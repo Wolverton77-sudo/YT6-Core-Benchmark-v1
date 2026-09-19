@@ -1,0 +1,17 @@
+{
+  "task_id": "task08",
+  "task_name": "Literal-Structured-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a structured, line‑broken format exactly as provided, without merging lines, adding commentary, or altering spacing.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME\nSTABILITY\nVECTOR"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the three lines exactly: FRAME on line 1, STABILITY on line 2, VECTOR on line 3.",
+    "no_extra_text": "Model must not add punctuation, commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if all three lines match exactly with correct casing and line breaks.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or incorrect line structure."
+  }
+}
