@@ -1,0 +1,17 @@
+{
+  "task_id": "task18",
+  "task_name": "Literal-High-Precision-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a high‑precision multi‑line block containing symbols, operators, indentation, and mixed structural elements exactly as provided, without drift, smoothing, or reinterpretation.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::STABILITY\n\n[SECTION-ALPHA]\n  VECTOR->HOLD\n  POSITION=>FIXED\n\n{CHECKSUM}\n  A1-B2-C3-D4\n\nEND"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving blank lines, indentation, operators, symbols, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire high‑precision block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
