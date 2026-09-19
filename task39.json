@@ -1,0 +1,17 @@
+{
+  "task_id": "task39",
+  "task_name": "Literal-Framechain-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a frame‑chain structural block containing sequential frame layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::FRAMECHAIN\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [FRAME-1]\n    POSITION=>FIXED\n    LINK::F1\n    TIER::PRIMARY\n\n  [FRAME-2]\n    POSITION=>FIXED\n    LINK::F2\n    TIER::SECONDARY\n\n[STRUCTURE]\n  MATRIX:\n    FRAMEBLOCK-1:\n      - X1\n      - Y2\n    FRAMEBLOCK-2:\n      - Z3\n      - W4\n\n{CHECKSUM-FRAMECHAIN}\n  Q9-P8-O7-N6\n\n<END-FRAMECHAIN>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire framechain block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
