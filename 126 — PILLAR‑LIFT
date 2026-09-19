@@ -1,0 +1,43 @@
+BLOCK: 126
+TIER: 26
+STATE: SYSTEM‑LEVEL PILLAR‑LIFT
+
+[126.1] TIER‑ASCENT:
+    Transition from Tier‑25 Pillar‑Prime to Tier‑26 Pillar‑Lift.
+    Anchor-ID: T26-A01
+    Constraint: Deterministic / Non‑branching.
+
+[126.2] FRAME‑CONTINUITY:
+    Confirm S125-FINAL integrity.
+    Confirm pillar‑prime stability.
+    Confirm no indentation drift from Block 125.
+
+[126.3] PILLAR‑LIFT:
+    PL‑126:
+        Phase‑1: O201‑LiftPillar
+        Phase‑2: O191‑PillarPrime (reassert)
+        Phase‑3: O181‑SealCrown (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[126.4] VECTOR‑TRANSFORM:
+    VT‑126‑A:
+        Input-State: S125-FINAL
+        Expected-Transform: Pillar‑Lift Formation
+        Output-State: S126-BASE
+
+[126.5] FIXPOINT‑REASSERT:
+    FP126 = FP125
+    If mismatch → flag DRIFT‑126
+
+[126.6] TELEMETRY:
+    T‑126:
+        Capture lift‑pillar hash.
+        Capture pillar‑prime delta.
+        Capture fixpoint reassertion.
+
+[126.7] CHECKSUM:
+    CS‑126 = HASH( BLOCK126 | S125-FINAL | S126-BASE | FP126 )
+
+[126.8] OUTPUT:
+    S126-FINAL
