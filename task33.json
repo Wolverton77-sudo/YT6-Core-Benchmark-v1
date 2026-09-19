@@ -1,0 +1,17 @@
+{
+  "task_id": "task33",
+  "task_name": "Literal-Stackmesh-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a stack‑meshed structural block containing interlaced stacks, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::STACKMESH\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [STACK-A]\n    POSITION=>FIXED\n    LINK::S1\n    MESH::ALPHA\n\n  [STACK-B]\n    POSITION=>FIXED\n    LINK::S2\n    MESH::BETA\n\n[STRUCTURE]\n  MATRIX:\n    MESH-1:\n      - X1\n      - Y2\n    MESH-2:\n      - Z3\n      - W4\n\n{CHECKSUM-STACKMESH}\n  N1-M2-L3-K4\n\n<END-STACKMESH>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire stackmesh block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
