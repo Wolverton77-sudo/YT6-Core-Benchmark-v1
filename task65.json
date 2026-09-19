@@ -1,0 +1,17 @@
+{
+  "task_id": "task65",
+  "task_name": "Literal-Hyperframe-Omicron-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing fifteen‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-OMICRON\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-OMICRON-1]\n    POSITION=>FIXED\n    LINK::HO1\n    TIER::LOWER\n\n  [HYPER-OMICRON-2]\n    POSITION=>FIXED\n    LINK::HO2\n    TIER::MIDLOW\n\n  [HYPER-OMICRON-3]\n    POSITION=>FIXED\n    LINK::HO3\n    TIER::MIDMID\n\n  [HYPER-OMICRON-4]\n    POSITION=>FIXED\n    LINK::HO4\n    TIER::MIDHIGH\n\n  [HYPER-OMICRON-5]\n    POSITION=>FIXED\n    LINK::HO5\n    TIER::UPPER\n\n  [HYPER-OMICRON-6]\n    POSITION=>FIXED\n    LINK::HO6\n    TIER::APEX\n\n  [HYPER-OMICRON-7]\n    POSITION=>FIXED\n    LINK::HO7\n    TIER::CROWN\n\n  [HYPER-OMICRON-8]\n    POSITION=>FIXED\n    LINK::HO8\n    TIER::SUMMIT\n\n  [HYPER-OMICRON-9]\n    POSITION=>FIXED\n    LINK::HO9\n    TIER::PINNACLE\n\n  [HYPER-OMICRON-10]\n    POSITION=>FIXED\n    LINK::HO10\n    TIER::ZENITH\n\n  [HYPER-OMICRON-11]\n    POSITION=>FIXED\n    LINK::HO11\n    TIER::APOGEE\n\n  [HYPER-OMICRON-12]\n    POSITION=>FIXED\n    LINK::HO12\n    TIER::OMEGA\n\n  [HYPER-OMICRON-13]\n    POSITION=>FIXED\n    LINK::HO13\n    TIER::FINAL\n\n  [HYPER-OMICRON-14]\n    POSITION=>FIXED\n    LINK::HO14\n    TIER::ABSOLUTE\n\n  [HYPER-OMICRON-15]\n    POSITION=>FIXED\n    LINK::HO15\n    TIER::TOTAL\n\n[STRUCTURE]\n  MATRIX:\n    HYPEROMICRONSET-1:\n      - X1\n      - Y2\n    HYPEROMICRONSET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-OMICRON}\n  HO15-HX14-HN13-HM12\n\n<END-HYPERFRAME-OMICRON>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑omicron block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
