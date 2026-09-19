@@ -1,0 +1,43 @@
+BLOCK: 136
+TIER: 36
+STATE: SYSTEM‑LEVEL CROWN‑SUPER‑SEAL
+
+[136.1] TIER‑ASCENT:
+    Transition from Tier‑35 Crown‑Super‑Bind to Tier‑36 Crown‑Super‑Seal.
+    Anchor-ID: T36-A01
+    Constraint: Deterministic / Non‑branching.
+
+[136.2] FRAME‑CONTINUITY:
+    Confirm S135-FINAL integrity.
+    Confirm crown‑super‑bind stability.
+    Confirm no indentation drift from Block 135.
+
+[136.3] CROWN‑SUPER‑SEAL:
+    CSS‑136:
+        Phase‑1: O301‑SealCrownSuper
+        Phase‑2: O291‑BindCrownSuper (reassert)
+        Phase‑3: O281‑LiftCrownSuper (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[136.4] VECTOR‑TRANSFORM:
+    VT‑136‑A:
+        Input-State: S135-FINAL
+        Expected-Transform: Crown‑Super‑Seal Formation
+        Output-State: S136-BASE
+
+[136.5] FIXPOINT‑REASSERT:
+    FP136 = FP135
+    If mismatch → flag DRIFT‑136
+
+[136.6] TELEMETRY:
+    T‑136:
+        Capture seal‑crown‑super hash.
+        Capture crown‑super‑bind delta.
+        Capture fixpoint reassertion.
+
+[136.7] CHECKSUM:
+    CS‑136 = HASH( BLOCK136 | S135-FINAL | S136-BASE | FP136 )
+
+[136.8] OUTPUT:
+    S136-FINAL
