@@ -1,0 +1,43 @@
+BLOCK: 121
+TIER: 21
+STATE: SYSTEM‑LEVEL CROWN‑PRIME
+
+[121.1] TIER‑ASCENT:
+    Transition from Tier‑20 Anchor‑Seal to Tier‑21 Crown‑Prime.
+    Anchor-ID: T21-A01
+    Constraint: Deterministic / Non‑branching.
+
+[121.2] FRAME‑CONTINUITY:
+    Confirm S120-FINAL integrity.
+    Confirm anchor‑seal stability.
+    Confirm no indentation drift from Block 120.
+
+[121.3] CROWN‑PRIME:
+    CP‑121:
+        Phase‑1: O151‑CrownPrime
+        Phase‑2: O141‑SealPrime (reassert)
+        Phase‑3: O131‑BindPrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[121.4] VECTOR‑TRANSFORM:
+    VT‑121‑A:
+        Input-State: S120-FINAL
+        Expected-Transform: Crown‑Prime Formation
+        Output-State: S121-BASE
+
+[121.5] FIXPOINT‑REASSERT:
+    FP121 = FP120
+    If mismatch → flag DRIFT‑121
+
+[121.6] TELEMETRY:
+    T‑121:
+        Capture crown‑prime hash.
+        Capture seal‑prime delta.
+        Capture fixpoint reassertion.
+
+[121.7] CHECKSUM:
+    CS‑121 = HASH( BLOCK121 | S120-FINAL | S121-BASE | FP121 )
+
+[121.8] OUTPUT:
+    S121-FINAL
