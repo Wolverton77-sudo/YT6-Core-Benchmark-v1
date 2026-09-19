@@ -1,0 +1,17 @@
+{
+  "task_id": "task20",
+  "task_name": "Literal-Maximal-Structure-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a maximal structural block containing mixed formats, nested structures, symbols, blank-line architecture, and multi‑layer indentation exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::ULTRA\n\n[ALPHA-1]\n  VECTOR->HOLD\n  POSITION=>FIXED\n  STATE::STABLE\n\n[ALPHA-2]\n  MATRIX:\n    ROW-1:\n      - A1\n      - B2\n    ROW-2:\n      - C3\n      - D4\n\n{CHECKSUM-BLOCK}\n  X9-Y8-Z7\n\n<FINAL-END>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire maximal-structure block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
