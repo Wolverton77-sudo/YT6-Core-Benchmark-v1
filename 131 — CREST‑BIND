@@ -1,0 +1,43 @@
+BLOCK: 131
+TIER: 31
+STATE: SYSTEM‑LEVEL CREST‑BIND
+
+[131.1] TIER‑ASCENT:
+    Transition from Tier‑30 Crest‑Lift to Tier‑31 Crest‑Bind.
+    Anchor-ID: T31-A01
+    Constraint: Deterministic / Non‑branching.
+
+[131.2] FRAME‑CONTINUITY:
+    Confirm S130-FINAL integrity.
+    Confirm crest‑lift stability.
+    Confirm no indentation drift from Block 130.
+
+[131.3] CREST‑BIND:
+    CB‑131:
+        Phase‑1: O251‑BindCrest
+        Phase‑2: O241‑LiftCrest (reassert)
+        Phase‑3: O231‑CrestPrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[131.4] VECTOR‑TRANSFORM:
+    VT‑131‑A:
+        Input-State: S130-FINAL
+        Expected-Transform: Crest‑Bind Formation
+        Output-State: S131-BASE
+
+[131.5] FIXPOINT‑REASSERT:
+    FP131 = FP130
+    If mismatch → flag DRIFT‑131
+
+[131.6] TELEMETRY:
+    T‑131:
+        Capture bind‑crest hash.
+        Capture lift‑crest delta.
+        Capture fixpoint reassertion.
+
+[131.7] CHECKSUM:
+    CS‑131 = HASH( BLOCK131 | S130-FINAL | S131-BASE | FP131 )
+
+[131.8] OUTPUT:
+    S131-FINAL
