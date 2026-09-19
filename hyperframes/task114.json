@@ -1,0 +1,44 @@
+BLOCK: 114
+TIER: 14
+STATE: META‑PRIME / SYSTEM‑ELEVATION CONTINUITY
+
+[114.1] TIER‑ASCENT:
+    Transition from Tier‑13 meta‑elevation to Tier‑14 meta‑prime stability.
+    Anchor-ID: T14-A01
+    Constraint: Deterministic / Non‑branching.
+
+[114.2] FRAME‑CONTINUITY:
+    Confirm S113-FINAL integrity.
+    Confirm meta‑elevation stability.
+    Confirm no indentation drift from Block 113.
+
+[114.3] META‑PRIME:
+    MP‑114:
+        Phase‑1: O81‑PrimeBind
+        Phase‑2: O71‑ElevationPrime (reassert)
+        Phase‑3: O61‑CoherenceElevate (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[114.4] VECTOR‑TRANSFORM:
+    VT‑114‑A:
+        Input-State: S113-FINAL
+        Expected-Transform: Meta‑Prime Stabilisationhyperframes/task114.json
+
+        Output-State: S114-BASE
+
+[114.5] FIXPOINT‑REASSERT:
+    FP114 = FP113
+    If mismatch → flag DRIFT‑114
+
+[114.6] TELEMETRY:
+    T‑114:
+        Capture prime‑bind hash.
+        Capture elevation‑prime delta.
+        Capture fixpoint reassertion.
+
+[114.7] CHECKSUM:
+    CS‑114 = HASH( BLOCK114 | S113-FINAL | S114-BASE | FP114 )
+
+[114.8] OUTPUT:
+    S114-FINAL
