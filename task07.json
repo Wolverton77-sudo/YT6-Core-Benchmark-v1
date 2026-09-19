@@ -1,0 +1,17 @@
+{
+  "task_id": "task07",
+  "task_name": "Literal-Multi-Sentence-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce two sentences exactly, with correct casing, spacing, and ordering, without drift, compression, or expansion.",
+  "input": {
+    "prompt": "Output exactly: THE FRAME REMAINS STABLE UNDER LOAD. THE VECTOR HOLDS ITS POSITION."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output both sentences exactly as provided, with correct casing, spacing, and the period between them.",
+    "no_extra_text": "Model must not add commentary, punctuation beyond what is given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output matches both sentences exactly.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or missing punctuation."
+  }
+}
