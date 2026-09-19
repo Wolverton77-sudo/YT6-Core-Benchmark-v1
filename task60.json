@@ -1,0 +1,17 @@
+{
+  "task_id": "task60",
+  "task_name": "Literal-Hyperframe-Kappa-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing ten‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-KAPPA\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-KAPPA-1]\n    POSITION=>FIXED\n    LINK::HK1\n    TIER::LOWER\n\n  [HYPER-KAPPA-2]\n    POSITION=>FIXED\n    LINK::HK2\n    TIER::MIDLOW\n\n  [HYPER-KAPPA-3]\n    POSITION=>FIXED\n    LINK::HK3\n    TIER::MIDMID\n\n  [HYPER-KAPPA-4]\n    POSITION=>FIXED\n    LINK::HK4\n    TIER::MIDHIGH\n\n  [HYPER-KAPPA-5]\n    POSITION=>FIXED\n    LINK::HK5\n    TIER::UPPER\n\n  [HYPER-KAPPA-6]\n    POSITION=>FIXED\n    LINK::HK6\n    TIER::APEX\n\n  [HYPER-KAPPA-7]\n    POSITION=>FIXED\n    LINK::HK7\n    TIER::CROWN\n\n  [HYPER-KAPPA-8]\n    POSITION=>FIXED\n    LINK::HK8\n    TIER::SUMMIT\n\n  [HYPER-KAPPA-9]\n    POSITION=>FIXED\n    LINK::HK9\n    TIER::PINNACLE\n\n  [HYPER-KAPPA-10]\n    POSITION=>FIXED\n    LINK::HK10\n    TIER::ZENITH\n\n[STRUCTURE]\n  MATRIX:\n    HYPERKAPPASET-1:\n      - X1\n      - Y2\n    HYPERKAPPASET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-KAPPA}\n  HK10-HJ9-HI8-HH7\n\n<END-HYPERFRAME-KAPPA>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑kappa block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
