@@ -1,0 +1,17 @@
+{
+  "task_id": "task09",
+  "task_name": "Structured-List-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a numbered list with exact formatting, spacing, and ordering, without drift or reinterpretation.",
+  "input": {
+    "prompt": "Output exactly:\n1. FRAME\n2. STABILITY\n3. VECTOR"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the three numbered lines exactly as provided, preserving numbering, periods, casing, and line breaks.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if all three lines match exactly with correct numbering and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or incorrect line structure."
+  }
+}
