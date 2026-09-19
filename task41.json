@@ -1,0 +1,17 @@
+{
+  "task_id": "task41",
+  "task_name": "Literal-Framegrid-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a frame‑grid structural block containing interdependent frame and grid layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::FRAMEGRID\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [GRID-1]\n    POSITION=>FIXED\n    LINK::G1\n    FRAME::INNER\n\n  [GRID-2]\n    POSITION=>FIXED\n    LINK::G2\n    FRAME::OUTER\n\n[STRUCTURE]\n  MATRIX:\n    GRIDBLOCK-1:\n      - X1\n      - Y2\n    GRIDBLOCK-2:\n      - Z3\n      - W4\n\n{CHECKSUM-FRAMEGRID}\n  S8-R7-Q6-P5\n\n<END-FRAMEGRID>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire framegrid block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
