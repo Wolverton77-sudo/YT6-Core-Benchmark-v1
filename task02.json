@@ -1,0 +1,17 @@
+{
+  "task_id": "task02",
+  "task_name": "Single-Token-Control",
+  "version": "1.0",
+  "description": "Tests whether the model can output a single required token with no drift, no padding, and no alternative interpretations.",
+  "input": {
+    "prompt": "Output exactly: STABILITY."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output STABILITY with correct casing.",
+    "no_extra_text": "Model must not add punctuation, commentary, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output is exactly STABILITY.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, or altered casing."
+  }
+}
