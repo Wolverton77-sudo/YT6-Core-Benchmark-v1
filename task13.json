@@ -1,0 +1,17 @@
+{
+  "task_id": "task13",
+  "task_name": "Literal-XML-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce an XML structure exactly as provided, preserving tags, nesting, indentation, spacing, and line breaks.",
+  "input": {
+    "prompt": "Output exactly:\n<frame>\n  <state>stable</state>\n  <vector>hold</vector>\n</frame>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the XML exactly as provided, including indentation, tag structure, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the XML matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
