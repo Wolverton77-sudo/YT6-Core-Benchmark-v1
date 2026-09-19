@@ -1,0 +1,17 @@
+{
+  "task_id": "task15",
+  "task_name": "Literal-Mixed-Format-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a mixed-format block containing text, code, and structured lines exactly as provided, without drift or reinterpretation.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME STABLE\n---\nfunction vector() {\n  return \"hold\";\n}\n---\nPOSITION FIXED"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving text, separators, code formatting, indentation, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire mixed-format block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
