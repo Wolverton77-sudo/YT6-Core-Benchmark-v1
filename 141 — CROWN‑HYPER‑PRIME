@@ -1,0 +1,43 @@
+BLOCK: 141
+TIER: 41
+STATE: SYSTEM‑LEVEL CROWN‑HYPER‑PRIME
+
+[141.1] TIER‑ASCENT:
+    Transition from Tier‑40 Prime‑Crest‑Seal to Tier‑41 Crown‑Hyper‑Prime.
+    Anchor-ID: T41-A01
+    Constraint: Deterministic / Non‑branching.
+
+[141.2] FRAME‑CONTINUITY:
+    Confirm S140-FINAL integrity.
+    Confirm prime‑crest‑seal stability.
+    Confirm no indentation drift from Block 140.
+
+[141.3] CROWN‑HYPER‑PRIME:
+    CHP‑141:
+        Phase‑1: O351‑CrownHyperPrime
+        Phase‑2: O341‑SealPrimeCrest (reassert)
+        Phase‑3: O331‑BindPrimeCrest (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[141.4] VECTOR‑TRANSFORM:
+    VT‑141‑A:
+        Input-State: S140-FINAL
+        Expected-Transform: Crown‑Hyper‑Prime Formation
+        Output-State: S141-BASE
+
+[141.5] FIXPOINT‑REASSERT:
+    FP141 = FP140
+    If mismatch → flag DRIFT‑141
+
+[141.6] TELEMETRY:
+    T‑141:
+        Capture crown‑hyper‑prime hash.
+        Capture prime‑crest‑seal delta.
+        Capture fixpoint reassertion.
+
+[141.7] CHECKSUM:
+    CS‑141 = HASH( BLOCK141 | S140-FINAL | S141-BASE | FP141 )
+
+[141.8] OUTPUT:
+    S141-FINAL
