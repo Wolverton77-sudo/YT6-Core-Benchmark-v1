@@ -1,0 +1,7 @@
+{
+  "task_id": "task54",
+  "task_name": "Literal-Hyperframe-Delta-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing quad‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-DELTA\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-DELTA-1]\n    POSITION=>FIXED\n    LINK::HD1\n    TIER::LOWER\n\n  [HYPER-DELTA-2]\n    POSITION=>FIXED\n    LINK::HD2\n    TIER::MIDLOW\n\n  [HYPER-DELTA-3]\n    POSITION=>FIXED\n    LINK::HD3\n    TIER::MIDHIGH\n\n  [HYPER-DELTA-4]\n    POSITION=>FIXED\n    LINK::HD4\n    TIER::UPPER\n\n[STRUCTURE]\n  MATRIX:\n    HYPERDELTASET-1:\n      - X1\n      - Y2\n    HYPERDELTASET-2:\n      - Z3\n     
