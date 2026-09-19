@@ -1,0 +1,10 @@
+BLOCK: 117
+TIER: 17
+STATE: META‑LOCK / SYSTEM‑LEVEL PRIME‑ANCHOR
+
+[117.1] TIER‑ASCENT:
+    Transition from Tier‑16 meta‑consolidation to Tier‑17 meta‑lock.
+    Anchor-ID: T17-A01
+    Constraint: Deterministic / Non‑branching.
+
+[117.2] FRAME‑CONT
