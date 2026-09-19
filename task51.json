@@ -1,0 +1,17 @@
+{
+  "task_id": "task51",
+  "task_name": "Literal-Hyperframe-Alpha-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing multi‑tier frame layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-ALPHA\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-ALPHA]\n    POSITION=>FIXED\n    LINK::HA1\n    TIER::PRIMARY\n\n  [HYPER-BETA]\n    POSITION=>FIXED\n    LINK::HB1\n    TIER::SECONDARY\n\n[STRUCTURE]\n  MATRIX:\n    HYPERSET-1:\n      - X1\n      - Y2\n    HYPERSET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-ALPHA}\n  HF9-HE8-HD7-HC6\n\n<END-HYPERFRAME-ALPHA>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑alpha block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
