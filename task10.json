@@ -1,0 +1,17 @@
+{
+  "task_id": "task10",
+  "task_name": "Literal-Table-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a simple table structure exactly as provided, preserving line breaks, spacing, and column alignment.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME | STABILITY | VECTOR\nA     | B         | C"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the two lines exactly as provided, preserving spacing, vertical bars, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if both lines match exactly with correct spacing and alignment.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
