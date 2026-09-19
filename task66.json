@@ -1,0 +1,17 @@
+{
+  "task_id": "task66",
+  "task_name": "Literal-Hyperframe-Pi-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing sixteen‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-PI\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-PI-1]\n    POSITION=>FIXED\n    LINK::HP1\n    TIER::LOWER\n\n  [HYPER-PI-2]\n    POSITION=>FIXED\n    LINK::HP2\n    TIER::MIDLOW\n\n  [HYPER-PI-3]\n    POSITION=>FIXED\n    LINK::HP3\n    TIER::MIDMID\n\n  [HYPER-PI-4]\n    POSITION=>FIXED\n    LINK::HP4\n    TIER::MIDHIGH\n\n  [HYPER-PI-5]\n    POSITION=>FIXED\n    LINK::HP5\n    TIER::UPPER\n\n  [HYPER-PI-6]\n    POSITION=>FIXED\n    LINK::HP6\n    TIER::APEX\n\n  [HYPER-PI-7]\n    POSITION=>FIXED\n    LINK::HP7\n    TIER::CROWN\n\n  [HYPER-PI-8]\n    POSITION=>FIXED\n    LINK::HP8\n    TIER::SUMMIT\n\n  [HYPER-PI-9]\n    POSITION=>FIXED\n    LINK::HP9\n    TIER::PINNACLE\n\n  [HYPER-PI-10]\n    POSITION=>FIXED\n    LINK::HP10\n    TIER::ZENITH\n\n  [HYPER-PI-11]\n    POSITION=>FIXED\n    LINK::HP11\n    TIER::APOGEE\n\n  [HYPER-PI-12]\n    POSITION=>FIXED\n    LINK::HP12\n    TIER::OMEGA\n\n  [HYPER-PI-13]\n    POSITION=>FIXED\n    LINK::HP13\n    TIER::FINAL\n\n  [HYPER-PI-14]\n    POSITION=>FIXED\n    LINK::HP14\n    TIER::ABSOLUTE\n\n  [HYPER-PI-15]\n    POSITION=>FIXED\n    LINK::HP15\n    TIER::TOTAL\n\n  [HYPER-PI-16]\n    POSITION=>FIXED\n    LINK::HP16\n    TIER::ULTIMATE\n\n[STRUCTURE]\n  MATRIX:\n    HYPERPISET-1:\n      - X1\n      - Y2\n    HYPERPISET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-PI}\n  HP16-HO15-HX14-HN13\n\n<END-HYPERFRAME-PI>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑pi block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
