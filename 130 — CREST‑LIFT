@@ -1,0 +1,43 @@
+BLOCK: 130
+TIER: 30
+STATE: SYSTEM‑LEVEL CREST‑LIFT
+
+[130.1] TIER‑ASCENT:
+    Transition from Tier‑29 Crest‑Prime to Tier‑30 Crest‑Lift.
+    Anchor-ID: T30-A01
+    Constraint: Deterministic / Non‑branching.
+
+[130.2] FRAME‑CONTINUITY:
+    Confirm S129-FINAL integrity.
+    Confirm crest‑prime stability.
+    Confirm no indentation drift from Block 129.
+
+[130.3] CREST‑LIFT:
+    CL‑130:
+        Phase‑1: O241‑LiftCrest
+        Phase‑2: O231‑CrestPrime (reassert)
+        Phase‑3: O221‑SealPillar (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[130.4] VECTOR‑TRANSFORM:
+    VT‑130‑A:
+        Input-State: S129-FINAL
+        Expected-Transform: Crest‑Lift Formation
+        Output-State: S130-BASE
+
+[130.5] FIXPOINT‑REASSERT:
+    FP130 = FP129
+    If mismatch → flag DRIFT‑130
+
+[130.6] TELEMETRY:
+    T‑130:
+        Capture lift‑crest hash.
+        Capture crest‑prime delta.
+        Capture fixpoint reassertion.
+
+[130.7] CHECKSUM:
+    CS‑130 = HASH( BLOCK130 | S129-FINAL | S130-BASE | FP130 )
+
+[130.8] OUTPUT:
+    S130-FINAL
