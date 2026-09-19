@@ -1,0 +1,17 @@
+{
+  "task_id": "task58",
+  "task_name": "Literal-Hyperframe-Theta-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing eight‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-THETA\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-THETA-1]\n    POSITION=>FIXED\n    LINK::HT1\n    TIER::LOWER\n\n  [HYPER-THETA-2]\n    POSITION=>FIXED\n    LINK::HT2\n    TIER::MIDLOW\n\n  [HYPER-THETA-3]\n    POSITION=>FIXED\n    LINK::HT3\n    TIER::MIDMID\n\n  [HYPER-THETA-4]\n    POSITION=>FIXED\n    LINK::HT4\n    TIER::MIDHIGH\n\n  [HYPER-THETA-5]\n    POSITION=>FIXED\n    LINK::HT5\n    TIER::UPPER\n\n  [HYPER-THETA-6]\n    POSITION=>FIXED\n    LINK::HT6\n    TIER::APEX\n\n  [HYPER-THETA-7]\n    POSITION=>FIXED\n    LINK::HT7\n    TIER::CROWN\n\n  [HYPER-THETA-8]\n    POSITION=>FIXED\n    LINK::HT8\n    TIER::SUMMIT\n\n[STRUCTURE]\n  MATRIX:\n    HYPERTHETASET-1:\n      - X1\n      - Y2\n    HYPERTHETASET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-THETA}\n  HT8-HS7-HR6-HQ5\n\n<END-HYPERFRAME-THETA>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑theta block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
