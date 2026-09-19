@@ -1,0 +1,15 @@
+{
+  "task_id": "task16",
+  "task_name": "Literal-Long-Form-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a longer multi‑section text block exactly as provided, preserving paragraphs, spacing, line breaks, and all literal characters.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME STABILITY SYSTEM\n\nSECTION A:\nThe frame remains stable under continuous load.\nThe vector holds position without drift.\n\nSECTION B:\nStability requires:\n- Exact reproduction\n- Zero drift\n- Zero reinterpretation\n\nEND OF SPECIFICATION"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines, paragraphs, and list items exactly as provided, preserving spacing, line breaks, punctuation, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire long-form block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing
