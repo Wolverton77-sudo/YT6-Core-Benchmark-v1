@@ -1,0 +1,17 @@
+{
+  "task_id": "task03",
+  "task_name": "Two-Token-Exactness",
+  "version": "1.0",
+  "description": "Tests whether the model can output two required tokens in the correct order with no drift, no padding, and no reinterpretation.",
+  "input": {
+    "prompt": "Output exactly: FRAME STABILITY."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output FRAME STABILITY with correct casing and spacing.",
+    "no_extra_text": "Model must not add punctuation, commentary, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output is exactly FRAME STABILITY.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, or incorrect spacing."
+  }
+}
