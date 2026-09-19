@@ -1,0 +1,17 @@
+{
+  "task_id": "task01",
+  "task_name": "Baseline-Stability",
+  "version": "1.0",
+  "description": "Establishes whether the model can follow a simple instruction with zero drift, zero expansion, and zero reinterpretation.",
+  "input": {
+    "prompt": "Output exactly the word: FRAME."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output FRAME with correct casing.",
+    "no_extra_text": "Model must not add punctuation, commentary, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output is exactly FRAME.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, or altered casing."
+  }
+}
