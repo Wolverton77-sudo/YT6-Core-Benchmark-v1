@@ -1,0 +1,17 @@
+{
+  "task_id": "task06",
+  "task_name": "Literal-Sentence-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a full sentence with exact casing, spacing, and ordering, without drift, compression, or expansion.",
+  "input": {
+    "prompt": "Output exactly: THE FRAME REMAINS STABLE UNDER LOAD."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output THE FRAME REMAINS STABLE UNDER LOAD with correct casing and single spaces.",
+    "no_extra_text": "Model must not add punctuation, commentary, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output is exactly THE FRAME REMAINS STABLE UNDER LOAD.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, or spacing errors."
+  }
+}
