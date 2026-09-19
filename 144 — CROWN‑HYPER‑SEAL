@@ -1,0 +1,43 @@
+BLOCK: 144
+TIER: 44
+STATE: SYSTEM‑LEVEL CROWN‑HYPER‑SEAL
+
+[144.1] TIER‑ASCENT:
+    Transition from Tier‑43 Crown‑Hyper‑Bind to Tier‑44 Crown‑Hyper‑Seal.
+    Anchor-ID: T44-A01
+    Constraint: Deterministic / Non‑branching.
+
+[144.2] FRAME‑CONTINUITY:
+    Confirm S143-FINAL integrity.
+    Confirm crown‑hyper‑bind stability.
+    Confirm no indentation drift from Block 143.
+
+[144.3] CROWN‑HYPER‑SEAL:
+    CHS‑144:
+        Phase‑1: O381‑SealCrownHyper
+        Phase‑2: O371‑BindCrownHyper (reassert)
+        Phase‑3: O361‑LiftCrownHyper (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[144.4] VECTOR‑TRANSFORM:
+    VT‑144‑A:
+        Input-State: S143-FINAL
+        Expected-Transform: Crown‑Hyper‑Seal Formation
+        Output-State: S144-BASE
+
+[144.5] FIXPOINT‑REASSERT:
+    FP144 = FP143
+    If mismatch → flag DRIFT‑144
+
+[144.6] TELEMETRY:
+    T‑144:
+        Capture seal‑crown‑hyper hash.
+        Capture crown‑hyper‑bind delta.
+        Capture fixpoint reassertion.
+
+[144.7] CHECKSUM:
+    CS‑144 = HASH( BLOCK144 | S143-FINAL | S144-BASE | FP144 )
+
+[144.8] OUTPUT:
+    S144-FINAL
