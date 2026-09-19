@@ -1,0 +1,43 @@
+BLOCK: 143
+TIER: 43
+STATE: SYSTEM‑LEVEL CROWN‑HYPER‑BIND
+
+[143.1] TIER‑ASCENT:
+    Transition from Tier‑42 Crown‑Hyper‑Lift to Tier‑43 Crown‑Hyper‑Bind.
+    Anchor-ID: T43-A01
+    Constraint: Deterministic / Non‑branching.
+
+[143.2] FRAME‑CONTINUITY:
+    Confirm S142-FINAL integrity.
+    Confirm crown‑hyper‑lift stability.
+    Confirm no indentation drift from Block 142.
+
+[143.3] CROWN‑HYPER‑BIND:
+    CHB‑143:
+        Phase‑1: O371‑BindCrownHyper
+        Phase‑2: O361‑LiftCrownHyper (reassert)
+        Phase‑3: O351‑CrownHyperPrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[143.4] VECTOR‑TRANSFORM:
+    VT‑143‑A:
+        Input-State: S142-FINAL
+        Expected-Transform: Crown‑Hyper‑Bind Formation
+        Output-State: S143-BASE
+
+[143.5] FIXPOINT‑REASSERT:
+    FP143 = FP142
+    If mismatch → flag DRIFT‑143
+
+[143.6] TELEMETRY:
+    T‑143:
+        Capture bind‑crown‑hyper hash.
+        Capture crown‑hyper‑lift delta.
+        Capture fixpoint reassertion.
+
+[143.7] CHECKSUM:
+    CS‑143 = HASH( BLOCK143 | S142-FINAL | S143-BASE | FP143 )
+
+[143.8] OUTPUT:
+    S143-FINAL
