@@ -1,0 +1,5 @@
+{
+  "task_id": "task32",
+  "task_name": "Literal-Stackmesh-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a stack‑meshed structural block containing interlaced stacks, symbolic operators
