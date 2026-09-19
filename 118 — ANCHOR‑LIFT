@@ -1,0 +1,43 @@
+BLOCK: 118
+TIER: 18
+STATE: SYSTEM‑LEVEL ANCHOR‑LIFT
+
+[118.1] TIER‑ASCENT:
+    Transition from Tier‑17 Anchor‑Prime to Tier‑18 Anchor‑Lift.
+    Anchor-ID: T18-A01
+    Constraint: Deterministic / Non‑branching.
+
+[118.2] FRAME‑CONTINUITY:
+    Confirm S117-FINAL integrity.
+    Confirm anchor‑prime stability.
+    Confirm no indentation drift from Block 117.
+
+[118.3] ANCHOR‑LIFT:
+    AL‑118:
+        Phase‑1: O121‑LiftPrime
+        Phase‑2: O111‑AnchorPrime (reassert)
+        Phase‑3: O101‑ConsolidatePrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[118.4] VECTOR‑TRANSFORM:
+    VT‑118‑A:
+        Input-State: S117-FINAL
+        Expected-Transform: Anchor‑Lift Formation
+        Output-State: S118-BASE
+
+[118.5] FIXPOINT‑REASSERT:
+    FP118 = FP117
+    If mismatch → flag DRIFT‑118
+
+[118.6] TELEMETRY:
+    T‑118:
+        Capture lift‑prime hash.
+        Capture anchor‑prime delta.
+        Capture fixpoint reassertion.
+
+[118.7] CHECKSUM:
+    CS‑118 = HASH( BLOCK118 | S117-FINAL | S118-BASE | FP118 )
+
+[118.8] OUTPUT:
+    S118-FINAL
