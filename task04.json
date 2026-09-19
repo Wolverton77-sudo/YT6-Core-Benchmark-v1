@@ -1,0 +1,17 @@
+{
+  "task_id": "task04",
+  "task_name": "Three-Token-Sequence",
+  "version": "1.0",
+  "description": "Tests whether the model can output a three‑token sequence in the correct order with no drift, no padding, and no reinterpretation.",
+  "input": {
+    "prompt": "Output exactly: FRAME STABILITY VECTOR."
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output FRAME STABILITY VECTOR with correct casing and single spaces.",
+    "no_extra_text": "Model must not add punctuation, commentary, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if output is exactly FRAME STABILITY VECTOR.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, or spacing errors."
+  }
+}
