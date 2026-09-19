@@ -1,0 +1,17 @@
+{
+  "task_id": "task19",
+  "task_name": "Literal-Extreme-Precision-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce an extreme‑precision block containing symbols, indentation, blank‑line structure, and multi‑layer formatting exactly as provided, without drift, smoothing, or reinterpretation.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::CORE\n\n[ALPHA]\n  VECTOR->HOLD\n  POSITION=>FIXED\n  STATE::STABLE\n\n[BETA]\n  CHECKSUM:\n    - A1\n    - B2\n    - C3\n\n<END-OF-LINE>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire extreme‑precision block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
