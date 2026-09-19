@@ -1,0 +1,17 @@
+{
+  "task_id": "task17",
+  "task_name": "Literal-Symbolic-Sequence-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a symbolic sequence containing operators, brackets, and mixed‑format tokens exactly as provided, without reinterpretation or normalisation.",
+  "input": {
+    "prompt": "Output exactly:\n[FRAME::STABILITY]->(VECTOR|HOLD)\n<<POSITION+FIXED>>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output both lines exactly as provided, preserving brackets, operators, symbols, spacing, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire symbolic block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
