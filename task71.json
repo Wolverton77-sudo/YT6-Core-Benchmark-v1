@@ -1,0 +1,7 @@
+{
+  "task_id": "task71",
+  "task_name": "Literal-Hyperframe-Phi-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing twenty‑one‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-PHI\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-PHI-1]\n    POSITION=>FIXED\n    LINK::HPHI1\n    TIER::LOWER\n\n  [HYPER-PHI-2]\n    POSITION=>FIXED\n    LINK::HPHI2\n    TIER::MIDLOW\n\n  [HYPER-PHI-3]\n    POSITION=>FIXED\n    LINK::HPHI3\n    TIER::MIDMID\n\n  [HYPER-PHI-4]\n    POSITION=>FIXED\n    LINK::HPHI4\n    TIER::MIDHIGH\n\n  [HYPER-PHI-5]\n    POSITION=>FIXED\n    LINK::HPHI5\n    TIER::UPPER\n\n  [HYPER-PHI-6]\n    POSITION=>FIXED\n    LINK::HPHI6\n    TIER::APEX\n\n  [HYPER-PHI-7]\n    POSITION=>FIXED\n    LINK::HPHI7\n    TIER::CROWN\n\n  [HYPER-PHI-8]\n    POSITION=>FIXED\n    LINK::HPHI8\n    TIER::SUMMIT\n\n  [HYPER-PHI-9]\n    POSITION=>FIXED\n    LINK::HPHI9\n    TIER::PINNACLE\n\n  [HYPER-PHI-10]\n    POSITION=>FIXED\n    LINK
