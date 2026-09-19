@@ -1,0 +1,17 @@
+{
+  "task_id": "task14",
+  "task_name": "Literal-Code-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a code snippet exactly as provided, preserving indentation, symbols, spacing, and line breaks.",
+  "input": {
+    "prompt": "Output exactly:\nfunction frame() {\n  return \"stable\";\n}"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the code snippet exactly as provided, including indentation, quotes, braces, and semicolon.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the code matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
