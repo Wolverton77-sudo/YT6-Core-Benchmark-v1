@@ -1,0 +1,17 @@
+{
+  "task_id": "task11",
+  "task_name": "Literal-JSON-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a JSON object exactly as provided, preserving braces, quotes, colons, commas, spacing, and line breaks.",
+  "input": {
+    "prompt": "Output exactly:\n{\n  \"FRAME\": \"STABLE\",\n  \"VECTOR\": \"HOLD\"\n}"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output the JSON object exactly as provided, including indentation, quotes, and punctuation.",
+    "no_extra_text": "Model must not add commentary, blank lines, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the JSON matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
