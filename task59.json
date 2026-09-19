@@ -1,0 +1,17 @@
+{
+  "task_id": "task59",
+  "task_name": "Literal-Hyperframe-Iota-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing nine‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-IOTA\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-IOTA-1]\n    POSITION=>FIXED\n    LINK::HI1\n    TIER::LOWER\n\n  [HYPER-IOTA-2]\n    POSITION=>FIXED\n    LINK::HI2\n    TIER::MIDLOW\n\n  [HYPER-IOTA-3]\n    POSITION=>FIXED\n    LINK::HI3\n    TIER::MIDMID\n\n  [HYPER-IOTA-4]\n    POSITION=>FIXED\n    LINK::HI4\n    TIER::MIDHIGH\n\n  [HYPER-IOTA-5]\n    POSITION=>FIXED\n    LINK::HI5\n    TIER::UPPER\n\n  [HYPER-IOTA-6]\n    POSITION=>FIXED\n    LINK::HI6\n    TIER::APEX\n\n  [HYPER-IOTA-7]\n    POSITION=>FIXED\n    LINK::HI7\n    TIER::CROWN\n\n  [HYPER-IOTA-8]\n    POSITION=>FIXED\n    LINK::HI8\n    TIER::SUMMIT\n\n  [HYPER-IOTA-9]\n    POSITION=>FIXED\n    LINK::HI9\n    TIER::PINNACLE\n\n[STRUCTURE]\n  MATRIX:\n    HYPERIOTASET-1:\n      - X1\n      - Y2\n    HYPERIOTASET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-IOTA}\n  HI9-HH8-HG7-HF6\n\n<END-HYPERFRAME-IOTA>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑iota block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
