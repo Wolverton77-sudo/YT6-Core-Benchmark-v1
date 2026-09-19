@@ -1,0 +1,43 @@
+BLOCK: 140
+TIER: 40
+STATE: SYSTEM‑LEVEL PRIME‑CREST‑SEAL
+
+[140.1] TIER‑ASCENT:
+    Transition from Tier‑39 Prime‑Crest‑Bind to Tier‑40 Prime‑Crest‑Seal.
+    Anchor-ID: T40-A01
+    Constraint: Deterministic / Non‑branching.
+
+[140.2] FRAME‑CONTINUITY:
+    Confirm S139-FINAL integrity.
+    Confirm prime‑crest‑bind stability.
+    Confirm no indentation drift from Block 139.
+
+[140.3] PRIME‑CREST‑SEAL:
+    PCS‑140:
+        Phase‑1: O341‑SealPrimeCrest
+        Phase‑2: O331‑BindPrimeCrest (reassert)
+        Phase‑3: O321‑LiftPrimeCrest (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[140.4] VECTOR‑TRANSFORM:
+    VT‑140‑A:
+        Input-State: S139-FINAL
+        Expected-Transform: Prime‑Crest‑Seal Formation
+        Output-State: S140-BASE
+
+[140.5] FIXPOINT‑REASSERT:
+    FP140 = FP139
+    If mismatch → flag DRIFT‑140
+
+[140.6] TELEMETRY:
+    T‑140:
+        Capture seal‑prime‑crest hash.
+        Capture prime‑crest‑bind delta.
+        Capture fixpoint reassertion.
+
+[140.7] CHECKSUM:
+    CS‑140 = HASH( BLOCK140 | S139-FINAL | S140-BASE | FP140 )
+
+[140.8] OUTPUT:
+    S140-FINAL
