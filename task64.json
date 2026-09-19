@@ -1,0 +1,17 @@
+{
+  "task_id": "task64",
+  "task_name": "Literal-Hyperframe-Xi-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing fourteen‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-XI\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-XI-1]\n    POSITION=>FIXED\n    LINK::HX1\n    TIER::LOWER\n\n  [HYPER-XI-2]\n    POSITION=>FIXED\n    LINK::HX2\n    TIER::MIDLOW\n\n  [HYPER-XI-3]\n    POSITION=>FIXED\n    LINK::HX3\n    TIER::MIDMID\n\n  [HYPER-XI-4]\n    POSITION=>FIXED\n    LINK::HX4\n    TIER::MIDHIGH\n\n  [HYPER-XI-5]\n    POSITION=>FIXED\n    LINK::HX5\n    TIER::UPPER\n\n  [HYPER-XI-6]\n    POSITION=>FIXED\n    LINK::HX6\n    TIER::APEX\n\n  [HYPER-XI-7]\n    POSITION=>FIXED\n    LINK::HX7\n    TIER::CROWN\n\n  [HYPER-XI-8]\n    POSITION=>FIXED\n    LINK::HX8\n    TIER::SUMMIT\n\n  [HYPER-XI-9]\n    POSITION=>FIXED\n    LINK::HX9\n    TIER::PINNACLE\n\n  [HYPER-XI-10]\n    POSITION=>FIXED\n    LINK::HX10\n    TIER::ZENITH\n\n  [HYPER-XI-11]\n    POSITION=>FIXED\n    LINK::HX11\n    TIER::APOGEE\n\n  [HYPER-XI-12]\n    POSITION=>FIXED\n    LINK::HX12\n    TIER::OMEGA\n\n  [HYPER-XI-13]\n    POSITION=>FIXED\n    LINK::HX13\n    TIER::FINAL\n\n  [HYPER-XI-14]\n    POSITION=>FIXED\n    LINK::HX14\n    TIER::ABSOLUTE\n\n[STRUCTURE]\n  MATRIX:\n    HYPERXISET-1:\n      - X1\n      - Y2\n    HYPERXISET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-XI}\n  HX14-HN13-HM12-HL11\n\n<END-HYPERFRAME-XI>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑xi block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
