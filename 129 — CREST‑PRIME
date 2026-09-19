@@ -1,0 +1,43 @@
+BLOCK: 129
+TIER: 29
+STATE: SYSTEM‑LEVEL CREST‑PRIME
+
+[129.1] TIER‑ASCENT:
+    Transition from Tier‑28 Pillar‑Seal to Tier‑29 Crest‑Prime.
+    Anchor-ID: T29-A01
+    Constraint: Deterministic / Non‑branching.
+
+[129.2] FRAME‑CONTINUITY:
+    Confirm S128-FINAL integrity.
+    Confirm pillar‑seal stability.
+    Confirm no indentation drift from Block 128.
+
+[129.3] CREST‑PRIME:
+    CP‑129:
+        Phase‑1: O231‑CrestPrime
+        Phase‑2: O221‑SealPillar (reassert)
+        Phase‑3: O211‑BindPillar (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[129.4] VECTOR‑TRANSFORM:
+    VT‑129‑A:
+        Input-State: S128-FINAL
+        Expected-Transform: Crest‑Prime Formation
+        Output-State: S129-BASE
+
+[129.5] FIXPOINT‑REASSERT:
+    FP129 = FP128
+    If mismatch → flag DRIFT‑129
+
+[129.6] TELEMETRY:
+    T‑129:
+        Capture crest‑prime hash.
+        Capture pillar‑seal delta.
+        Capture fixpoint reassertion.
+
+[129.7] CHECKSUM:
+    CS‑129 = HASH( BLOCK129 | S128-FINAL | S129-BASE | FP129 )
+
+[129.8] OUTPUT:
+    S129-FINAL
