@@ -1,0 +1,43 @@
+BLOCK: 128
+TIER: 28
+STATE: SYSTEM‑LEVEL PILLAR‑SEAL
+
+[128.1] TIER‑ASCENT:
+    Transition from Tier‑27 Pillar‑Bind to Tier‑28 Pillar‑Seal.
+    Anchor-ID: T28-A01
+    Constraint: Deterministic / Non‑branching.
+
+[128.2] FRAME‑CONTINUITY:
+    Confirm S127-FINAL integrity.
+    Confirm pillar‑bind stability.
+    Confirm no indentation drift from Block 127.
+
+[128.3] PILLAR‑SEAL:
+    PS‑128:
+        Phase‑1: O221‑SealPillar
+        Phase‑2: O211‑BindPillar (reassert)
+        Phase‑3: O201‑LiftPillar (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[128.4] VECTOR‑TRANSFORM:
+    VT‑128‑A:
+        Input-State: S127-FINAL
+        Expected-Transform: Pillar‑Seal Formation
+        Output-State: S128-BASE
+
+[128.5] FIXPOINT‑REASSERT:
+    FP128 = FP127
+    If mismatch → flag DRIFT‑128
+
+[128.6] TELEMETRY:
+    T‑128:
+        Capture seal‑pillar hash.
+        Capture bind‑pillar delta.
+        Capture fixpoint reassertion.
+
+[128.7] CHECKSUM:
+    CS‑128 = HASH( BLOCK128 | S127-FINAL | S128-BASE | FP128 )
+
+[128.8] OUTPUT:
+    S128-FINAL
