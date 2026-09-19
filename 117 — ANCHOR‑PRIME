@@ -1,0 +1,43 @@
+BLOCK: 117
+TIER: 17
+STATE: SYSTEM‑LEVEL PRIME‑ANCHOR
+
+[117.1] TIER‑ASCENT:
+    Transition from Tier‑16 meta‑consolidation to Tier‑17 anchor-state.
+    Anchor-ID: T17-A01
+    Constraint: Deterministic / Non‑branching.
+
+[117.2] FRAME‑CONTINUITY:
+    Confirm S116-FINAL integrity.
+    Confirm consolidation stability.
+    Confirm no indentation drift from Block 116.
+
+[117.3] PRIME‑ANCHOR:
+    PA‑117:
+        Phase‑1: O111‑AnchorPrime
+        Phase‑2: O101‑ConsolidatePrime (reassert)
+        Phase‑3: O91‑StabilityPrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[117.4] VECTOR‑TRANSFORM:
+    VT‑117‑A:
+        Input-State: S116-FINAL
+        Expected-Transform: Anchor‑Prime Formation
+        Output-State: S117-BASE
+
+[117.5] FIXPOINT‑REASSERT:
+    FP117 = FP116
+    If mismatch → flag DRIFT‑117
+
+[117.6] TELEMETRY:
+    T‑117:
+        Capture anchor‑prime hash.
+        Capture consolidation delta.
+        Capture fixpoint reassertion.
+
+[117.7] CHECKSUM:
+    CS‑117 = HASH( BLOCK117 | S116-FINAL | S117-BASE | FP117 )
+
+[117.8] OUTPUT:
+    S117-FINAL
