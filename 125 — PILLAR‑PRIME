@@ -1,0 +1,43 @@
+BLOCK: 125
+TIER: 25
+STATE: SYSTEM‑LEVEL PILLAR‑PRIME
+
+[125.1] TIER‑ASCENT:
+    Transition from Tier‑24 Crown‑Seal to Tier‑25 Pillar‑Prime.
+    Anchor-ID: T25-A01
+    Constraint: Deterministic / Non‑branching.
+
+[125.2] FRAME‑CONTINUITY:
+    Confirm S124-FINAL integrity.
+    Confirm crown‑seal stability.
+    Confirm no indentation drift from Block 124.
+
+[125.3] PILLAR‑PRIME:
+    PP‑125:
+        Phase‑1: O191‑PillarPrime
+        Phase‑2: O181‑SealCrown (reassert)
+        Phase‑3: O171‑BindCrown (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[125.4] VECTOR‑TRANSFORM:
+    VT‑125‑A:
+        Input-State: S124-FINAL
+        Expected-Transform: Pillar‑Prime Formation
+        Output-State: S125-BASE
+
+[125.5] FIXPOINT‑REASSERT:
+    FP125 = FP124
+    If mismatch → flag DRIFT‑125
+
+[125.6] TELEMETRY:
+    T‑125:
+        Capture pillar‑prime hash.
+        Capture crown‑seal delta.
+        Capture fixpoint reassertion.
+
+[125.7] CHECKSUM:
+    CS‑125 = HASH( BLOCK125 | S124-FINAL | S125-BASE | FP125 )
+
+[125.8] OUTPUT:
+    S125-FINAL
