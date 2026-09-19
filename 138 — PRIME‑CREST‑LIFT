@@ -1,0 +1,43 @@
+BLOCK: 138
+TIER: 38
+STATE: SYSTEM‑LEVEL PRIME‑CREST‑LIFT
+
+[138.1] TIER‑ASCENT:
+    Transition from Tier‑37 Prime‑Crest‑Prime to Tier‑38 Prime‑Crest‑Lift.
+    Anchor-ID: T38-A01
+    Constraint: Deterministic / Non‑branching.
+
+[138.2] FRAME‑CONTINUITY:
+    Confirm S137-FINAL integrity.
+    Confirm prime‑crest‑prime stability.
+    Confirm no indentation drift from Block 137.
+
+[138.3] PRIME‑CREST‑LIFT:
+    PCL‑138:
+        Phase‑1: O321‑LiftPrimeCrest
+        Phase‑2: O311‑PrimeCrestPrime (reassert)
+        Phase‑3: O301‑SealCrownSuper (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[138.4] VECTOR‑TRANSFORM:
+    VT‑138‑A:
+        Input-State: S137-FINAL
+        Expected-Transform: Prime‑Crest‑Lift Formation
+        Output-State: S138-BASE
+
+[138.5] FIXPOINT‑REASSERT:
+    FP138 = FP137
+    If mismatch → flag DRIFT‑138
+
+[138.6] TELEMETRY:
+    T‑138:
+        Capture lift‑prime‑crest hash.
+        Capture prime‑crest‑prime delta.
+        Capture fixpoint reassertion.
+
+[138.7] CHECKSUM:
+    CS‑138 = HASH( BLOCK138 | S137-FINAL | S138-BASE | FP138 )
+
+[138.8] OUTPUT:
+    S138-FINAL
