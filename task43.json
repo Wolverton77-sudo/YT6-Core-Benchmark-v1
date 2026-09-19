@@ -1,0 +1,17 @@
+{
+  "task_id": "task43",
+  "task_name": "Literal-Framegridstack-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a frame‑gridstack structural block containing stacked grid–frame layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::FRAMEGRIDSTACK\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [GRIDSTACK-A]\n    POSITION=>FIXED\n    LINK::GS1\n    FRAME::UPPER\n\n  [GRIDSTACK-B]\n    POSITION=>FIXED\n    LINK::GS2\n    FRAME::LOWER\n\n[STRUCTURE]\n  MATRIX:\n    GRIDSTACK-1:\n      - X1\n      - Y2\n    GRIDSTACK-2:\n      - Z3\n      - W4\n\n{CHECKSUM-FRAMEGRIDSTACK}\n  H4-G3-F2-E1\n\n<END-FRAMEGRIDSTACK>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire framegridstack block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
