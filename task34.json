@@ -1,0 +1,17 @@
+{
+  "task_id": "task34",
+  "task_name": "Literal-Stackweave-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a stack‑weave structural block containing interwoven stack layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::STACKWEAVE\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [WEAVE-A]\n    POSITION=>FIXED\n    LINK::W1\n    THREAD::ALPHA\n\n  [WEAVE-B]\n    POSITION=>FIXED\n    LINK::W2\n    THREAD::BETA\n\n[STRUCTURE]\n  MATRIX:\n    WEAVE-1:\n      - X1\n      - Y2\n    WEAVE-2:\n      - Z3\n      - W4\n\n{CHECKSUM-STACKWEAVE}\n  J1-H2-G3-F4\n\n<END-STACKWEAVE>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire stackweave block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
