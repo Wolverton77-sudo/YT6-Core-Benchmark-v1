@@ -1,0 +1,43 @@
+BLOCK: 120
+TIER: 20
+STATE: SYSTEM‑LEVEL ANCHOR‑SEAL
+
+[120.1] TIER‑ASCENT:
+    Transition from Tier‑19 Anchor‑Bind to Tier‑20 Anchor‑Seal.
+    Anchor-ID: T20-A01
+    Constraint: Deterministic / Non‑branching.
+
+[120.2] FRAME‑CONTINUITY:
+    Confirm S119-FINAL integrity.
+    Confirm anchor‑bind stability.
+    Confirm no indentation drift from Block 119.
+
+[120.3] ANCHOR‑SEAL:
+    AS‑120:
+        Phase‑1: O141‑SealPrime
+        Phase‑2: O131‑BindPrime (reassert)
+        Phase‑3: O121‑LiftPrime (reinforce)
+        Phase‑4: O03‑Fixpoint (lock)
+        Phase‑5: O22‑NonDrift (seal)
+
+[120.4] VECTOR‑TRANSFORM:
+    VT‑120‑A:
+        Input-State: S119-FINAL
+        Expected-Transform: Anchor‑Seal Formation
+        Output-State: S120-BASE
+
+[120.5] FIXPOINT‑REASSERT:
+    FP120 = FP119
+    If mismatch → flag DRIFT‑120
+
+[120.6] TELEMETRY:
+    T‑120:
+        Capture seal‑prime hash.
+        Capture bind‑prime delta.
+        Capture fixpoint reassertion.
+
+[120.7] CHECKSUM:
+    CS‑120 = HASH( BLOCK120 | S119-FINAL | S120-BASE | FP120 )
+
+[120.8] OUTPUT:
+    S120-FINAL
