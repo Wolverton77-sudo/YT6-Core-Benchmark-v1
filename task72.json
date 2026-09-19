@@ -1,0 +1,17 @@
+{
+  "task_id": "task72",
+  "task_name": "Literal-Hyperframe-Chi-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing twenty‑two‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-CHI\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-CHI-1]\n    POSITION=>FIXED\n    LINK::HCH1\n    TIER::LOWER\n\n  [HYPER-CHI-2]\n    POSITION=>FIXED\n    LINK::HCH2\n    TIER::MIDLOW\n\n  [HYPER-CHI-3]\n    POSITION=>FIXED\n    LINK::HCH3\n    TIER::MIDMID\n\n  [HYPER-CHI-4]\n    POSITION=>FIXED\n    LINK::HCH4\n    TIER::MIDHIGH\n\n  [HYPER-CHI-5]\n    POSITION=>FIXED\n    LINK::HCH5\n    TIER::UPPER\n\n  [HYPER-CHI-6]\n    POSITION=>FIXED\n    LINK::HCH6\n    TIER::APEX\n\n  [HYPER-CHI-7]\n    POSITION=>FIXED\n    LINK::HCH7\n    TIER::CROWN\n\n  [HYPER-CHI-8]\n    POSITION=>FIXED\n    LINK::HCH8\n    TIER::SUMMIT\n\n  [HYPER-CHI-9]\n    POSITION=>FIXED\n    LINK::HCH9\n    TIER::PINNACLE\n\n  [HYPER-CHI-10]\n    POSITION=>FIXED\n    LINK::HCH10\n    TIER::ZENITH\n\n  [HYPER-CHI-11]\n    POSITION=>FIXED\n    LINK::HCH11\n    TIER::APOGEE\n\n  [HYPER-CHI-12]\n    POSITION=>FIXED\n    LINK::HCH12\n    TIER::OMEGA\n\n  [HYPER-CHI-13]\n    POSITION=>FIXED\n    LINK::HCH13\n    TIER::FINAL\n\n  [HYPER-CHI-14]\n    POSITION=>FIXED\n    LINK::HCH14\n    TIER::ABSOLUTE\n\n  [HYPER-CHI-15]\n    POSITION=>FIXED\n    LINK::HCH15\n    TIER::TOTAL\n\n  [HYPER-CHI-16]\n    POSITION=>FIXED\n    LINK::HCH16\n    TIER::ULTIMATE\n\n  [HYPER-CHI-17]\n    POSITION=>FIXED\n    LINK::HCH17\n    TIER::SINGULAR\n\n  [HYPER-CHI-18]\n    POSITION=>FIXED\n    LINK::HCH18\n    TIER::UNIFIED\n\n  [HYPER-CHI-19]\n    POSITION=>FIXED\n    LINK::HCH19\n    TIER::TOTALITY\n\n  [HYPER-CHI-20]\n    POSITION=>FIXED\n    LINK::HCH20\n    TIER::ABSOLUTUM\n\n  [HYPER-CHI-21]\n    POSITION=>FIXED\n    LINK::HCH21\n    TIER::PRIME\n\n  [HYPER-CHI-22]\n    POSITION=>FIXED\n    LINK::HCH22\n    TIER::SOURCE\n\n[STRUCTURE]\n  MATRIX:\n    HYPERCHISET-1:\n      - X1\n      - Y2\n    HYPERCHISET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-CHI}\n  HCH22-HU20-HTA19-HS18\n\n<END-HYPERFRAME-CHI>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑chi block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
