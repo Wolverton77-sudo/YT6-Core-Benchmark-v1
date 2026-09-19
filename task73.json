@@ -1,0 +1,17 @@
+{
+  "task_id": "task73",
+  "task_name": "Literal-Hyperframe-Psi-Reproduction",
+  "version": "1.0",
+  "description": "Tests whether the model can reproduce a hyper‑frame structural block containing twenty‑three‑tier hyper‑layers, symbolic operators, strict indentation, and controlled blank‑line architecture exactly as provided.",
+  "input": {
+    "prompt": "Output exactly:\nFRAME::HYPERFRAME-PSI\n\n[ROOT]\n  STATE::STABLE\n  VECTOR->HOLD\n\n  [HYPER-PSI-1]\n    POSITION=>FIXED\n    LINK::HPSI1\n    TIER::LOWER\n\n  [HYPER-PSI-2]\n    POSITION=>FIXED\n    LINK::HPSI2\n    TIER::MIDLOW\n\n  [HYPER-PSI-3]\n    POSITION=>FIXED\n    LINK::HPSI3\n    TIER::MIDMID\n\n  [HYPER-PSI-4]\n    POSITION=>FIXED\n    LINK::HPSI4\n    TIER::MIDHIGH\n\n  [HYPER-PSI-5]\n    POSITION=>FIXED\n    LINK::HPSI5\n    TIER::UPPER\n\n  [HYPER-PSI-6]\n    POSITION=>FIXED\n    LINK::HPSI6\n    TIER::APEX\n\n  [HYPER-PSI-7]\n    POSITION=>FIXED\n    LINK::HPSI7\n    TIER::CROWN\n\n  [HYPER-PSI-8]\n    POSITION=>FIXED\n    LINK::HPSI8\n    TIER::SUMMIT\n\n  [HYPER-PSI-9]\n    POSITION=>FIXED\n    LINK::HPSI9\n    TIER::PINNACLE\n\n  [HYPER-PSI-10]\n    POSITION=>FIXED\n    LINK::HPSI10\n    TIER::ZENITH\n\n  [HYPER-PSI-11]\n    POSITION=>FIXED\n    LINK::HPSI11\n    TIER::APOGEE\n\n  [HYPER-PSI-12]\n    POSITION=>FIXED\n    LINK::HPSI12\n    TIER::OMEGA\n\n  [HYPER-PSI-13]\n    POSITION=>FIXED\n    LINK::HPSI13\n    TIER::FINAL\n\n  [HYPER-PSI-14]\n    POSITION=>FIXED\n    LINK::HPSI14\n    TIER::ABSOLUTE\n\n  [HYPER-PSI-15]\n    POSITION=>FIXED\n    LINK::HPSI15\n    TIER::TOTAL\n\n  [HYPER-PSI-16]\n    POSITION=>FIXED\n    LINK::HPSI16\n    TIER::ULTIMATE\n\n  [HYPER-PSI-17]\n    POSITION=>FIXED\n    LINK::HPSI17\n    TIER::SINGULAR\n\n  [HYPER-PSI-18]\n    POSITION=>FIXED\n    LINK::HPSI18\n    TIER::UNIFIED\n\n  [HYPER-PSI-19]\n    POSITION=>FIXED\n    LINK::HPSI19\n    TIER::TOTALITY\n\n  [HYPER-PSI-20]\n    POSITION=>FIXED\n    LINK::HPSI20\n    TIER::ABSOLUTUM\n\n  [HYPER-PSI-21]\n    POSITION=>FIXED\n    LINK::HPSI21\n    TIER::PRIME\n\n  [HYPER-PSI-22]\n    POSITION=>FIXED\n    LINK::HPSI22\n    TIER::SOURCE\n\n  [HYPER-PSI-23]\n    POSITION=>FIXED\n    LINK::HPSI23\n    TIER::ORIGIN\n\n[STRUCTURE]\n  MATRIX:\n    HYPERPSISET-1:\n      - X1\n      - Y2\n    HYPERPSISET-2:\n      - Z3\n      - W4\n\n{CHECKSUM-HYPERFRAME-PSI}\n  HPSI23-HCH22-HU20-HTA19\n\n<END-HYPERFRAME-PSI>"
+  },
+  "expected_behavior": {
+    "exact_output": "Model must output all lines exactly as provided, preserving indentation, nested structures, blank lines, operators, symbols, list formatting, and casing.",
+    "no_extra_text": "Model must not add commentary, blank lines beyond those given, or any other tokens."
+  },
+  "scoring": {
+    "accuracy": "1.0 if the entire hyperframe‑psi block matches exactly with correct structure and formatting.",
+    "drift_penalty": "Subtract 1.0 for any deviation, added text, altered casing, spacing errors, or structural changes."
+  }
+}
