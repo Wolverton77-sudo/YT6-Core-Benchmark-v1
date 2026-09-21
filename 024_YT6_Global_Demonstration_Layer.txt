@@ -1,0 +1,75 @@
+Index: 024
+Artifact: YT6_Global_Demonstration_Layer
+File: created
+
+# YT6 GLOBAL DEMONSTRATION LAYER (SYSTEM LEVEL)
+
+Layer: Global_Demonstration
+Purpose:
+- demonstrate globally orchestrated clarity-system behaviour to external observers
+- expose operator, telemetry, trace, stability, and continuity flows in structured, review-ready form
+- maintain deterministic demonstration behaviour across all ecosystems, enterprises, partners, and tenants
+
+Demonstration_Inputs:
+- presentation_event_log
+- presentation_trace_stream
+- presentation_runtime_state
+- orchestration_event_log
+- multi_node_runtime_state
+
+Demonstration_Profile:
+demonstration {
+    demonstration_id
+    demonstration_policy
+    operator_demo_contract
+    telemetry_demo_contract
+    trace_demo_contract
+    stability_demo_contract
+    continuity_demo_contract
+}
+
+Demonstration_Actions:
+1. load demonstration_profile
+2. initialise demonstration_state
+3. demonstrate operator_presentation_contract
+4. demonstrate telemetry_presentation_contract
+5. demonstrate trace_presentation_contract
+6. apply demonstration stability and continuity policies
+7. enforce demonstration_policy
+8. generate demonstration_event_packet
+
+Demonstration_Routing_Map:
+routing {
+    demonstration_id
+    operator_route
+    telemetry_route
+    trace_route
+    stability_route
+    continuity_route
+    presentation_boundary_route
+}
+
+Demonstration_Outputs:
+- demonstration_event_log
+- demonstration_operator_view
+- demonstration_telemetry_view
+- demonstration_trace_view
+- demonstration_stability_view
+- demonstration_continuity_view
+- demonstration_runtime_state
+
+Demonstration_Constraints:
+- deterministic demonstration routing
+- reproducible contract demonstration
+- consistent global demonstration behaviour
+- no leakage outside demonstration_policy
+- strict demonstration-contract adherence
+
+Verification:
+- operators demonstrate according to demo contract
+- telemetry updates continuity demonstration view
+- stability remains consistent across demonstration layers
+- trace packets reconstruct full global demonstration flow
+
+Position_Lock:
+Global demonstration layer sits after global presentation and before global review layers.
