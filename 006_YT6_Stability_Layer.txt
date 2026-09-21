@@ -1,0 +1,48 @@
+Index: 006
+Artifact: YT6_Stability_Layer
+File: created
+
+# YT6 STABILITY LAYER (SYSTEM LEVEL)
+
+Layer: Stability
+Purpose:
+- lock_interaction_state
+- prevent_regression
+- prevent_oscillation
+- maintain_consistent_clarity
+
+Stability_Inputs:
+- sustained_clarity_state
+- sustained_engagement_state
+- sustained_stability_state
+
+Stability_Conditions:
+- if clarity_state fluctuates → apply Stability_Correction
+- if engagement_state fluctuates → apply Stability_Correction
+- if stability_state fluctuates → apply Stability_Correction
+
+Stability_Correction:
+Actions:
+1. freeze_current_state_profile
+2. reapply Stabilise_Interaction
+3. verify_state_consistency
+4. update stability_profile
+
+Stability_Outputs:
+- locked_clarity_state
+- locked_engagement_state
+- locked_stability_state
+
+Stability_Constraints:
+- deterministic_state_lock
+- no oscillation
+- no regression
+- reproducible stability checks
+
+Verification:
+- clarity stable across cycles
+- engagement stable across cycles
+- interaction stability maintained
+
+Position_Lock:
+Stability layer sits after continuity and before telemetry/trace layers.
