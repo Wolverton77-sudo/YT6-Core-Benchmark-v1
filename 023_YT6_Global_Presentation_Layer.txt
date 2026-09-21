@@ -1,0 +1,75 @@
+Index: 023
+Artifact: YT6_Global_Presentation_Layer
+File: created
+
+# YT6 GLOBAL PRESENTATION LAYER (SYSTEM LEVEL)
+
+Layer: Global_Presentation
+Purpose:
+- present globally orchestrated clarity-system state to human-visible layers
+- expose operator, telemetry, trace, stability, and continuity flows in structured, deterministic form
+- maintain reproducible presentation behaviour across all ecosystems, enterprises, partners, and tenants
+
+Presentation_Inputs:
+- orchestration_event_log
+- orchestration_trace_stream
+- orchestration_runtime_state
+- runtime_event_log
+- multi_node_runtime_state
+
+Presentation_Profile:
+presentation {
+    presentation_id
+    presentation_policy
+    operator_presentation_contract
+    telemetry_presentation_contract
+    trace_presentation_contract
+    stability_presentation_contract
+    continuity_presentation_contract
+}
+
+Presentation_Actions:
+1. load presentation_profile
+2. initialise presentation_state
+3. render operator_orchestration_contract into presentation format
+4. render telemetry_orchestration_contract into presentation format
+5. render trace_orchestration_contract into presentation format
+6. apply presentation stability and continuity policies
+7. enforce presentation_policy
+8. generate presentation_event_packet
+
+Presentation_Routing_Map:
+routing {
+    presentation_id
+    operator_route
+    telemetry_route
+    trace_route
+    stability_route
+    continuity_route
+    orchestration_boundary_route
+}
+
+Presentation_Outputs:
+- presentation_event_log
+- presentation_operator_view
+- presentation_telemetry_view
+- presentation_trace_view
+- presentation_stability_view
+- presentation_continuity_view
+- presentation_runtime_state
+
+Presentation_Constraints:
+- deterministic presentation routing
+- reproducible contract rendering
+- consistent global presentation behaviour
+- no leakage outside presentation_policy
+- strict presentation-contract adherence
+
+Verification:
+- operators render according to presentation contract
+- telemetry updates continuity view
+- stability remains consistent across presentation layers
+- trace packets reconstruct full global presentation flow
+
+Position_Lock:
+Global presentation layer sits after global orchestration and before global demonstration layers.
