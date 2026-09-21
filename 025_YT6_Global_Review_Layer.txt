@@ -1,0 +1,75 @@
+Index: 025
+Artifact: YT6_Global_Review_Layer
+File: created
+
+# YT6 GLOBAL REVIEW LAYER (SYSTEM LEVEL)
+
+Layer: Global_Review
+Purpose:
+- provide structured, deterministic review access to globally demonstrated clarity-system behaviour
+- expose operator, telemetry, trace, stability, and continuity flows for external evaluators, auditors, and reviewers
+- maintain reproducible review behaviour across all ecosystems, enterprises, partners, and tenants
+
+Review_Inputs:
+- demonstration_event_log
+- demonstration_trace_stream
+- demonstration_runtime_state
+- presentation_event_log
+- multi_node_runtime_state
+
+Review_Profile:
+review {
+    review_id
+    review_policy
+    operator_review_contract
+    telemetry_review_contract
+    trace_review_contract
+    stability_review_contract
+    continuity_review_contract
+}
+
+Review_Actions:
+1. load review_profile
+2. initialise review_state
+3. review operator_demo_contract
+4. review telemetry_demo_contract
+5. review trace_demo_contract
+6. apply review stability and continuity policies
+7. enforce review_policy
+8. generate review_event_packet
+
+Review_Routing_Map:
+routing {
+    review_id
+    operator_route
+    telemetry_route
+    trace_route
+    stability_route
+    continuity_route
+    demonstration_boundary_route
+}
+
+Review_Outputs:
+- review_event_log
+- review_operator_view
+- review_telemetry_view
+- review_trace_view
+- review_stability_view
+- review_continuity_view
+- review_runtime_state
+
+Review_Constraints:
+- deterministic review routing
+- reproducible contract inspection
+- consistent global review behaviour
+- no leakage outside review_policy
+- strict review-contract adherence
+
+Verification:
+- operators review according to review contract
+- telemetry updates continuity review view
+- stability remains consistent across review layers
+- trace packets reconstruct full global review flow
+
+Position_Lock:
+Global review layer sits after global demonstration and before global validation layers.
