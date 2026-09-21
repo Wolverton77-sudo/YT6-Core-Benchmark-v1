@@ -1,0 +1,55 @@
+Index: 005
+Artifact: YT6_Continuity_Loop
+File: created
+
+# YT6 CONTINUITY LOOP (SYSTEM LEVEL)
+
+Loop: YT6_Continuity
+Purpose:
+- maintain_clarity
+- maintain_stability
+- maintain_forward_motion
+- prevent_drift
+
+Loop_Inputs:
+- interaction_return_state
+- human_clarity_state
+- human_engagement_state
+- stability_state
+
+Loop_Conditions:
+- if clarity_state < threshold → reapply Reduce_Negatives
+- if engagement_state < threshold → reapply Replace_Positives
+- if stability_state < threshold → reapply Stabilise_Interaction
+
+Loop_Actions:
+1. Assess current interaction state
+2. Detect clarity loss
+3. Detect engagement drop
+4. Detect stability drift
+5. Trigger corrective operators:
+   - Reduce_Negatives
+   - Replace_Positives
+   - Stabilise_Interaction
+6. Re‑evaluate state
+7. Continue until all thresholds satisfied
+
+Loop_Outputs:
+- sustained_clarity_state
+- sustained_engagement_state
+- sustained_stability_state
+
+Loop_Constraints:
+- deterministic_execution
+- no skipped steps
+- reproducible corrections
+- continuous monitoring
+
+Verification:
+- clarity maintained
+- overload reduced
+- drift prevented
+- stability preserved
+
+Position_Lock:
+Continuity loop sits after integration and before higher‑order system blocks.
