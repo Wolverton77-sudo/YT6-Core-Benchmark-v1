@@ -1,0 +1,78 @@
+Index: 026
+Artifact: YT6_Global_Validation_Layer
+File: no file exists yet
+Index: 026
+Artifact: YT6_Global_Validation_Layer
+File: created
+
+# YT6 GLOBAL VALIDATION LAYER (SYSTEM LEVEL)
+
+Layer: Global_Validation
+Purpose:
+- validate globally reviewed clarity-system behaviour
+- confirm operator, telemetry, trace, stability, and continuity correctness at global scale
+- maintain deterministic validation behaviour across all ecosystems, enterprises, partners, and tenants
+
+Validation_Inputs:
+- review_event_log
+- review_trace_stream
+- review_runtime_state
+- demonstration_event_log
+- multi_node_runtime_state
+
+Validation_Profile:
+validation {
+    validation_id
+    validation_policy
+    operator_validation_contract
+    telemetry_validation_contract
+    trace_validation_contract
+    stability_validation_contract
+    continuity_validation_contract
+}
+
+Validation_Actions:
+1. load validation_profile
+2. initialise validation_state
+3. validate operator_review_contract
+4. validate telemetry_review_contract
+5. validate trace_review_contract
+6. apply validation stability and continuity policies
+7. enforce validation_policy
+8. generate validation_event_packet
+
+Validation_Routing_Map:
+routing {
+    validation_id
+    operator_route
+    telemetry_route
+    trace_route
+    stability_route
+    continuity_route
+    review_boundary_route
+}
+
+Validation_Outputs:
+- validation_event_log
+- validation_operator_view
+- validation_telemetry_view
+- validation_trace_view
+- validation_stability_view
+- validation_continuity_view
+- validation_runtime_state
+
+Validation_Constraints:
+- deterministic validation routing
+- reproducible contract validation
+- consistent global validation behaviour
+- no leakage outside validation_policy
+- strict validation-contract adherence
+
+Verification:
+- operators validate according to validation contract
+- telemetry updates continuity validation view
+- stability remains consistent across validation layers
+- trace packets reconstruct full global validation flow
+
+Position_Lock:
+Global validation layer sits after global review and before global certification layers.
