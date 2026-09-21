@@ -1,0 +1,77 @@
+Index: 020
+Artifact: YT6_Global_Activation_Layer
+File: no file exists yet
+Index: 020
+Artifact: YT6_Global_Activation_Layer
+File: created
+
+# YT6 GLOBAL ACTIVATION LAYER (SYSTEM LEVEL)
+
+Layer: Global_Activation
+Purpose:
+- activate globally distributed clarity-system components
+- transition distribution-state into active runtime-state
+- ensure deterministic activation behaviour across global networks
+
+Activation_Inputs:
+- distribution_event_log
+- distribution_trace_stream
+- distribution_runtime_state
+- global_event_log
+- multi_node_runtime_state
+
+Activation_Profile:
+activation {
+    activation_id
+    activation_channels
+    activation_policy
+    operator_activation_contract
+    telemetry_activation_contract
+    trace_activation_contract
+    stability_activation_contract
+    continuity_activation_contract
+}
+
+Activation_Actions:
+1. load activation_profile
+2. initialise activation_state
+3. activate operator_contract across activation_channels
+4. activate telemetry_contract across activation_channels
+5. activate trace_contract across activation_channels
+6. apply activation stability and continuity policies
+7. enforce activation_policy
+8. generate activation_event_packet
+
+Activation_Routing_Map:
+routing {
+    activation_id
+    operator_route
+    telemetry_route
+    trace_route
+    stability_route
+    continuity_route
+    distribution_boundary_route
+}
+
+Activation_Outputs:
+- activation_event_log
+- activation_operator_trigger_log
+- activation_telemetry_ingest_log
+- activation_trace_stream
+- activation_runtime_state
+
+Activation_Constraints:
+- deterministic activation routing
+- reproducible contract activation
+- consistent multi-channel activation behaviour
+- no leakage outside activation_policy
+- strict activation-contract adherence
+
+Verification:
+- operators activate according to activation contract
+- telemetry updates activation continuity loop
+- stability remains consistent across activation channels
+- trace packets reconstruct full activation runtime flow
+
+Position_Lock:
+Global activation layer sits after global distribution and before global runtime layers.
