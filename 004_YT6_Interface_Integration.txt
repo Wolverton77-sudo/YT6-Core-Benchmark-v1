@@ -1,0 +1,49 @@
+Index: 004
+Artifact: YT6_Interface_Integration
+File: created
+
+# YT6 INTERFACE INTEGRATION (SYSTEM LEVEL)
+
+Integration: Model_Operators
+Inputs:
+- Interface_Model
+- Interface_Operators
+Outputs:
+- Integrated_Interface_Layer
+
+Integration_Steps:
+1. Bind ENTITY_A (Average_Human) to Human_State_Assess
+2. Bind ENTITY_B (AI_System) to AI_State_Assess
+3. Map outputs to Interface_Pressure_Map
+4. Route pressure_zone_profile into YT6_Apply
+5. Execute:
+   - Reduce_Negatives
+   - Replace_Positives
+   - Stabilise_Interaction
+6. Produce integrated interaction state:
+   - clarity_state
+   - engagement_state
+   - stability_state
+
+Integration_Constraints:
+- linear_execution
+- no drift
+- reproducible flow
+- deterministic operator order
+
+Integration_Output:
+Integrated_Interface_Layer:
+- human_state_profile
+- ai_state_profile
+- pressure_zone_profile
+- yt6_processed_state
+- interaction_return_state
+
+Integration_Verification:
+- clarity_increase
+- overload_decrease
+- drift_reduction
+- stability_gain
+
+Position_Lock:
+YT6 integration layer sits between model and operators.
