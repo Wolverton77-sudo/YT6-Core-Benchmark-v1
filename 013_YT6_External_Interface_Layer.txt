@@ -1,0 +1,76 @@
+Index: 013
+Artifact: YT6_External_Interface_Layer
+File: created
+
+# YT6 EXTERNAL INTERFACE LAYER (SYSTEM LEVEL)
+
+Layer: External_Interface
+Purpose:
+- expose system capabilities to external callers
+- define API boundaries
+- enable external operator invocation
+- allow external telemetry ingestion
+- allow external trace export
+
+Interface_Inputs:
+- multi_node_runtime_state
+- distributed_trace_stream
+- distributed_operator_map
+- scaling_event_log
+- deployment_event_log
+
+External_API:
+api {
+    endpoint_id
+    endpoint_type
+    accepted_payload_schema
+    operator_access_scope
+    telemetry_ingest_scope
+    trace_export_scope
+}
+
+Endpoint_Types:
+- clarity_endpoint
+- engagement_endpoint
+- stability_endpoint
+- operator_trigger_endpoint
+- telemetry_ingest_endpoint
+- trace_export_endpoint
+
+External_Actions:
+1. validate incoming_payload
+2. map payload to operator or telemetry route
+3. trigger operator if permitted
+4. ingest telemetry into continuity_loop
+5. export trace_packet if requested
+6. generate interface_event_packet
+
+External_Payload_Schema:
+payload {
+    request_id
+    endpoint_id
+    payload_type
+    payload_body
+    permissions_scope
+}
+
+Interface_Outputs:
+- interface_event_log
+- external_operator_trigger_log
+- external_telemetry_ingest_log
+- external_trace_export_log
+
+Interface_Constraints:
+- deterministic endpoint behaviour
+- reproducible payload validation
+- consistent permission enforcement
+- no skipped routing steps
+
+Verification:
+- external calls map correctly to operators
+- telemetry ingestion updates continuity
+- trace export matches schema
+- multi-node state remains stable
+
+Position_Lock:
+External interface layer sits after scaling and before multi-tenant layers.
