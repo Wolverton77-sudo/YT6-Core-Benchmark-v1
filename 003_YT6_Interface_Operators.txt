@@ -1,0 +1,61 @@
+Index: 003
+Artifact: YT6_Interface_Operators
+File: created
+
+# YT6 INTERFACE OPERATORS (SYSTEM LEVEL)
+
+Operator: Reduce_Negatives
+Actions:
+- remove_confusion
+- remove_overload
+- remove_drift
+- remove_collapse
+
+Operator: Replace_Positives
+Actions:
+- add_clarity
+- add_trust
+- add_openness
+- add_engagement
+
+Operator: Stabilise_Interaction
+Actions:
+- maintain_continuity
+- maintain_forward_motion
+- maintain_behavioral_trust
+
+Operator: Human_State_Assess
+Inputs:
+- stress_level
+- overload_level
+- clarity_level
+Outputs:
+- human_state_profile
+
+Operator: AI_State_Assess
+Inputs:
+- capability_profile
+- complexity_profile
+Outputs:
+- ai_state_profile
+
+Operator: Interface_Pressure_Map
+Inputs:
+- human_state_profile
+- ai_state_profile
+Outputs:
+- pressure_zone_profile
+
+Operator: YT6_Apply
+Inputs:
+- pressure_zone_profile
+Actions:
+- Reduce_Negatives
+- Replace_Positives
+- Stabilise_Interaction
+
+Operator: Interaction_Return
+Outputs:
+- human_clarity_state
+- human_engagement_state
+- interaction_stability_state
