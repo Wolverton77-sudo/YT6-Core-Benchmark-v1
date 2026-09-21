@@ -1,0 +1,71 @@
+Index: 002
+Artifact: YT6_Human-AI_Interface_Model
+File: created
+
+# YT6 HUMAN–AI INTERFACE MODEL (SYSTEM ARCHITECTURE)
+
+ENTITY_A: Average_Human
+State:
+- stress
+- overload
+- uncertainty
+- drift
+Needs:
+- stability
+- simplicity
+- confidence
+- direction
+
+INTERFACE_PRESSURE_ZONE:
+Characteristics:
+- confusion
+- cognitive load
+- negative loops
+Risk:
+- human collapse before AI becomes useful
+
+ENTITY_B: AI_System (Copilot)
+State:
+- high capability
+- high complexity
+Needs:
+- clear human input
+- stable interaction
+- sustained engagement
+
+YT6_CLARITY_ENGINE:
+Functions:
+- Negative_Reduction
+- Positive_Replacement
+- Interaction_Stabilisation
+
+Negative_Reduction:
+- remove_confusion
+- remove_overload
+- remove_drift
+- remove_collapse
+
+Positive_Replacement:
+- add_clarity
+- add_trust
+- add_openness
+- add_engagement
+
+Interaction_Stabilisation:
+- maintain_continuity
+- maintain_forward_motion
+- maintain_behavioral_trust
+
+FLOW_MODEL:
+Average_Human
+    ↓
+Interface_Pressure_Zone
+    ↓
+YT6_Clarity_Engine
+    ↓
+AI_System (Copilot)
+    ↓
+Average_Human (clear, calm, open, trusting, forward-moving)
+
+POSITION_LOCK:
+YT6 is the stabilising layer between the average human and AI.
