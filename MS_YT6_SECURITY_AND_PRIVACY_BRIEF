@@ -1,0 +1,727 @@
+Index: MS_YT6_SECURITY_AND_PRIVACY_BRIEF
+2
+ 
+3
+Artifact Name:
+4
+YT6 Security And Privacy Brief
+5
+ 
+6
+Project:
+7
+YT6 — Clarity-System Architecture
+8
+ 
+9
+Repository:
+10
+YT6-Core-Benchmark-v1
+11
+ 
+12
+Status:
+13
+Reviewer Ready
+14
+ 
+15
+Purpose:
+16
+Provide Microsoft reviewers with a concise description of security controls, privacy protections, governance mechanisms, and operational safeguards implemented within the YT6 architecture.
+17
+ 
+18
+Overview:
+19
+ 
+20
+YT6 is designed around the principles of traceability, accountability, reviewability, and responsible system operation.
+21
+ 
+22
+Security and privacy considerations are integrated into architectural layers rather than introduced as external controls.
+23
+ 
+24
+Security Objectives:
+25
+ 
+26
+• Protect system integrity
+27
+• Protect operational telemetry
+28
+• Support auditability
+29
+• Minimise privilege exposure
+30
+• Enable governance review
+31
+• Reduce operational risk
+32
+ 
+33
+Security Model:
+34
+ 
+35
+YT6 applies layered security controls across:
+36
+ 
+37
+01 Ingestion
+38
+ 
+39
+Controls:
+40
+ 
+41
+• Input validation
+42
+• Schema verification
+43
+• Provenance tracking
+44
+• Source verification
+45
+ 
+46
+02 Knowledge Layer
+47
+ 
+48
+Controls:
+49
+ 
+50
+• Access management
+51
+• Version control
+52
+• Retrieval boundaries
+53
+• Data provenance tracking
+54
+ 
+55
+03 Reasoning Layer
+56
+ 
+57
+Controls:
+58
+ 
+59
+• Structured processing
+60
+• Verification checkpoints
+61
+• Runtime inspection
+62
+• Trace recording
+63
+ 
+64
+04 Policy Layer
+65
+ 
+66
+Controls:
+67
+ 
+68
+• Output review
+69
+• Governance enforcement
+70
+• Escalation triggers
+71
+• Human review pathways
+72
+ 
+73
+05 Telemetry Layer
+74
+ 
+75
+Controls:
+76
+ 
+77
+• Immutable event logs
+78
+• System monitoring
+79
+• Trace preservation
+80
+• Reviewable execution history
+81
+ 
+82
+Privacy Principles:
+83
+ 
+84
+YT6 follows the principles of:
+85
+ 
+86
+• Least privilege
+87
+• Minimum necessary access
+88
+• Accountability
+89
+• Data visibility
+90
+• Auditability
+91
+ 
+92
+Recommended Privacy Controls:
+93
+ 
+94
+• Role-based access control
+95
+• Encryption at rest
+96
+• Encryption in transit
+97
+• Access logging
+98
+• Separation of responsibilities
+99
+• Controlled retention periods
+100
+ 
+101
+Governance Controls:
+102
+ 
+103
+Governance functions include:
+104
+ 
+105
+• Policy validation
+106
+• Trace inspection
+107
+• Human oversight
+108
+• Exception handling
+109
+• Escalation workflows
+110
+• Compliance verification
+111
+ 
+112
+Audit Capabilities:
+113
+ 
+114
+YT6 supports review through:
+115
+ 
+116
+• Execution traces
+117
+• Telemetry records
+118
+• Runtime artifacts
+119
+• Decision histories
+120
+• Layer interaction logs
+121
+ 
+122
+Operational Review Questions:
+123
+ 
+124
+Can inputs be validated?
+125
+ 
+126
+Can outputs be inspected?
+127
+ 
+128
+Can decisions be traced?
+129
+ 
+130
+Can policy interactions be observed?
+131
+ 
+132
+Can governance controls be reviewed?
+133
+ 
+134
+Can telemetry be independently audited?
+135
+ 
+136
+Risk Categories Addressed:
+137
+ 
+138
+• Invalid inputs
+139
+• Data misuse
+140
+• Unverified outputs
+141
+• Policy violations
+142
+• Runtime uncertainty
+143
+• Operational drift
+144
+ 
+145
+Reviewer Notes:
+146
+ 
+147
+Implementation details may vary by deployment environment.
+148
+ 
+149
+Deployment-specific controls such as Azure Key Vault, Azure Monitor, Microsoft Entra ID, and Azure Policy can be integrated alongside the YT6 architecture.
+150
+ 
+151
+Conclusion:
+152
+ 
+153
+YT6 incorporates security, governance, observability, and privacy considerations as architectural components.
+154
+ 
+155
+The framework is intended to support enterprise-grade review processes, reproducible evaluation, and responsible deployment within Azure AI Foundry environments.
+Show more lines
+FILE NAME BLOCK
+Plain Text
+1
+MS_YT6_REPRODUCIBLE_DEMO_SCRIPT
+Show more lines
+MAIN BLOCK
+Plain Text
+1
+Index: MS_YT6_REPRODUCIBLE_DEMO_SCRIPT
+2
+ 
+3
+Artifact Name:
+4
+YT6 Reproducible Demonstration Script
+5
+ 
+6
+Project:
+7
+YT6 — Clarity-System Architecture
+8
+ 
+9
+Repository:
+10
+YT6-Core-Benchmark-v1
+11
+ 
+12
+Purpose:
+13
+Provide reviewers with a repeatable walkthrough demonstrating YT6 architecture behaviour, traceability, governance controls, and runtime observability.
+14
+ 
+15
+Demo Goal:
+16
+ 
+17
+Demonstrate end-to-end execution of a request through all major YT6 layers.
+18
+ 
+19
+Expected Duration:
+20
+ 
+21
+5–10 Minutes
+22
+ 
+23
+Demonstration Flow:
+24
+ 
+25
+STEP 01 — USER REQUEST
+26
+ 
+27
+Input:
+28
+ 
+29
+User submits a request requiring retrieval, reasoning, validation, and final response generation.
+30
+ 
+31
+Expected Observation:
+32
+ 
+33
+Request accepted by ingestion layer.
+34
+ 
+35
+Verification:
+36
+ 
+37
+Input recorded.
+38
+ 
+39
+Schema validated.
+40
+ 
+41
+Trace initiated.
+42
+ 
+43
+--------------------------------------------------
+44
+ 
+45
+STEP 02 — INGESTION LAYER
+46
+ 
+47
+Functions:
+48
+ 
+49
+• Input validation
+50
+• Provenance capture
+51
+• Metadata creation
+52
+ 
+53
+Expected Observation:
+54
+ 
+55
+Request converted into execution-ready format.
+56
+ 
+57
+Verification:
+58
+ 
+59
+Telemetry event generated.
+60
+ 
+61
+Trace record updated.
+62
+ 
+63
+--------------------------------------------------
+64
+ 
+65
+STEP 03 — KNOWLEDGE LAYER
+66
+ 
+67
+Functions:
+68
+ 
+69
+• Context retrieval
+70
+• Knowledge lookup
+71
+• Evidence collection
+72
+ 
+73
+Expected Observation:
+74
+ 
+75
+Supporting information retrieved.
+76
+ 
+77
+Verification:
+78
+ 
+79
+Retrieval artifacts logged.
+80
+ 
+81
+Knowledge source identifiers recorded.
+82
+ 
+83
+--------------------------------------------------
+84
+ 
+85
+STEP 04 — REASONING LAYER
+86
+ 
+87
+Functions:
+88
+ 
+89
+• Planning
+90
+• Processing
+91
+• Verification
+92
+ 
+93
+Expected Observation:
+94
+ 
+95
+Reasoning sequence produced.
+96
+ 
+97
+Verification:
+98
+ 
+99
+Execution trail captured.
+100
+ 
+101
+Intermediate artifacts preserved.
+102
+ 
+103
+--------------------------------------------------
+104
+ 
+105
+STEP 05 — POLICY LAYER
+106
+ 
+107
+Functions:
+108
+ 
+109
+• Governance review
+110
+• Policy validation
+111
+• Escalation checks
+112
+ 
+113
+Expected Observation:
+114
+ 
+115
+Output assessed before release.
+116
+ 
+117
+Verification:
+118
+ 
+119
+Policy decision recorded.
+120
+ 
+121
+Pass or intervention status logged.
+122
+ 
+123
+--------------------------------------------------
+124
+ 
+125
+STEP 06 — TELEMETRY LAYER
+126
+ 
+127
+Functions:
+128
+ 
+129
+• Runtime monitoring
+130
+• Event tracking
+131
+• Audit recording
+132
+ 
+133
+Expected Observation:
+134
+ 
+135
+Execution metrics generated.
+136
+ 
+137
+Verification:
+138
+ 
+139
+Telemetry stream available.
+140
+ 
+141
+Audit events captured.
+142
+ 
+143
+--------------------------------------------------
+144
+ 
+145
+STEP 07 — FINAL OUTPUT
+146
+ 
+147
+Functions:
+148
+ 
+149
+• Response delivery
+150
+• Trace completion
+151
+• Artifact preservation
+152
+ 
+153
+Expected Observation:
+154
+ 
+155
+Validated response returned.
+156
+ 
+157
+Verification:
+158
+ 
+159
+Execution closed.
+160
+ 
+161
+Final trace stored.
+162
+ 
+163
+--------------------------------------------------
+164
+ 
+165
+Reviewer Checklist:
+166
+ 
+167
+□ Was the request traceable?
+168
+ 
+169
+□ Were retrieval points visible?
+170
+ 
+171
+□ Were reasoning stages observable?
+172
+ 
+173
+□ Were policy controls executed?
+174
+ 
+175
+□ Was telemetry generated?
+176
+ 
+177
+□ Was the output auditable?
+178
+ 
+179
+□ Could execution be independently reviewed?
+180
+ 
+181
+Evidence Bundle:
+182
+ 
+183
+Recommended supporting artifacts:
+184
+ 
+185
+• Execution trace
+186
+• Telemetry export
+187
+• Policy result log
+188
+• Retrieval record
+189
+• Validation record
+190
+• Final output record
+191
+ 
+192
+Success Criteria:
+193
+ 
+194
+The reviewer can follow the full lifecycle of a request from ingestion through governance review to final output using recorded evidence.
+195
+ 
+196
+Conclusion:
+197
+ 
+198
+This demonstration illustrates how YT6 integrates clarity, governance, observability, traceability, and operational reviewability into a single end-to-end workflow.
+Show more lines
+
+Suggested commit messages:
+
+Plain Text
+1
+Add YT6 Security And Privacy Brief for Microsoft reviewers
+Show more lines
+Plain Text
+1
+Add YT6 Reproducible Demonstration Script for Foundry evaluation
+Show more lines
+Provide your feedback on BizChat
+Add README and folder structureCreate a concise reviewer checklistFormat this as Markdown files
