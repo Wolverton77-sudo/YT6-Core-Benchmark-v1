@@ -1,0 +1,459 @@
+MAIN BLOCK
+Plain Text
+1
+Index: MS_YT6_SIMPLE_DEMO_WALKTHROUGH
+2
+ 
+3
+Artifact Name:
+4
+YT6 Simple Demonstration Walkthrough
+5
+ 
+6
+Project:
+7
+YT6 — Clarity-System Architecture
+8
+ 
+9
+Purpose:
+10
+ 
+11
+Provide reviewers with a simple end-to-end example demonstrating how YT6 processes a request through its architecture.
+12
+ 
+13
+Estimated Review Time:
+14
+ 
+15
+3 Minutes
+16
+ 
+17
+==================================================
+18
+ 
+19
+DEMO SCENARIO
+20
+ 
+21
+User Request:
+22
+ 
+23
+"Summarise the key risks contained within a project report and identify any mitigation actions."
+24
+ 
+25
+Objective:
+26
+ 
+27
+Demonstrate:
+28
+ 
+29
+• Ingestion
+30
+• Knowledge retrieval
+31
+• Reasoning
+32
+• Validation
+33
+• Governance review
+34
+• Telemetry generation
+35
+• Final output
+36
+ 
+37
+==================================================
+38
+ 
+39
+STEP 01
+40
+ 
+41
+INGESTION LAYER
+42
+ 
+43
+Input Received:
+44
+ 
+45
+"Summarise the key risks contained within a project report and identify any mitigation actions."
+46
+ 
+47
+System Actions:
+48
+ 
+49
+• Validate input
+50
+• Create request record
+51
+• Generate trace identifier
+52
+• Record timestamp
+53
+ 
+54
+Expected Output:
+55
+ 
+56
+Request accepted.
+57
+ 
+58
+Trace started.
+59
+ 
+60
+==================================================
+61
+ 
+62
+STEP 02
+63
+ 
+64
+KNOWLEDGE LAYER
+65
+ 
+66
+System Actions:
+67
+ 
+68
+• Locate relevant report
+69
+• Retrieve supporting content
+70
+• Create evidence list
+71
+ 
+72
+Example Retrieval:
+73
+ 
+74
+Risk A:
+75
+Data quality inconsistencies
+76
+ 
+77
+Risk B:
+78
+Missing process documentation
+79
+ 
+80
+Risk C:
+81
+Limited monitoring capability
+82
+ 
+83
+Expected Output:
+84
+ 
+85
+Evidence package assembled.
+86
+ 
+87
+==================================================
+88
+ 
+89
+STEP 03
+90
+ 
+91
+REASONING LAYER
+92
+ 
+93
+System Actions:
+94
+ 
+95
+• Analyse retrieved content
+96
+• Identify significant risks
+97
+• Match mitigation activities
+98
+• Build structured summary
+99
+ 
+100
+Working Result:
+101
+ 
+102
+Risk:
+103
+Data quality inconsistencies
+104
+ 
+105
+Mitigation:
+106
+Validation procedures
+107
+ 
+108
+Risk:
+109
+Missing documentation
+110
+ 
+111
+Mitigation:
+112
+Documentation review process
+113
+ 
+114
+Risk:
+115
+Limited monitoring
+116
+ 
+117
+Mitigation:
+118
+Telemetry implementation
+119
+ 
+120
+Expected Output:
+121
+ 
+122
+Draft response generated.
+123
+ 
+124
+==================================================
+125
+ 
+126
+STEP 04
+127
+ 
+128
+POLICY LAYER
+129
+ 
+130
+System Actions:
+131
+ 
+132
+• Validate output
+133
+• Check governance rules
+134
+• Confirm compliance
+135
+ 
+136
+Expected Result:
+137
+ 
+138
+Output approved.
+139
+ 
+140
+No intervention required.
+141
+ 
+142
+==================================================
+143
+ 
+144
+STEP 05
+145
+ 
+146
+TELEMETRY LAYER
+147
+ 
+148
+System Actions:
+149
+ 
+150
+• Record execution metrics
+151
+• Record processing events
+152
+• Record policy status
+153
+• Store final trace
+154
+ 
+155
+Example Records:
+156
+ 
+157
+Request ID:
+158
+YT6-0001
+159
+ 
+160
+Status:
+161
+Success
+162
+ 
+163
+Policy:
+164
+Passed
+165
+ 
+166
+Trace:
+167
+Stored
+168
+ 
+169
+==================================================
+170
+ 
+171
+STEP 06
+172
+ 
+173
+FINAL RESPONSE
+174
+ 
+175
+Response Returned:
+176
+ 
+177
+Summary of Risks
+178
+ 
+179
+1. Data quality inconsistencies
+180
+ 
+181
+Recommended Mitigation:
+182
+Implement validation controls
+183
+ 
+184
+2. Missing process documentation
+185
+ 
+186
+Recommended Mitigation:
+187
+Perform documentation review
+188
+ 
+189
+3. Limited monitoring capability
+190
+ 
+191
+Recommended Mitigation:
+192
+Expand telemetry coverage
+193
+ 
+194
+==================================================
+195
+ 
+196
+REVIEWER OBSERVATIONS
+197
+ 
+198
+The reviewer should be able to observe:
+199
+ 
+200
+• Input validation
+201
+• Retrieval behaviour
+202
+• Reasoning progression
+203
+• Governance checks
+204
+• Telemetry generation
+205
+• Final output generation
+206
+ 
+207
+==================================================
+208
+ 
+209
+SUCCESS CRITERIA
+210
+ 
+211
+The request can be followed through every major YT6 layer.
+212
+ 
+213
+The execution path is observable.
+214
+ 
+215
+The result is traceable.
+216
+ 
+217
+The workflow is reviewable.
+218
+ 
+219
+==================================================
+220
+ 
+221
+CONCLUSION
+222
+ 
+223
+This walkthrough demonstrates how YT6 combines clarity, governance, observability, validation, and traceability into a single operational workflow suitable for technical review and evaluation.
+Show more lines
+Suggested Commit Message
+Plain Text
+1
+Add YT6 Simple Demonstration Walkthrough for technical reviewers
+Show more lines
+
+This is likely the most useful demo format for a reviewer because they can understand the entire YT6 flow in under three minutes without needing to run any code.
+
+Provide your feedback on BizChat
+Add a runnable Python demoCreate sample trace output
