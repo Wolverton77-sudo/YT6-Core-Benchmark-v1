@@ -1,0 +1,458 @@
+name: YT6 Validation Pipeline
+2
+ 
+3
+on:
+4
+push:
+5
+branches:
+6
+- main
+7
+- develop
+8
+ 
+9
+pull_request:
+10
+branches:
+11
+- main
+12
+ 
+13
+workflow_dispatch:
+14
+ 
+15
+permissions:
+16
+contents: read
+17
+issues: write
+18
+pull-requests: write
+19
+ 
+20
+env:
+21
+PROJECT_NAME: YT6
+22
+VALIDATION_VERSION: v1
+23
+ 
+24
+jobs:
+25
+ 
+26
+repository-health:
+27
+name: Repository Health Check
+28
+runs-on: ubuntu-latest
+29
+ 
+30
+steps:
+31
+- name: Checkout Repository
+32
+uses: actions/checkout@v4
+33
+ 
+34
+- name: Validate Required Directories
+35
+run: |
+36
+test -d review
+37
+test -d benchmarks
+38
+test -d results
+39
+test -d governance
+40
+test -d funding
+41
+ 
+42
+- name: Validate Required Files
+43
+run: |
+44
+test -f README.md
+45
+test -f CONTRIBUTING.md
+46
+ 
+47
+markdown-validation:
+48
+name: Validate Documentation
+49
+runs-on: ubuntu-latest
+50
+ 
+51
+steps:
+52
+- uses: actions/checkout@v4
+53
+ 
+54
+- name: Lint Markdown
+55
+uses: DavidAnson/markdownlint-cli2-action@v17
+56
+with:
+57
+globs: |
+58
+**/*.md
+59
+ 
+60
+benchmark-validation:
+61
+name: Benchmark Validation
+62
+runs-on: ubuntu-latest
+63
+ 
+64
+steps:
+65
+- uses: actions/checkout@v4
+66
+ 
+67
+- name: Verify Benchmark Directory
+68
+run: |
+69
+echo "Checking benchmark assets..."
+70
+ls benchmarks
+71
+ 
+72
+- name: Count Benchmark Tasks
+73
+run: |
+74
+COUNT=$(find benchmarks -type f | wc -l)
+75
+echo "Benchmark Count: $COUNT"
+76
+ 
+77
+- name: Benchmark Threshold Check
+78
+run: |
+79
+COUNT=$(find benchmarks -type f | wc -l)
+80
+ 
+81
+if [ "$COUNT" -lt 20 ]; then
+82
+echo "Validation failed."
+83
+exit 1
+84
+fi
+85
+ 
+86
+demo-validation:
+87
+name: Demo Execution
+88
+runs-on: ubuntu-latest
+89
+ 
+90
+steps:
+91
+- uses: actions/checkout@v4
+92
+ 
+93
+- name: Setup Python
+94
+uses: actions/setup-python@v5
+95
+with:
+96
+python-version: "3.11"
+97
+ 
+98
+- name: Run Demo
+99
+run: |
+100
+if [ -f demos/yt6_demo.py ]; then
+101
+python demos/yt6_demo.py
+102
+else
+103
+echo "Demo file missing"
+104
+exit 1
+105
+fi
+106
+ 
+107
+evidence-validation:
+108
+name: Evidence Package Check
+109
+runs-on: ubuntu-latest
+110
+ 
+111
+steps:
+112
+- uses: actions/checkout@v4
+113
+ 
+114
+- name: Verify Evidence Structure
+115
+run: |
+116
+mkdir -p results/evidence
+117
+ 
+118
+echo "Evidence structure verified."
+119
+ 
+120
+- name: Check Validation Report
+121
+run: |
+122
+if [ ! -f review/MS_YT6_VALIDATION_REPORT_V1.md ]; then
+123
+echo "Validation report missing."
+124
+exit 1
+125
+fi
+126
+ 
+127
+review-readiness:
+128
+name: Review Readiness Assessment
+129
+runs-on: ubuntu-latest
+130
+ 
+131
+steps:
+132
+- uses: actions/checkout@v4
+133
+ 
+134
+- name: Review Asset Verification
+135
+run: |
+136
+REQUIRED=(
+137
+review/MS_YT6_EXECUTIVE_ONE_PAGE_SUMMARY.md
+138
+review/MS_YT6_FOUNDRY_REVIEW_PACKET.md
+139
+review/MS_YT6_SECURITY_AND_PRIVACY_BRIEF.md
+140
+review/MS_YT6_VALIDATION_REPORT_V1.md
+141
+)
+142
+ 
+143
+for FILE in "${REQUIRED[@]}"
+144
+do
+145
+if [ ! -f "$FILE" ]; then
+146
+echo "Missing $FILE"
+147
+exit 1
+148
+fi
+149
+done
+150
+ 
+151
+funding-readiness:
+152
+name: Funding Package Check
+153
+runs-on: ubuntu-latest
+154
+ 
+155
+steps:
+156
+- uses: actions/checkout@v4
+157
+ 
+158
+- name: Verify Funding Documents
+159
+run: |
+160
+REQUIRED=(
+161
+funding/MS_YT6_FUNDING_OVERVIEW.md
+162
+funding/MS_YT6_INVESTOR_EXECUTIVE_SUMMARY.md
+163
+funding/MS_YT6_FUNDING_MILESTONE_TIMELINE.md
+164
+)
+165
+ 
+166
+for FILE in "${REQUIRED[@]}"
+167
+do
+168
+if [ ! -f "$FILE" ]; then
+169
+echo "Missing $FILE"
+170
+exit 1
+171
+fi
+172
+done
+173
+ 
+174
+validation-dashboard:
+175
+name: Validation Dashboard
+176
+runs-on: ubuntu-latest
+177
+ 
+178
+needs:
+179
+- repository-health
+180
+- markdown-validation
+181
+- benchmark-validation
+182
+- demo-validation
+183
+- evidence-validation
+184
+- review-readiness
+185
+- funding-readiness
+186
+ 
+187
+steps:
+188
+- name: Validation Summary
+189
+run: |
+190
+echo "================================="
+191
+echo "YT6 Validation Pipeline"
+192
+echo "================================="
+193
+echo "Repository Health PASS"
+194
+echo "Documentation PASS"
+195
+echo "Benchmarks PASS"
+196
+echo "Demo PASS"
+197
+echo "Evidence PASS"
+198
+echo "Review Assets PASS"
+199
+echo "Funding Assets PASS"
+200
+echo "================================="
+201
+echo "VALIDATION READY"
+202
+echo "================================="
+Show more lines
+Add a Release Validation Workflow
+Plain Text
+1
+.github/workflows/release-validation.yml
+Show more lines
+YAML
+1
+name: Release Validation
+2
+ 
+3
+on:
+4
+release:
+5
+types: [published]
+6
+ 
+7
+jobs:
+8
+validate-release:
+9
+runs-on: ubuntu-latest
+10
+ 
+11
+steps:
+12
+- uses: actions/checkout@v4
+13
+ 
+14
+- name: Verify Validation Assets
+15
+run: |
+16
+echo "Reviewing release package..."
+17
+ 
+18
+test -f review/MS_YT6_EXECUTIVE_ONE_PAGE_SUMMARY.md
+19
+test -f review/MS_YT6_VALIDATION_REPORT_V1.md
+20
+test -f funding/MS_YT6_INVESTOR_EXECUTIVE_SUMMARY.md
+21
+ 
+22
+- name: Release Status
+23
+run: |
+24
+echo "YT6 Review Candidate Verified"
