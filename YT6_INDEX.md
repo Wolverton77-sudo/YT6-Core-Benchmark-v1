@@ -8,3 +8,5 @@ Then:
 - Create a new file in the repo called YT6_INDEX.md
 - Paste the same block there
 - Commit the file
+- ➡️ Start here: [YT6 Home](YT6_HOME.md)
+
