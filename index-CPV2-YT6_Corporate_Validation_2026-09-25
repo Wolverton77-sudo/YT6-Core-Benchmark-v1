@@ -1,0 +1,143 @@
+# YT6 — CPV‑2 Corporate Infrastructure Validation
+## Phase 2: Validation Inside Real Business Environments
+
+CPV‑2 proves that YT6 operates correctly inside real workplaces, on real corporate machines, under real restrictions, with real humans. This phase confirms cross‑infrastructure stability beyond CPV‑1’s cross‑platform validation.
+
+---
+
+## 1. Objective
+Validate that YT6:
+- behaves identically on corporate machines,
+- remains stable under enterprise Copilot,
+- functions correctly under corporate firewalls and compliance filters,
+- produces reproducible clarity outputs for multiple independent humans.
+
+---
+
+## 2. Test Environments
+### Ribble Homecare
+- Abbas — Reviewer 003B  
+- Ribble Owners — 3 machines  
+- Enterprise Copilot  
+- Care‑industry workflows  
+- Restricted corporate network
+
+### Barmouth Bay / Guest Services
+- Jane Swaine — Reviewer 004A  
+- Park corporate machine  
+- Park corporate restrictions  
+- Guest Services workflows
+
+These are real‑world, non‑laboratory conditions.
+
+---
+
+## 3. Human Reviewers
+CPV‑2 uses average humans, not engineers:
+- Abbas — care industry  
+- Jane — guest services team leader  
+- Ribble owners — business operators  
+
+They do not know the architecture, maths, or Python backing.  
+This confirms YT6 works for real people.
+
+---
+
+## 4. Validation Criteria
+Each reviewer must demonstrate:
+
+### A. Reproducibility
+- identical behaviour across machines and networks  
+- consistent clarity outputs  
+- stable structure  
+
+### B. Drift Elimination
+- no padding  
+- no steering  
+- no tone drift  
+- no goal drift  
+
+### C. Intent Lock
+- human intent preserved  
+- 60/40 ratio maintained  
+- human‑lead clarity  
+
+### D. Clarity Output
+- structured  
+- predictable  
+- repeatable  
+
+### E. Cross‑Infrastructure Stability
+- enterprise Copilot behaves correctly  
+- corporate restrictions do not break YT6  
+- firewalls and filters do not distort output  
+
+---
+
+## 5. Procedure
+Each reviewer completes:
+1. YT6_HOME.md  
+2. YT6_MECHANISM.md  
+3. YT6_EXEC_SUMMARY.md  
+4. REPRODUCE.md  
+5. Reviewer Scoring Engine  
+6. Cross‑platform comparison  
+7. Corporate machine validation  
+8. Final reviewer notes  
+
+---
+
+## 6. Confirmed Results (Live Update)
+### Jane Swaine — Guest Services Team Leader  
+**Status: Complete**  
+- Completed YT6 review on **Copilot**  
+- Completed YT6 review on **Gemini**  
+- On **park corporate machine**  
+- Under **park corporate restrictions**  
+- **Perfect behaviour**  
+- **High results**  
+- **Full CPV‑2 confirmation**
+
+This is a major validation milestone.
+
+Full results from all reviewers expected by **17:30 UK time**.
+
+---
+
+## 7. Expected Outcome
+CPV‑2 is successful when:
+- YT6 behaves identically across all corporate machines  
+- reviewers produce consistent clarity outputs  
+- drift is eliminated  
+- intent is preserved  
+- reproducibility is confirmed  
+- enterprise Copilot performs correctly  
+- corporate restrictions do not break the protocol  
+
+This confirms YT6 is enterprise‑ready.
+
+---
+
+## 8. Evidence Collection
+Collected for Evidence Pack v2:
+- reviewer transcripts  
+- reviewer scores  
+- machine/network details  
+- reproducibility logs  
+- drift‑analysis notes  
+- clarity‑output samples  
+- cross‑platform comparisons  
+
+---
+
+## 9. Summary
+CPV‑2 validates YT6 inside real businesses:
+- corporate machines  
+- enterprise Copilot  
+- restricted networks  
+- compliance filters  
+- multi‑human reproducibility  
+
+Goal: YT6 must work exactly the same in a business as it does at home.
+
+YT6_END
