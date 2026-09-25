@@ -1,6 +1,66 @@
-Partner Name: ______________________
-Partner Domain: ____________________
-Partner Requirements: ______________
-Partner Expectations: ______________
-Partner Use‑Case: __________________
-Partner Infrastructure: ____________
+## Purpose
+This page captures the minimum partner‑alignment data required for:
+- Licensing Pack generation
+- Partner‑aligned review packages
+- GitHub case creation
+- Internal escalation
+- Enterprise‑grade clarity alignment
+
+This is the first page in the Licensing Pack chain.
+
+---
+
+## Partner Context Fields (Fill These In)
+
+Partner Name: _______________________________________
+
+Partner Domain:
+(e.g., AI, productivity, enterprise software, education, care)
+________________________________________________________
+
+Partner Requirements:
+(e.g., reproducibility, clarity uplift, human-first workflows)
+________________________________________________________
+
+Partner Expectations:
+(e.g., stability, cross-platform behaviour, low friction)
+________________________________________________________
+
+Partner Use-Case:
+(e.g., Copilot clarity layer, workflow uplift, training support)
+________________________________________________________
+
+Partner Infrastructure:
+(e.g., Microsoft 365, Azure, corporate networks, restricted machines)
+________________________________________________________
+
+---
+
+## Why This Block Matters
+This block is the foundation for:
+- the Licensing Pack
+- the Partner Review Package
+- the Escalation Summary
+- the GitHub Case
+- the internal reviewer path
+- the enterprise licensing route
+
+Without this block, partners cannot:
+- evaluate fit
+- assess risk
+- understand deployment
+- escalate internally
+- consider licensing
+
+This is the first page they will read.
+
+---
+
+## Summary
+YT6 Partner Context Input:
+- captures partner domain
+- defines partner requirements
+- aligns expectations
+- maps use-case
+- maps infrastructure
+- foundation for licensing and escalation
