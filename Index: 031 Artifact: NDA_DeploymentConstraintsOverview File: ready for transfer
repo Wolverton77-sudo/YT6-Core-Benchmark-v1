@@ -1,0 +1,10 @@
+# YT6 — NDA Deployment Constraints Overview
+
+## 1. Purpose
+This document introduces the **deployment constraints** inside the NDA layer of YT6.  
+Deployment constraints define the boundaries, rules and conditions required for safe, stable and correct integration of YT6 into partner environments.
+
+This overview does not expose any protected deployment mechanics.
+
+## 2. What Deployment Constraints Are
+Deployment constraints are the **non‑negotiable rules** that
