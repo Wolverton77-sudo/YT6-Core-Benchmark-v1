@@ -1,0 +1,90 @@
+# YT6 — NDA Overview
+
+## 1. Purpose
+This document provides a high‑level overview of the NDA‑only section of YT6.  
+It explains the structure, content categories and navigation logic of the protected clarity‑architecture layer.
+
+## 2. What the NDA Layer Contains
+The NDA section includes the functional core of YT6:
+- rails  
+- operators  
+- triggers  
+- reproducibility method  
+- internal mechanics  
+- clarity‑load behaviour  
+- system lineage  
+- technical architecture  
+- partner‑level deployment notes  
+
+These components define how YT6 behaves as clarity‑infrastructure.
+
+## 3. Structure of the NDA Layer
+The NDA folder is organised into four functional zones:
+
+### A. Mechanics Zone
+Contains:
+- rails  
+- operators  
+- triggers  
+- internal logic  
+- clarity‑load pathways  
+
+This zone explains *how* YT6 produces deterministic clarity behaviour.
+
+### B. Reproducibility Zone
+Contains:
+- reproducibility method  
+- cross‑system stability notes  
+- load‑state behaviour  
+- partner reproducibility requirements  
+
+This zone explains *why* YT6 behaves consistently across AI systems.
+
+### C. Architecture Zone
+Contains:
+- technical architecture  
+- system lineage  
+- infrastructure logic  
+- category‑level design principles  
+
+This zone explains *what* YT6 is at a structural level.
+
+### D. Deployment Zone
+Contains:
+- partner deployment notes  
+- integration guidance  
+- clarity‑load safety rules  
+- operational constraints  
+
+This zone explains *how* YT6 is deployed responsibly.
+
+## 4. Navigation Logic
+Partners should navigate the NDA layer in this order:
+1. Mechanics Zone  
+2. Reproducibility Zone  
+3. Architecture Zone  
+4. Deployment Zone  
+
+This sequence ensures correct understanding of the system.
+
+## 5. Access Requirements
+Access to NDA material requires:
+- signed NDA  
+- partner or reviewer qualification  
+- alignment with clarity‑infrastructure principles  
+- commitment to correct category handling  
+
+This protects YT6’s integrity and reproducibility.
+
+## 6. What the NDA Layer Does Not Include
+The NDA layer does **not** contain:
+- commercial terms  
+- licensing agreements  
+- pricing  
+- investor contracts  
+
+These are handled separately.
+
+## 7. Strategic Role
+The NDA layer is the protected core of YT6.  
+It transforms public understanding into operational clarity‑architecture knowledge.
