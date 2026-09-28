@@ -1,0 +1,81 @@
+# YT6 — NDA Reproducibility Overview
+
+## 1. Purpose
+This document introduces the concept of **reproducibility** inside the NDA layer of YT6.  
+Reproducibility is the backbone of YT6’s clarity‑infrastructure behaviour.  
+It ensures that YT6 produces stable, deterministic clarity output across different AI systems, contexts and load states.
+
+This overview explains reproducibility at a conceptual level without exposing the reproducibility method itself.
+
+## 2. What Reproducibility Is
+Reproducibility is the **system guarantee** that YT6 behaves the same way across:
+- different AI models  
+- different versions of those models  
+- different contexts  
+- different clarity‑load states  
+- different human users  
+
+It is the infrastructure property that makes YT6 a *system*, not a tool.
+
+Reproducibility is not:
+- prompt consistency  
+- behavioural similarity  
+- stylistic alignment  
+- output matching  
+
+It is deeper: it is **clarity‑state stability**.
+
+## 3. Why Reproducibility Exists
+Reproducibility exists to:
+- maintain clarity under cognitive load  
+- ensure deterministic system behaviour  
+- prevent drift across AI systems  
+- stabilise human‑side clarity  
+- anchor the category as infrastructure  
+- enable infinite digital scale  
+- reduce wasted compute (climate alignment)  
+
+Without reproducibility, YT6 would collapse into a tool category.  
+With reproducibility, YT6 becomes infrastructure.
+
+## 4. How Reproducibility Behaves (Conceptual)
+Reproducibility behaves as:
+- a system‑level invariant  
+- a clarity‑state stabiliser  
+- a cross‑AI behavioural anchor  
+- a load‑state regulator  
+- a deterministic infrastructure property  
+
+It does **not** behave as:
+- a prompt technique  
+- a workflow pattern  
+- a behavioural rule  
+- a coaching method  
+- a style lock  
+
+Reproducibility is part of the system’s internal architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- the reproducibility method  
+- reproducibility sequences  
+- reproducibility operators  
+- reproducibility triggers  
+- load‑state mechanics  
+- cross‑AI calibration rules  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Reproducibility Overview is the fourth step in understanding the mechanics zone.  
+It prepares partners for:
+- clarity‑load behaviour  
+- internal logic  
+- system lineage  
+- technical architecture  
+- deployment constraints  
+
+It is the stability foundation for the mechanics layer.
+
+## 7. NDA Note
+All reproducibility details, methods and mechanics are protected and require deeper NDA clearance.
