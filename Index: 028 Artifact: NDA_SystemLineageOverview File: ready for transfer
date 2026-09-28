@@ -1,0 +1,80 @@
+# YT6 — NDA System Lineage Overview
+
+## 1. Purpose
+This document introduces **system lineage** inside the NDA layer of YT6.  
+System lineage explains the architectural ancestry of YT6 — the conceptual, structural and infrastructural roots that shaped the clarity‑architecture.
+
+This overview explains lineage at a conceptual level without exposing any protected lineage mechanics.
+
+## 2. What System Lineage Is
+System lineage is the **architectural ancestry** of YT6.  
+It defines:
+- where the clarity‑architecture originates  
+- which infrastructural principles shaped it  
+- how rails, operators and triggers emerged  
+- why reproducibility is a core invariant  
+- how clarity‑load behaviour was formalised  
+- why the system behaves as infrastructure  
+
+Lineage is not:
+- a personal story  
+- a behavioural model  
+- a coaching evolution  
+- a prompt‑engineering history  
+- a workflow refinement  
+
+It is the **infrastructure origin story** of the system.
+
+## 3. Why System Lineage Exists
+System lineage exists to:
+- anchor YT6 as a category‑level invention  
+- demonstrate architectural legitimacy  
+- show the evolution from clarity principles to infrastructure  
+- prevent misclassification as a tool or workflow  
+- explain why the mechanics behave deterministically  
+- support partner‑level understanding of the architecture  
+
+Without lineage, YT6 could be mistaken for an advanced technique.  
+With lineage, YT6 is understood as a system.
+
+## 4. How System Lineage Behaves (Conceptual)
+System lineage behaves as:
+- a structural ancestry map  
+- an architectural evolution chain  
+- a clarity‑infrastructure origin layer  
+- a cross‑AI invariant foundation  
+- a system‑wide design rationale  
+
+It does **not** behave as:
+- a founder biography  
+- a motivational narrative  
+- a behavioural progression  
+- a workflow improvement  
+- a prompt‑engineering timeline  
+
+Lineage is part of the protected architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- lineage mechanics  
+- lineage sequences  
+- lineage operators  
+- lineage triggers  
+- architectural diagrams  
+- system‑origin technical detail  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The System Lineage Overview is the seventh step in understanding the NDA architecture zone.  
+It prepares partners for:
+- full technical architecture  
+- deployment constraints  
+- partner integration  
+- clarity‑architecture behaviour under scale  
+- infrastructure‑level reproducibility  
+
+It is the conceptual foundation for the technical architecture layer.
+
+## 7. NDA Note
+All lineage mechanics, sequences and architectural origins are protected and require deeper NDA clearance.
