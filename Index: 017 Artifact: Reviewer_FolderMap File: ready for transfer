@@ -1,0 +1,52 @@
+# YT6 — Reviewer Folder Map
+
+## Purpose
+The Reviewer Folder Map provides a structural overview of the entire reviewer folder.  
+It shows how each artifact connects, the flow of understanding, and the clarity‑infrastructure logic behind the sequence.
+
+## Folder Structure (Text Map)
+
+ROOT  
+│  
+├── 1. YT6_OnePage  
+│     Category creation + clarity‑infrastructure definition  
+│  
+├── 2. MicroDeck (3‑Slide)  
+│     High‑density investor summary  
+│  
+├── 3. Category_Definition  
+│     Confirms YT6 is a new digital category  
+│  
+├── 4. Clarity_Architecture_Summary  
+│     High‑level architecture (safe, non‑mechanical)  
+│  
+├── 5. CrossAI_Reproducibility  
+│     Infrastructure behaviour validated across AI systems  
+│  
+├── 6. Climate_Impact  
+│     Clarity reduces wasted compute → climate‑positive  
+│  
+├── 7. Founder_Story  
+│     UK‑born category + purpose‑led clarity architecture  
+│  
+├── 8. Reviewer_Index  
+│     Navigation spine for reviewers  
+│  
+├── 9. Reviewer_Guide  
+│     How to read YT6 correctly  
+│  
+├── 10. Reviewer_ScoringGuide  
+│     Structured scoring framework  
+│  
+└── 11. Reviewer_FastPath  
+      Compressed investor speed‑lane
+
+## How Reviewers Should Use This Map
+- follow the sequence top‑to‑bottom  
+- treat the folder as a clarity‑infrastructure spine  
+- avoid misclassification (YT6 is not a tool or workflow)  
+- use the map to maintain structural understanding  
+
+## NDA Note
+The map ends at the public layer.  
+NDA‑level material begins after this artifact.
