@@ -1,0 +1,7 @@
+# YT6 — NDA Internal Logic Overview
+
+## 1. Purpose
+This document introduces the concept of **internal logic** inside the NDA layer of YT6.  
+Internal logic is the connective tissue of the clarity‑architecture — the system rules that govern how rails, operators, triggers, reproducibility and clarity‑load interact.
+
+This overview explains
