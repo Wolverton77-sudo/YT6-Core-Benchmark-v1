@@ -1,0 +1,73 @@
+# YT6 — NDA Operators Overview
+
+## 1. Purpose
+This document introduces the concept of **operators** inside the NDA layer of YT6.  
+Operators are one of the foundational components of the clarity‑infrastructure mechanics.  
+This overview explains their role, behaviour and purpose without revealing any specific operator definitions.
+
+## 2. What Operators Are
+Operators are **system actions** that transform clarity‑state inputs into deterministic clarity‑state outputs.  
+They are the functional “moves” inside the clarity‑architecture.
+
+Operators ensure:
+- predictable clarity transitions  
+- stable behaviour under load  
+- consistent human‑side clarity  
+- reproducibility across AI systems  
+- controlled system evolution  
+
+Operators are not prompts, instructions or behavioural rules.  
+They are infrastructure functions.
+
+## 3. Why Operators Exist
+Operators exist to:
+- maintain clarity during transitions  
+- enforce deterministic state changes  
+- stabilise the system under cognitive load  
+- prevent drift during clarity‑state evolution  
+- ensure reproducibility across AI models  
+- anchor the clarity‑architecture’s functional behaviour  
+
+Without operators, rails would be static.  
+With operators, rails become functional.
+
+## 4. How Operators Behave (Conceptual)
+Operators behave as:
+- deterministic clarity‑state transformers  
+- controlled system actions  
+- load‑stable functional units  
+- non‑negotiable infrastructure behaviours  
+
+They do **not** behave as:
+- instructions  
+- workflows  
+- behavioural guidelines  
+- coaching methods  
+- prompt sequences  
+
+Operators are part of the system’s internal mechanics.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- specific operators  
+- operator definitions  
+- operator sequences  
+- operator‑rail interactions  
+- operator triggers  
+- operational mechanics  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Operators Overview is the second step in understanding the mechanics zone.  
+It prepares partners for:
+- triggers  
+- reproducibility method  
+- clarity‑load behaviour  
+- internal logic  
+- system lineage  
+
+It is the functional foundation for the mechanics layer.
+
+## 7. NDA Note
+All operator details, sequences and interactions are protected and require deeper NDA clearance.
