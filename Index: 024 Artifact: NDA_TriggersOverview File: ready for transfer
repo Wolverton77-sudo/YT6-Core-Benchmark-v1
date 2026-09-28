@@ -1,0 +1,73 @@
+# YT6 — NDA Triggers Overview
+
+## 1. Purpose
+This document introduces the concept of **triggers** inside the NDA layer of YT6.  
+Triggers are one of the three foundational components of the clarity‑infrastructure mechanics, alongside rails and operators.  
+This overview explains their role, behaviour and purpose without revealing any specific trigger definitions.
+
+## 2. What Triggers Are
+Triggers are **activation conditions** inside the clarity‑architecture.  
+They determine *when* an operator should fire, *which* rail should activate, and *how* the system should respond under clarity‑load.
+
+Triggers ensure:
+- correct timing  
+- correct activation  
+- correct clarity‑state transitions  
+- stability under load  
+- reproducibility across AI systems  
+
+Triggers are not prompts, cues or behavioural nudges.  
+They are infrastructure activation logic.
+
+## 3. Why Triggers Exist
+Triggers exist to:
+- control system activation  
+- prevent premature or incorrect transitions  
+- maintain clarity under cognitive load  
+- enforce deterministic behaviour  
+- stabilise the system during state changes  
+- ensure reproducibility across AI models  
+
+Without triggers, operators would fire incorrectly.  
+With triggers, operators fire deterministically.
+
+## 4. How Triggers Behave (Conceptual)
+Triggers behave as:
+- clarity‑state activation conditions  
+- deterministic system gates  
+- load‑stable activation logic  
+- non‑negotiable infrastructure rules  
+
+They do **not** behave as:
+- reminders  
+- behavioural cues  
+- workflow steps  
+- coaching signals  
+- prompt conditions  
+
+Triggers are part of the system’s internal mechanics.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- specific triggers  
+- trigger definitions  
+- trigger conditions  
+- trigger‑operator interactions  
+- trigger sequences  
+- operational mechanics  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Triggers Overview is the third step in understanding the mechanics zone.  
+It prepares partners for:
+- reproducibility method  
+- clarity‑load behaviour  
+- internal logic  
+- system lineage  
+- technical architecture  
+
+It is the activation foundation for the mechanics layer.
+
+## 7. NDA Note
+All trigger details, activation rules and interactions are protected and require deeper NDA clearance.
