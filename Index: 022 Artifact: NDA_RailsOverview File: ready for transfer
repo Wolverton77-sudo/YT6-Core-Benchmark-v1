@@ -1,0 +1,71 @@
+# YT6 — NDA Rails Overview
+
+## 1. Purpose
+This document introduces the concept of **rails** inside the NDA layer of YT6.  
+Rails are one of the core components of the clarity‑infrastructure mechanics.  
+This overview explains their role, behaviour and purpose without exposing any specific rail definitions.
+
+## 2. What Rails Are
+Rails are **structural clarity pathways** that guide the system’s behaviour under load.  
+They ensure:
+- deterministic clarity output  
+- stability across contexts  
+- reproducibility across AI systems  
+- protection against drift  
+- consistent human‑side clarity  
+
+Rails are not prompts, workflows or behavioural rules.  
+They are infrastructure logic.
+
+## 3. Why Rails Exist
+Rails exist to:
+- maintain clarity under cognitive load  
+- enforce deterministic behaviour  
+- prevent system drift  
+- stabilise human‑side clarity  
+- ensure reproducibility across AI models  
+- anchor the clarity‑architecture  
+
+Without rails, YT6 would behave like a tool.  
+With rails, YT6 behaves like infrastructure.
+
+## 4. How Rails Behave (Conceptual)
+Rails behave as:
+- fixed structural pathways  
+- deterministic clarity channels  
+- load‑stable infrastructure routes  
+- non‑negotiable system anchors  
+
+They do **not** behave as:
+- instructions  
+- prompts  
+- behavioural guidelines  
+- workflows  
+- coaching methods  
+
+Rails are part of the system’s internal architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- specific rails  
+- rail definitions  
+- rail operators  
+- rail triggers  
+- rail sequences  
+- rail mechanics  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Rails Overview is the first step in understanding the mechanics zone.  
+It prepares partners for:
+- operators  
+- triggers  
+- reproducibility method  
+- internal logic  
+- clarity‑load behaviour  
+
+It is the conceptual foundation for the mechanics layer.
+
+## 7. NDA Note
+All rail details, operators and triggers are protected and require deeper NDA clearance.
