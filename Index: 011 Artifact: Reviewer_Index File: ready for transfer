@@ -1,0 +1,39 @@
+# YT6 — Reviewer Index
+
+## Purpose
+This index provides reviewers with a clear, structured navigation path through the YT6 review folder. It ensures consistent understanding of the category, architecture and supporting evidence.
+
+## Order of Review
+1. YT6_OnePage  
+   High‑level category overview.
+
+2. YT6_MicroDeck  
+   Three‑slide investor summary.
+
+3. Category_Definition  
+   Defines the clarity‑infrastructure category.
+
+4. Clarity_Architecture_Summary  
+   High‑level architecture explanation (safe, non‑mechanical).
+
+5. CrossAI_Reproducibility  
+   Evidence of deterministic behaviour across AI systems.
+
+6. Climate_Impact  
+   How clarity infrastructure reduces wasted compute.
+
+7. Founder_Story  
+   Origin, purpose and principles behind YT6.
+
+## How to Use This Folder
+Reviewers should follow the order above to understand:
+- the category  
+- the architecture  
+- the reproducibility  
+- the climate impact  
+- the founder’s purpose  
+
+This sequence provides a complete, safe, high‑signal understanding of YT6 without exposing NDA‑level mechanics.
+
+## NDA Note
+Additional material (rails, operators, triggers, reproducibility method, technical document) is available under NDA only.
