@@ -1,0 +1,63 @@
+# YT6 — NDA Front Matter
+
+## 1. Purpose
+This document introduces the NDA‑only section of YT6.  
+It defines the boundaries, expectations and access conditions for deeper clarity‑architecture material that cannot be shared publicly.
+
+## 2. What NDA Covers
+The NDA layer contains:
+- rails  
+- operators  
+- triggers  
+- reproducibility method  
+- internal mechanics  
+- technical architecture  
+- system lineage  
+- clarity‑load behaviour  
+- partner‑level documentation  
+
+These elements form the functional core of YT6.
+
+## 3. Why NDA Is Required
+YT6 is a clarity‑infrastructure system.  
+Its internal mechanics must be protected to:
+- maintain category integrity  
+- prevent misuse  
+- ensure correct deployment  
+- protect founder IP  
+- safeguard reproducibility method  
+- preserve infrastructure behaviour  
+
+Public‑layer artifacts explain the category.  
+NDA‑layer artifacts explain the system.
+
+## 4. Access Conditions
+Access to NDA material requires:
+- signed NDA  
+- qualified reviewer or partner status  
+- alignment with clarity‑infrastructure principles  
+- commitment to correct category handling  
+- agreement not to replicate or reverse‑engineer mechanics  
+
+This ensures responsible use of YT6.
+
+## 5. What NDA Does Not Include
+NDA does **not** cover:
+- commercial agreements  
+- pricing  
+- licensing terms  
+- deployment contracts  
+
+These are handled separately.
+
+## 6. Strategic Role
+The NDA layer is the bridge between:
+- public understanding  
+and  
+- operational clarity‑architecture  
+
+It enables partners to evaluate YT6 at a deeper, functional level.
+
+## 7. Folder Position
+Artifact 020 is the first file in the NDA section.  
+All subsequent artifacts build on this foundation.
