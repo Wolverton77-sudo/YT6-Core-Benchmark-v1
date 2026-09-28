@@ -1,0 +1,64 @@
+# YT6 — Reviewer Folder Front Matter
+
+## Purpose
+This front matter provides reviewers with the initial context required to understand YT6 as a clarity‑infrastructure system.  
+It sets expectations, defines the review frame, and prevents misclassification before deeper artifacts are opened.
+
+## What This Folder Contains
+This folder contains the public‑safe reviewer materials for YT6:
+- category definition  
+- architecture summary  
+- reproducibility evidence  
+- climate impact  
+- founder story  
+- reviewer guidance  
+- scoring framework  
+- fast‑path summary  
+- folder map  
+
+These artifacts provide a complete understanding of YT6 without exposing NDA‑level mechanics.
+
+## How Reviewers Should Approach YT6
+Review YT6 as:
+- a new digital category  
+- an infrastructure layer  
+- a deterministic clarity architecture  
+- a reproducible system across AI models  
+- a climate‑aligned, infinitely scalable digital layer  
+
+Do **not** approach YT6 as:
+- a tool  
+- a workflow  
+- a behavioural model  
+- a coaching system  
+- a prompt pack  
+
+YT6 behaves as infrastructure.
+
+## Review Sequence
+Reviewers should follow the folder in order:
+1. One‑Page  
+2. MicroDeck  
+3. Category Definition  
+4. Architecture Summary  
+5. Cross‑AI Reproducibility  
+6. Climate Impact  
+7. Founder Story  
+8. Reviewer Index  
+9. Reviewer Guide  
+10. Reviewer Scoring Guide  
+11. Reviewer FastPath  
+12. Reviewer Folder Map  
+
+This ensures correct understanding of the category and architecture.
+
+## NDA Note
+This folder does **not** include:
+- rails  
+- operators  
+- triggers  
+- reproducibility method  
+- internal mechanics  
+- technical architecture  
+
+These are available under NDA for qualified partners and investors.
