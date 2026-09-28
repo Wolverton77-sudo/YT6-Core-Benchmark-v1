@@ -1,0 +1,80 @@
+# YT6 — NDA Operational Mechanics Overview
+
+## 1. Purpose
+This document introduces the **operational mechanics** inside the NDA layer of YT6.  
+Operational mechanics describe how the clarity‑architecture behaves internally during live deployment — at a conceptual, NDA‑safe level.
+
+This overview does not expose any protected operational sequences.
+
+## 2. What Operational Mechanics Are
+Operational mechanics are the **internal behaviour patterns** of YT6 during real‑world use.  
+They define:
+- how rails behave under operational load  
+- how operators transform clarity‑states during live interaction  
+- how triggers activate transitions in partner environments  
+- how reproducibility is maintained under operational pressure  
+- how clarity‑load stabilises human users in real‑time  
+- how internal logic governs system behaviour during deployment  
+
+Operational mechanics are not:
+- workflow steps  
+- instructions  
+- behavioural nudges  
+- coaching techniques  
+- prompt patterns  
+
+They are **infrastructure‑level mechanics**.
+
+## 3. Why Operational Mechanics Exist
+Operational mechanics exist to:
+- ensure deterministic clarity‑state transitions during live use  
+- maintain reproducibility across partner environments  
+- prevent drift under operational load  
+- stabilise clarity‑architecture during real‑time interaction  
+- anchor the category as infrastructure  
+- support enterprise‑scale clarity deployment  
+
+Without operational mechanics, YT6 would behave unpredictably under load.  
+With operational mechanics, YT6 remains stable infrastructure.
+
+## 4. How Operational Mechanics Behave (Conceptual)
+Operational mechanics behave as:
+- a deterministic internal engine  
+- a cross‑environment invariant  
+- a load‑stable clarity‑state regulator  
+- a system‑wide constraint layer  
+- an operational clarity‑architecture backbone  
+
+They do **not** behave as:
+- instructions  
+- workflow rules  
+- behavioural nudges  
+- prompt scaffolding  
+- coaching guidance  
+
+Operational mechanics are part of the protected deployment architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- operational sequences  
+- operational triggers  
+- operational operators  
+- environment‑specific mechanics  
+- partner‑specific pathways  
+- protected operational diagrams  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Operational Mechanics Overview is the thirteenth step in understanding the NDA deployment zone.  
+It prepares partners for:
+- protected operational sequences  
+- enterprise‑level clarity deployment  
+- infrastructure‑level reproducibility  
+- operational safety constraints  
+- partner‑level integration  
+
+It is the conceptual foundation for the operational mechanics layer.
+
+## 7. NDA Note
+All operational mechanics, sequences and activation rules are protected and require deeper NDA clearance.
