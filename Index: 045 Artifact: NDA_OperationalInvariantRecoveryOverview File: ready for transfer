@@ -1,0 +1,81 @@
+# YT6 — NDA Operational Invariant Recovery Overview
+
+## 1. Purpose
+This document introduces the **operational invariant recovery** inside the NDA layer of YT6.  
+Operational invariant recovery describes how the clarity‑architecture conceptually returns to deterministic stability after an invariant is stressed or partially violated — at a conceptual, NDA‑safe level.
+
+This overview does not expose any protected recovery mechanics.
+
+## 2. What Operational Invariant Recovery Is
+Operational invariant recovery is the **system‑level return‑to‑stability behaviour** that activates when an invariant has been approached, stressed, or lightly breached.  
+It defines:
+- how rails re‑establish structural integrity  
+- how operators restore clarity‑state reproducibility  
+- how triggers re‑align to their correct domains  
+- how clarity‑state boundaries re‑assert themselves  
+- how reproducibility conditions re‑stabilise  
+- how clarity‑load re‑anchors human users  
+- how internal logic re‑normalises after constraint stress  
+
+Recovery is not:
+- error handling  
+- workflow correction  
+- coaching repair  
+- UX fallback  
+- behavioural reset  
+
+It is **infrastructure‑level restoration behaviour**.
+
+## 3. Why Operational Invariant Recovery Exists
+Operational invariant recovery exists to:
+- ensure deterministic clarity‑state restoration  
+- maintain reproducibility after stress or partial failure  
+- prevent drift following invariant violation  
+- stabilise clarity‑architecture during real‑time recovery  
+- anchor the category as infrastructure  
+- support enterprise‑scale clarity deployment  
+
+Without recovery behaviour, YT6 could remain unstable after invariant stress.  
+With recovery behaviour, YT6 returns to stable infrastructure.
+
+## 4. How Operational Invariant Recovery Behaves (Conceptual)
+Operational invariant recovery behaves as:
+- deterministic restoration pathways  
+- cross‑environment stability re‑anchors  
+- load‑stable clarity‑state re‑alignment engines  
+- system‑wide constraint‑recovery frameworks  
+- operational stability backbones  
+
+It does **not** behave as:
+- instructions  
+- workflow rules  
+- behavioural nudges  
+- prompt scaffolding  
+- coaching guidance  
+
+Recovery is part of the protected deployment architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- protected recovery mechanics  
+- recovery diagrams  
+- recovery triggers  
+- recovery operators  
+- environment‑specific recovery rules  
+- partner‑specific recovery pathways  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Operational Invariant Recovery Overview is the twenty‑fourth step in understanding the NDA deployment zone.  
+It prepares partners for:
+- protected recovery mechanics  
+- enterprise‑level clarity deployment  
+- infrastructure‑level reproducibility  
+- operational safety constraints  
+- partner‑level integration  
+
+It is the conceptual foundation for the recovery layer.
+
+## 7. NDA Note
+All recovery mechanics, sequences and activation rules are protected and require deeper NDA clearance.
