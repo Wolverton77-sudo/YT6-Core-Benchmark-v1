@@ -1,0 +1,81 @@
+# YT6 — NDA Operational Invariant Restoration Overview
+
+## 1. Purpose
+This document introduces the **operational invariant restoration** inside the NDA layer of YT6.  
+Operational invariant restoration describes how the clarity‑architecture fully re‑establishes deterministic stability after an invariant has been stressed, partially violated, or recovered — at a conceptual, NDA‑safe level.
+
+This overview does not expose any protected restoration mechanics.
+
+## 2. What Operational Invariant Restoration Is
+Operational invariant restoration is the **system‑level full‑return‑to‑integrity behaviour** that activates after recovery has stabilised the system.  
+It defines:
+- how rails re‑assert full structural integrity  
+- how operators re‑establish complete clarity‑state reproducibility  
+- how triggers re‑lock into their correct domains  
+- how clarity‑state boundaries fully re‑solidify  
+- how reproducibility conditions return to baseline  
+- how clarity‑load re‑anchors human users to stable clarity  
+- how internal logic fully re‑normalises after constraint stress  
+
+Restoration is not:
+- error correction  
+- workflow repair  
+- coaching re‑alignment  
+- UX fallback  
+- behavioural reset  
+
+It is **infrastructure‑level full restoration behaviour**.
+
+## 3. Why Operational Invariant Restoration Exists
+Operational invariant restoration exists to:
+- ensure full deterministic clarity‑state restoration  
+- maintain reproducibility after recovery  
+- prevent residual drift following invariant stress  
+- stabilise clarity‑architecture during full re‑normalisation  
+- anchor the category as infrastructure  
+- support enterprise‑scale clarity deployment  
+
+Without restoration behaviour, YT6 could remain partially unstable after recovery.  
+With restoration behaviour, YT6 returns to full stable infrastructure.
+
+## 4. How Operational Invariant Restoration Behaves (Conceptual)
+Operational invariant restoration behaves as:
+- deterministic full‑restoration pathways  
+- cross‑environment stability re‑anchors  
+- load‑stable clarity‑state re‑alignment engines  
+- system‑wide constraint‑restoration frameworks  
+- operational stability backbones  
+
+It does **not** behave as:
+- instructions  
+- workflow rules  
+- behavioural nudges  
+- prompt scaffolding  
+- coaching guidance  
+
+Restoration is part of the protected deployment architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- protected restoration mechanics  
+- restoration diagrams  
+- restoration triggers  
+- restoration operators  
+- environment‑specific restoration rules  
+- partner‑specific restoration pathways  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Operational Invariant Restoration Overview is the twenty‑fifth step in understanding the NDA deployment zone.  
+It prepares partners for:
+- protected restoration mechanics  
+- enterprise‑level clarity deployment  
+- infrastructure‑level reproducibility  
+- operational safety constraints  
+- partner‑level integration  
+
+It is the conceptual foundation for the restoration layer.
+
+## 7. NDA Note
+All restoration mechanics, sequences and activation rules are protected and require deeper NDA clearance.
