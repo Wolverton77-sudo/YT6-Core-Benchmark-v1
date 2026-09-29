@@ -1,0 +1,10 @@
+# YT6 — NDA Mechanics → Deployment Bridge Transmission Overview
+
+## 1. Purpose
+This document introduces the **transmission behaviours** of the Mechanics → Deployment Bridge inside the NDA layer of YT6.  
+Bridge transmission describes how stability, load‑behaviour and clarity‑state integrity are *carried, moved and delivered* from mechanics (system physics) into deployment (system usage).
+
+This overview does not expose any protected mechanics.
+
+## 2. What Bridge Transmission Is
+Bridge transmission is the **conceptual transmission layer** that ensures mechanics‑grade stability is *del
