@@ -1,0 +1,82 @@
+# YT6 — NDA Mechanics → Deployment Bridge Propagation Overview
+
+## 1. Purpose
+This document introduces the **propagation behaviours** of the Mechanics → Deployment Bridge inside the NDA layer of YT6.  
+Bridge propagation describes how stability, load‑behaviour and clarity‑state integrity extend, spread and propagate from mechanics (system physics) into deployment (system usage).
+
+This overview does not expose any protected mechanics.
+
+## 2. What Bridge Propagation Is
+Bridge propagation is the **conceptual propagation layer** that ensures mechanics‑grade stability spreads correctly into deployment.  
+It defines:
+- how stability propagates across the bridge  
+- how rails extend mechanics behaviour into deployment  
+- how operators propagate invariant‑correct behaviour  
+- how triggers propagate domain‑aligned responses  
+- how boundaries and conditions propagate stability outward  
+- how failure, recovery and restoration propagate transition‑states  
+- how reinforcement, hardening and fortification propagate resilience  
+- how sustainment propagates long‑term stability across deployment environments  
+
+Bridge propagation is not:
+- instructions  
+- workflows  
+- deployment rules  
+- coaching guidance  
+- UX patterns  
+
+It is **infrastructure‑level conceptual propagation behaviour**.
+
+## 3. Why Bridge Propagation Exists
+Bridge propagation exists to:
+- ensure stability spreads into deployment  
+- maintain reproducibility across deployment environments  
+- stabilise architecture during mechanics → deployment transfer  
+- anchor deployment to invariant propagation behaviour  
+- support enterprise‑scale clarity rollout  
+- prevent localised drift or isolated stability pockets  
+
+Without bridge propagation, deployment stability would remain local and fragile.  
+With bridge propagation, deployment inherits system‑wide stability.
+
+## 4. How Bridge Propagation Behaves (Conceptual)
+Bridge propagation behaves as:
+- deterministic propagation pathways  
+- cross‑environment stability‑transmission engines  
+- load‑stable clarity‑state propagation behaviours  
+- system‑wide propagation frameworks  
+- operational stability backbones  
+
+It does **not** behave as:
+- instructions  
+- workflow rules  
+- behavioural nudges  
+- prompt scaffolding  
+- coaching guidance  
+
+Bridge propagation is part of the protected deployment architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- protected mechanics  
+- deployment instructions  
+- partner‑specific deployment rules  
+- environment‑specific deployment behaviour  
+- mechanics triggers  
+- mechanics operators  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Mechanics → Deployment Bridge Propagation Overview is the forty‑third step in understanding the NDA deployment zone.  
+It prepares partners for:
+- protected deployment propagation behaviour  
+- enterprise‑level clarity rollout  
+- infrastructure‑level reproducibility  
+- operational safety constraints  
+- partner‑level integration  
+
+It is the conceptual foundation for the propagation layer of the bridge.
+
+## 7. NDA Note
+All bridge propagation structures, sequences and activation rules are protected and require deeper NDA clearance.
