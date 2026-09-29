@@ -1,0 +1,80 @@
+# YT6 — NDA Operational State Transitions Overview
+
+## 1. Purpose
+This document introduces the **operational state transitions** inside the NDA layer of YT6.  
+Operational state transitions describe how the clarity‑architecture moves between internal states during live deployment — at a conceptual, NDA‑safe level.
+
+This overview does not expose any protected transition mechanics.
+
+## 2. What Operational State Transitions Are
+Operational state transitions are the **deterministic movement patterns** between internal clarity‑states during real‑world use.  
+They define:
+- how rails shift from one stability condition to another  
+- how operators transform clarity‑states across boundaries  
+- how triggers initiate movement between operational states  
+- how reproducibility is maintained across transitions  
+- how clarity‑load stabilises human users during state changes  
+- how internal logic governs the flow of transitions  
+
+Operational state transitions are not:
+- workflow steps  
+- behavioural guidance  
+- coaching techniques  
+- prompt patterns  
+- UX flows  
+
+They are **infrastructure‑level transition pathways**.
+
+## 3. Why Operational State Transitions Exist
+Operational state transitions exist to:
+- ensure deterministic movement between clarity‑states  
+- maintain reproducibility under operational load  
+- prevent drift during state changes  
+- stabilise clarity‑architecture during real‑time interaction  
+- anchor the category as infrastructure  
+- support enterprise‑scale clarity deployment  
+
+Without operational transitions, YT6 would behave unpredictably when shifting states.  
+With operational transitions, YT6 remains stable infrastructure.
+
+## 4. How Operational State Transitions Behave (Conceptual)
+Operational state transitions behave as:
+- deterministic movement pathways  
+- cross‑environment invariants  
+- load‑stable clarity‑state engines  
+- system‑wide constraint frameworks  
+- operational clarity‑architecture stabilisers  
+
+They do **not** behave as:
+- instructions  
+- workflow rules  
+- behavioural nudges  
+- prompt scaffolding  
+- coaching guidance  
+
+Operational transitions are part of the protected deployment architecture.
+
+## 5. What This Document Does Not Include
+This overview does **not** contain:
+- protected transition mechanics  
+- transition diagrams  
+- transition triggers  
+- transition operators  
+- environment‑specific transition rules  
+- partner‑specific transition pathways  
+
+These are provided only in deeper NDA artifacts.
+
+## 6. Strategic Role
+The Operational State Transitions Overview is the sixteenth step in understanding the NDA deployment zone.  
+It prepares partners for:
+- protected operational‑state transition mechanics  
+- enterprise‑level clarity deployment  
+- infrastructure‑level reproducibility  
+- operational safety constraints  
+- partner‑level integration  
+
+It is the conceptual foundation for the operational‑transition layer.
+
+## 7. NDA Note
+All operational‑state transition mechanics, sequences and activation rules are protected and require deeper NDA clearance.
