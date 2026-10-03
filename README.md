@@ -1,3 +1,4 @@
+![Review Status](https://img.shields.io/badge/YT6-External_Review_Active-blue)
 ## Reviewer Entry Point
 
 Formal review case (external evaluation ready):  
