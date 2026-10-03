@@ -1,3 +1,29 @@
+YT6-Core-Benchmark-v1/
+│
+├── README.md
+│   └── Overview, review instructions, clarity-system diagram
+│
+├── evidence/
+│   └── Multi-turn stability tests
+│   └── Reproducibility data
+│   └── Benchmark artefacts
+│
+├── validation/
+│   └── Validation pipeline
+│   └── Scoring guide
+│   └── Reviewer instructions
+│
+├── discussions/
+│   └── Overview post
+│   └── Reviewer Welcome Thread
+│   └── Announcements
+│
+├── releases/
+│   └── v1.0 — External Review Ready
+│
+└── .github/
+    └── Issue templates
+    └── Discussion templates
 ## 🔵 External Review Entry Point
 YT6 is now open for external review.
 
