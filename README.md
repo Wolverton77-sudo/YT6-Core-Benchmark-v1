@@ -1,3 +1,7 @@
+## 🔵 External Review Entry Point
+YT6 is now open for external review.
+
+👉 https://github.com/Wolverton77-sudo/YT6-Core-Benchmark-v1/issues/1
 ![Review Status](https://img.shields.io/badge/YT6-External_Review_Active-blue)
 ## Reviewer Entry Point
 
