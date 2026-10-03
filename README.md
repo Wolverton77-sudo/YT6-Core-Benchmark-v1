@@ -1,7 +1,40 @@
 YT6-Core-Benchmark-v1/
 │
 ├── README.md
-│   └── Overview, review instructions, clarity-system diagram
+│   └── Overview, review instructions, clarity-system diagram┌──────────────────────────────────────────────┐
+│                 YT6 Clarity System           │
+├──────────────────────────────────────────────┤
+│  Clarity Spine                               │
+│  • YT6 Core Protocol                          │
+│  • 6‑Stage Clarity Ladder                     │
+│  • Stability Operators (YT3>= etc.)           │
+│                                               │
+│  Base44 Symbolic Layer                        │
+│  • 44‑symbol human‑side clarity alphabet      │
+│  • Meaning‑mapping layer                      │
+│                                               │
+│  Lifebox Stability Layer                      │
+│  • Daily stability protocol                   │
+│  • Footprint moments                          │
+│  • Personal clarity anchors                   │
+│                                               │
+│  CAR Loop (Clarity‑Action‑Reflection)         │
+│  • Action discipline                          │
+│  • Reflection discipline                      │
+│  • Clarity reinforcement                      │
+│                                               │
+│  Evidence Pack                                │
+│  • Benchmark data                             │
+│  • Multi‑turn stability tests                  │
+│  • Reproducibility evidence                   │
+│                                               │
+│  Validation Pipeline                          │
+│  • Reviewer instructions                       │
+│  • Scoring guide                               │
+│  • External review entry point                 │
+└──────────────────────────────────────────────┘
+
+
 │
 ├── evidence/
 │   └── Multi-turn stability tests
