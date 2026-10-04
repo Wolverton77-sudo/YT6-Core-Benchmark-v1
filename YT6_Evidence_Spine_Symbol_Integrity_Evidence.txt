@@ -1,0 +1,11 @@
+Symbol Integrity Evidence
+
+Symbol Integrity Report includes:
+- Meaning stability
+- Anti‑drift behaviour
+- Cross‑model stability
+- Multi‑turn stability
+- Reproducibility score (0–10)
+
+Outcome:
+Symbol‑level stability is formally defined and externally testable.
