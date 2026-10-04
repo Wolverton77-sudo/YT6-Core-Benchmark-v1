@@ -1,0 +1,15 @@
+Benchmark Evidence
+
+20‑Task Stability Suite:
+- task01.json → task20.json
+- Multi‑turn, multi‑format, multi‑context
+
+Hyperframe Suite (100+ tasks):
+- Deep reproduction
+- Intermesh
+- Gridstack
+- Weaveframe
+- Harmonic stability
+
+Outcome:
+Industrial‑grade benchmark coverage.
