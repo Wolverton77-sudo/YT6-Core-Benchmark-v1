@@ -1,3 +1,4 @@
+/architecture/YT6_Architecture.png
 YT6-Core-Benchmark-v1/
 │
 ├── README.md
