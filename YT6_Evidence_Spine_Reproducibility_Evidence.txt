@@ -1,0 +1,10 @@
+Reproducibility Evidence
+
+Reproduction artefacts include:
+- JSON, XML, tables, lists, code, symbolic sequences
+- Cross‑AI reproducibility tests
+- Telemetry schema
+- Execution manifest
+
+Outcome:
+YT6 is measurable, repeatable, and externally verifiable.
