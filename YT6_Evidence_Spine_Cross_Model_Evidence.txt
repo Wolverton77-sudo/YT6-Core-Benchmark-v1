@@ -1,0 +1,8 @@
+Cross‑Model Evidence
+
+YT6 Cross‑Model Stability includes:
+- Cross‑model stability summary
+- Cross‑platform validation v1 + v2
+
+Outcome:
+YT6 is model‑agnostic and platform‑portable, enabling independent verification across different AI systems.
