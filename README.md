@@ -74,6 +74,9 @@ Reproducible benchmark for multi‑turn AI stability. Includes Base44/CAR/Lifebo
 Full overview of YT6 clarity, drift, stability, and reproducibility metrics:
 https://github.com/<your-repo>/tree/main/docs/partner/clarity-benchmark-summary.md## Partner Pack
 Full Microsoft‑for‑Startups partner documentation:
-https://github.com/<your-repo>/tree/main/docs/partner
+https://github.com/<your-repo>/tree/main/docs/partner## Security Policy
+YT6 follows a Microsoft‑aligned security posture:
+https://github.com/<your-repo>/blob/main/SECURITY.md
+
 
 
