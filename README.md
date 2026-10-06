@@ -96,7 +96,17 @@ Run the YT6 clarity benchmark:
 3. View results in `docs/results/`
 
 Full instructions:
-https://github.com/<your-repo>/blob/main/docs/reproduction/guide.md
+https://github.com/<your-repo>/blob/main/docs/reproduction/guide.md## What YT6 Measures
+YT6 evaluates clarity across four core metrics:
+
+- **Drift** — how reasoning changes across turns  
+- **Stability** — how consistent the system remains under pressure  
+- **Reproducibility** — whether identical inputs produce identical outputs  
+- **Variance** — how much the system fluctuates across runs
+
+Full details:
+https://github.com/<your-repo>/blob/main/docs/partner/clarity-benchmark-summary.md
+
 
 
 
