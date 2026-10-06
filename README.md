@@ -84,7 +84,10 @@ https://github.com/<your-repo>/blob/main/docs/integration-examples.md## Support
 Support options for YT6 clarity benchmark:
 https://github.com/<your-repo>/blob/main/SUPPORT.md## Code of Conduct
 Community and contributor standards for YT6:
-https://github.com/<your-repo>/blob/main/CODE_OF_CONDUCT.md
+https://github.com/<your-repo>/blob/main/CODE_OF_CONDUCT.md## Contributing
+Guidelines for contributing to the YT6 clarity benchmark:
+https://github.com/<your-repo>/blob/main/CONTRIBUTING.md
+
 
 
 
