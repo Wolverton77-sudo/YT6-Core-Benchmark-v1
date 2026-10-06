@@ -1,3 +1,4 @@
+A benchmark for measuring clarity, drift, stability, and reproducibility in human–AI reasoning.
 /architecture/YT6_Architecture.png
 YT6-Core-Benchmark-v1/
 │
