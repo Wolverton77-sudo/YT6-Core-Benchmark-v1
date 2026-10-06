@@ -88,7 +88,16 @@ https://github.com/<your-repo>/blob/main/CODE_OF_CONDUCT.md## Contributing
 Guidelines for contributing to the YT6 clarity benchmark:
 https://github.com/<your-repo>/blob/main/CONTRIBUTING.md## License
 YT6 is released under the MIT License:
-https://github.com/<your-repo>/blob/main/LICENSE
+https://github.com/<your-repo>/blob/main/LICENSE## Quick Start
+Run the YT6 clarity benchmark:
+
+1. Clone the repository  
+2. Run the reproduction script  
+3. View results in `docs/results/`
+
+Full instructions:
+https://github.com/<your-repo>/blob/main/docs/reproduction/guide.md
+
 
 
 
