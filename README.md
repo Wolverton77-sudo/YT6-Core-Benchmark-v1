@@ -76,7 +76,11 @@ https://github.com/<your-repo>/tree/main/docs/partner/clarity-benchmark-summary.
 Full Microsoft‑for‑Startups partner documentation:
 https://github.com/<your-repo>/tree/main/docs/partner## Security Policy
 YT6 follows a Microsoft‑aligned security posture:
-https://github.com/<your-repo>/blob/main/SECURITY.md
+https://github.com/<your-repo>/blob/main/SECURITY.md## Reproduction Guide
+Full deterministic reproduction procedure:
+https://github.com/<your-repo>/blob/main/docs/reproduction/guide.md
+
+
 
 
 
