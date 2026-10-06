@@ -86,7 +86,10 @@ https://github.com/<your-repo>/blob/main/SUPPORT.md## Code of Conduct
 Community and contributor standards for YT6:
 https://github.com/<your-repo>/blob/main/CODE_OF_CONDUCT.md## Contributing
 Guidelines for contributing to the YT6 clarity benchmark:
-https://github.com/<your-repo>/blob/main/CONTRIBUTING.md
+https://github.com/<your-repo>/blob/main/CONTRIBUTING.md## License
+YT6 is released under the MIT License:
+https://github.com/<your-repo>/blob/main/LICENSE
+
 
 
 
