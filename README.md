@@ -115,7 +115,8 @@ How YT6 evaluates clarity across drift, stability, reproducibility, and variance
 https://github.com/<your-repo>/blob/main/docs/scoring/overview.md## Project Status
 YT6 is currently in active development.
 Core benchmark components are stable, reproducible, and ready for external evaluation.
-Additional clarity‑layer expansions and partner integrations are in progress.
+Additional clarity‑layer expansions and partner integrations are in progress.# YT6 — Clarity Benchmark System
+
 
 
 
