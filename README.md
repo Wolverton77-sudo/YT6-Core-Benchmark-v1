@@ -110,7 +110,10 @@ YT6 exists to bring clarity, stability, and reproducibility to human–AI intera
 Its mission is to provide a universal benchmark that exposes drift, strengthens reasoning,
 and enables systems to operate with predictable, human‑aligned clarity.## Architecture Overview
 Full clarity‑layer and benchmark architecture:
-https://github.com/<your-repo>/blob/main/docs/architecture/overview.md
+https://github.com/<your-repo>/blob/main/docs/architecture/overview.md## Scoring Overview
+How YT6 evaluates clarity across drift, stability, reproducibility, and variance:
+https://github.com/<your-repo>/blob/main/docs/scoring/overview.md
+
 
 
 
