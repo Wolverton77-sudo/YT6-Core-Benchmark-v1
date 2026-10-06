@@ -80,7 +80,10 @@ https://github.com/<your-repo>/blob/main/SECURITY.md## Reproduction Guide
 Full deterministic reproduction procedure:
 https://github.com/<your-repo>/blob/main/docs/reproduction/guide.md## Integration Examples
 How to integrate YT6 into agents, pipelines, and workflows:
-https://github.com/<your-repo>/blob/main/docs/integration-examples.md
+https://github.com/<your-repo>/blob/main/docs/integration-examples.md## Support
+Support options for YT6 clarity benchmark:
+https://github.com/<your-repo>/blob/main/SUPPORT.md
+
 
 
 
