@@ -1,0 +1,42 @@
+# YT6 Communication Standards
+
+This document defines communication rules for all YT6-related writing, documentation and public statements.
+
+## Core Principles
+
+### 1. Clarity First
+All communication must be:
+- Direct
+- Structured
+- Deterministic
+- Free of ambiguity
+
+### 2. Stability of Tone
+Tone must remain:
+- Neutral
+- Professional
+- Consistent
+- Non-emotional
+
+### 3. Evidence-Based Claims
+All statements must be:
+- Factual
+- Testable
+- Reproducible
+- Supported by logs or benchmark results
+
+### 4. No Overclaiming
+YT6 does not:
+- Solve all AI safety
+- Replace model-level safety
+- Provide full security
+
+YT6 solves a **specific, critical part**: multi-turn stability and drift-resistance.
+
+### 5. Public-Facing Consistency
+All external communication must align with:
+- START_HERE.md
+- Public summary
+- Whitepaper outline
+
+These standards ensure YT6 communication remains world-class and clarity-layer aligned.
