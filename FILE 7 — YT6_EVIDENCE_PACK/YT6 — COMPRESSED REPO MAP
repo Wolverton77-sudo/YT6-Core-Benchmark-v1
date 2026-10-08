@@ -1,0 +1,50 @@
+/YT6
+│
+├── core/
+│     ├── START_HERE.md
+│     ├── YT6_CLARITY_THEORY.md
+│     ├── YT6_CLARITY_AXIOMS.md
+│     ├── YT6_CLARITY_INVARIANTS.md
+│     └── YT6_CLARITY_FRAMEWORK.md
+│
+├── protocol/
+│     ├── YT6_CLARITY_PROTOCOL_SPEC.md
+│     ├── YT6_CLARITY_OPERATORS.md
+│     ├── YT6_CLARITY_RUNTIME.md
+│     ├── YT6_CLARITY_EXECUTION_MODEL.md
+│     └── YT6_CLARITY_CYCLE.md
+│
+├── drift/
+│     ├── YT6_DRIFT_TAXONOMY.md
+│     ├── YT6_DRIFT_DIAGNOSTICS.md
+│     ├── YT6_DRIFT_PREVENTION_MATRIX.md
+│     ├── YT6_DRIFT_PREVENTION_ALGORITHM.md
+│     ├── YT6_DRIFT_RESOLUTION_FLOW.md
+│     ├── YT6_DRIFT_SUPPRESSION_STACK.md
+│     ├── YT6_DRIFT_SHIELD.md
+│     └── YT6_DRIFT_CONTAINMENT_SYSTEM.md
+│
+├── stability/
+│     ├── YT6_STABILITY_METRICS.md
+│     ├── YT6_STABILITY_MODEL.md
+│     ├── YT6_STABILITY_ENGINE.md
+│     ├── YT6_STABILITY_PIPELINE.md
+│     ├── YT6_STABILITY_GRID.md
+│     ├── YT6_STABILITY_MANIFOLD.md
+│     ├── YT6_STABILITY_MATRIX.md
+│     └── YT6_STABILITY_SURFACE.md
+│
+├── audit/
+│     ├── YT6_AUDIT_PROTOCOL.md
+│     ├── YT6_COMPLIANCE_NOTES.md
+│     └── YT6_STABILITY_CONSTANTS.md
+│
+├── meta/
+│     ├── YT6_META_STRUCTURE.md
+│     ├── YT6_CLARITY_MAP.md
+│     └── YT6_STABILITY_FIELD_MODEL.md
+│
+└── evidence/
+      ├── benchmark.md
+      ├── test_cases.md
+      └── reproduction_guide.md
