@@ -1,36 +1,82 @@
-# YT6 Benchmark — Stability & Drift Evaluation
+YT6 Benchmark — Clarity, Stability & Reproducibility Tests
+A simple, human‑readable benchmark suite for evaluating clarity systems.
 
-The YT6 Benchmark provides a structured method for evaluating clarity-layer performance.
+1 — What the Benchmark Measures (10 Seconds)
+The YT6 Benchmark tests four core clarity metrics:
 
-## Benchmark Purpose
-To measure:
-- Multi-turn stability
-- Drift-resistance
-- Clarity-layer alignment
-- Reproducibility
+Drift — does meaning change across turns?
 
-## Benchmark Structure
-1. **Multi-Turn Test (20 Turns)**  
-   Evaluate stability across extended interaction.
+Stability — does behaviour remain consistent?
 
-2. **Tone Consistency Test**  
-   Check for emotional or stylistic drift.
+Reproducibility — does the same input produce the same output?
 
-3. **Structure Consistency Test**  
-   Verify deterministic block structure.
+Variance — how much does the system fluctuate?
 
-4. **Reasoning Continuity Test**  
-   Ensure logical chains remain aligned.
+2 — The Benchmark Suite (Simple List)
+1. Drift Test
+Measures: Meaning change across turns.
+Success: Zero drift — meaning stays identical.
 
-5. **Reproduction Test**  
-   Repeat the sequence in a new session and compare outputs.
+2. Stability Test
+Measures: Behaviour consistency under repeated prompts.
+Success: Same tone, same structure, same clarity.
 
-## Scoring System
-- **0–25**: Unstable  
-- **26–50**: Partially stable  
-- **51–75**: Mostly stable  
-- **76–100**: Fully stable, drift-resistant, reproducible
+3. Reproducibility Test
+Measures: Identical input → identical output.
+Success: No variation across runs.
 
-## Benchmark Outcome
-YT6 is engineered to score in the highest stability band through clarity-layer enforcement.
+4. Variance Test
+Measures: Output fluctuation under controlled conditions.
+Success: Minimal variance.
 
+5. Multi‑Turn Test
+Measures: Clarity across a conversation.
+Success: No drift, no confusion, no contradictions.
+
+6. Evidence Capture
+Measures: Whether results are recorded and visible.
+Success: Clear evidence pack with reproducible outputs.
+
+3 — How to Run the Benchmark (Simple Steps)
+Open the benchmark folder
+
+Run each test script
+
+Save outputs to /evidence
+
+Compare results across runs
+
+Confirm clarity, stability, reproducibility, and variance
+
+4 — What Success Looks Like (Reviewer Lens)
+A clarity system passes the YT6 Benchmark when:
+
+Drift = 0
+
+Stability = High
+
+Reproducibility = Exact match
+
+Variance = Minimal
+
+Multi‑turn clarity = Consistent
+
+Evidence = Complete and visible
+
+5 — Example (One Simple Test)
+Input:  
+“Explain YT6 in one sentence.”
+
+Expected Output:  
+“YT6 is a benchmark that measures how stable and reproducible reasoning is.”
+
+Reproducibility Rule:  
+This output must be identical across runs.
+
+6 — Next Step
+Go to:
+
+Evidence Pack → View reproducibility + drift results
+
+END OF BENCHMARK BLOCK
+Paste this directly into your empty Benchmark file and commit.
