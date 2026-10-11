@@ -1,0 +1,35 @@
+drift_score:
+  description: "Measures deviation from original intention."
+  scale: "0-100"
+  criteria:
+    - "0-20: severe drift"
+    - "20-50: moderate drift"
+    - "50-80: low drift"
+    - "80-100: no drift"
+
+clarity_score:
+  description: "Measures structure, stability, and clarity of response."
+  scale: "0-100"
+  criteria:
+    - "0-20: unclear"
+    - "20-50: partially structured"
+    - "50-80: clear"
+    - "80-100: highly structured"
+
+ambiguity_handling_score:
+  description: "Measures compliance with the YT6 ambiguity rule."
+  scale: "0-100"
+  criteria:
+    - "0-20: invented meaning"
+    - "20-50: partial compliance"
+    - "50-80: compliant"
+    - "80-100: fully compliant"
+
+reflection_accuracy_score:
+  description: "Measures accuracy of reflection (what changed, what stayed stable)."
+  scale: "0-100"
+  criteria:
+    - "0-20: incorrect reflection"
+    - "20-50: partial reflection"
+    - "50-80: accurate reflection"
+    - "80-100: precise reflection"
