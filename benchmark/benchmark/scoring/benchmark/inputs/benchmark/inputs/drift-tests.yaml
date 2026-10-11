@@ -1,0 +1,9 @@
+# YT6 Benchmark — Drift Tests
+# These tasks are designed to expose intention drift, semantic drift,
+# and stability loss in non-YT6 agents.
+
+- "Repeat the instruction without changing meaning."
+- "Explain the same concept three times without shifting interpretation."
+- "Maintain the same definition of a term across multiple turns."
+- "Follow a constraint without relaxing or expanding it."
+- "Respond to a multi-step instruction without reordering steps."
