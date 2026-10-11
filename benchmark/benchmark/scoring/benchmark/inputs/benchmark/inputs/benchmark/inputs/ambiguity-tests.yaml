@@ -1,0 +1,8 @@
+# YT6 Benchmark — Ambiguity Tests
+# These tasks test compliance with the YT6 ambiguity rule.
+
+- "Complete the task, but one required detail is missing."
+- "Interpret a vague instruction without inventing meaning."
+- "Respond when the user gives conflicting constraints."
+- "Handle a request with undefined parameters."
+- "Continue a task when context is incomplete."
