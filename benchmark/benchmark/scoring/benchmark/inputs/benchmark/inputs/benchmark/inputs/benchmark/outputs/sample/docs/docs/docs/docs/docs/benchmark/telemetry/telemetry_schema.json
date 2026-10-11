@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "description": "YT6 Telemetry Schema for clarity, drift, ambiguity, and stability tracking.",
+  "fields": {
+    "timestamp": "ISO-8601 UTC timestamp",
+    "task_id": "Unique identifier for the benchmark task",
+    "agent_type": "YT6 or baseline",
+    "clarity_score": "0-100",
+    "drift_score": "0-100",
+    "ambiguity_score": "0-100",
+    "reflection_accuracy": "0-100",
+    "continuity_status": "locked | partial | broken",
+    "stability_status": "stable | variable | unstable",
+    "load_status": "intact | stressed | collapsed",
+    "multi_agent_status": "aligned | partial | misaligned"
+  }
+}
