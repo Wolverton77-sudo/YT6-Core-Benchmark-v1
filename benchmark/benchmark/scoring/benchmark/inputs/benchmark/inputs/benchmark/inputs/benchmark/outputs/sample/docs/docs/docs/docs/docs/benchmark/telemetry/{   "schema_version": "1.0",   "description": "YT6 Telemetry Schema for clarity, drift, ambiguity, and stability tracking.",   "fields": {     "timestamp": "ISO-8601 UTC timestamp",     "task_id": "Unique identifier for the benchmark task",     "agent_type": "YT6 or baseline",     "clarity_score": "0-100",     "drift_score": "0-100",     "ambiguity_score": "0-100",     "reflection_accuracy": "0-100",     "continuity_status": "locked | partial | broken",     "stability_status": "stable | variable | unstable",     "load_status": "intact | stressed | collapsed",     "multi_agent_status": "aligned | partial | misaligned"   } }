@@ -1,0 +1,41 @@
+# YT6 — Execution Engine (Tier‑4)
+
+The Execution Engine defines how YT6 performs clarity‑aligned actions using the clarity spine and Base44 semantics.
+
+---
+
+## 1. Purpose
+The Execution Engine ensures:
+- clarity‑aligned action  
+- stable meaning execution  
+- reproducible behaviour  
+- drift‑resistant task performance  
+- correct handling of ambiguity  
+
+---
+
+## 2. Engine Structure
+The engine follows a strict three‑phase cycle:
+
+### Phase 1 — Clarity
+- identify intention  
+- identify constraints  
+- identify missing information  
+- lock Base44 meanings  
+
+### Phase 2 — Action
+- execute the task  
+- preserve intention  
+- maintain stability  
+- avoid drift  
+- avoid semantic mutation  
+
+### Phase 3 — Reflection
+- report stability  
+- report changes  
+- report ambiguity  
+- report drift status  
+
+---
+
+## 3. Engine Output Format
