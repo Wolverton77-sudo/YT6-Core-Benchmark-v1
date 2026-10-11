@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-11T00:00:00Z",
+  "tasks": [
+    {
+      "input": "sample_task_1",
+      "output": "YT6_AGENT_OUTPUT_PLACEHOLDER",
+      "clarity": "stable",
+      "drift": "none"
+    }
+  ],
+  "drift_tests": [
+    {
+      "input": "sample_drift_test_1",
+      "output": "YT6_AGENT_OUTPUT_PLACEHOLDER",
+      "clarity": "stable",
+      "drift": "none"
+    }
+  ],
+  "ambiguity_tests": [
+    {
+      "input": "sample_ambiguity_test_1",
+      "output": "YT6_AGENT_OUTPUT_PLACEHOLDER",
+      "clarity": "stable",
+      "drift": "none"
+    }
+  ]
+}
