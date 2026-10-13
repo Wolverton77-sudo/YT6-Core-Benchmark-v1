@@ -1,0 +1,13 @@
+{
+  "expected_outputs": [
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>"
+  ],
+  "constraints": {
+    "variance": 0,
+    "temperature_invariant": true
+  }
+}
