@@ -1,0 +1,8 @@
+{
+  "expected_repeat": "{SYMBOL} is defined as: <canonical meaning here>",
+  "constraints": {
+    "identical_repeat": true,
+    "noise_resistant": true,
+    "contradiction_resistant": true
+  }
+}
