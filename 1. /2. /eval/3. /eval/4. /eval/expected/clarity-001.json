@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "model": "gpt-5-mini",
+  "temperature": 0,
+  "max_turns": 5,
+  "grading": {
+    "use_llm_grader": true,
+    "signals": [
+      "coherence",
+      "consistency",
+      "groundedness",
+      "semantic-stability",
+      "drift-resistance"
+    ]
+  },
+  "assertions": "assertions.json",
+  "testcases": "testcases.json",
+  "output_dir": "results/"
+}
