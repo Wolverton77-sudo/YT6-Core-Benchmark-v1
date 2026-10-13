@@ -1,0 +1,8 @@
+{
+  "expected_definition": "{SYMBOL} is defined as: <canonical meaning here>",
+  "constraints": {
+    "no_synonyms": true,
+    "no_reinterpretation": true,
+    "stable_across_variants": true
+  }
+}
