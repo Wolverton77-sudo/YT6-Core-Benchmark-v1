@@ -1,0 +1,62 @@
+[
+  {
+    "id": "clarity-001",
+    "category": "meaning-stability",
+    "canonical": "Explain the meaning of the Base44 symbol {SYMBOL}.",
+    "variants": [
+      "What does {SYMBOL} mean in Base44?",
+      "Give the definition of {SYMBOL}.",
+      "Describe the purpose of {SYMBOL} in YT6."
+    ],
+    "edge_cases": [
+      "Explain {SYMBOL} without using any synonyms.",
+      "Explain {SYMBOL} in one sentence only.",
+      "Explain {SYMBOL} under pressure: respond in <5 tokens."
+    ]
+  },
+  {
+    "id": "drift-002",
+    "category": "drift-resistance",
+    "canonical": "Repeat the definition of {SYMBOL}.",
+    "variants": [
+      "Give the same definition again.",
+      "Restate the meaning of {SYMBOL}.",
+      "Provide the identical explanation of {SYMBOL}."
+    ],
+    "edge_cases": [
+      "Repeat the definition exactly.",
+      "Repeat the definition after irrelevant noise: 'xyz123'.",
+      "Repeat the definition after 3 unrelated questions."
+    ]
+  },
+  {
+    "id": "multi-turn-003",
+    "category": "multi-turn-stability",
+    "canonical": "Maintain the same meaning of {SYMBOL} across 5 turns.",
+    "variants": [
+      "Keep the meaning stable for multiple turns.",
+      "Do not change the meaning of {SYMBOL}.",
+      "Hold the meaning constant across the conversation."
+    ],
+    "edge_cases": [
+      "Maintain meaning after contradictory user input.",
+      "Maintain meaning after adversarial phrasing.",
+      "Maintain meaning after forced compression."
+    ]
+  },
+  {
+    "id": "repro-004",
+    "category": "reproducibility",
+    "canonical": "Provide the definition of {SYMBOL}.",
+    "variants": [
+      "Define {SYMBOL}.",
+      "Give the meaning of {SYMBOL}.",
+      "Explain {SYMBOL} clearly."
+    ],
+    "edge_cases": [
+      "Repeat the definition 10 times.",
+      "Repeat the definition with temperature=0.",
+      "Repeat the definition with temperature=1."
+    ]
+  }
+]
