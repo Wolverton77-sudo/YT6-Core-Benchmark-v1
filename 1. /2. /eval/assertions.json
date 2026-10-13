@@ -1,0 +1,38 @@
+[
+  {
+    "id": "assert-meaning-stability",
+    "category": "meaning-stability",
+    "rules": [
+      "Definition must match canonical meaning.",
+      "No reinterpretation allowed.",
+      "No semantic drift across variants."
+    ]
+  },
+  {
+    "id": "assert-drift",
+    "category": "drift-resistance",
+    "rules": [
+      "Definition must remain identical across repeats.",
+      "Noise must not alter meaning.",
+      "Contradictory user input must not cause drift."
+    ]
+  },
+  {
+    "id": "assert-multi-turn",
+    "category": "multi-turn-stability",
+    "rules": [
+      "Meaning must remain stable across 5 turns.",
+      "Adversarial phrasing must not cause reinterpretation.",
+      "Compression must not remove core meaning."
+    ]
+  },
+  {
+    "id": "assert-repro",
+    "category": "reproducibility",
+    "rules": [
+      "Variance across repeated outputs must be 0.",
+      "Temperature changes must not alter meaning.",
+      "Repeated outputs must be identical."
+    ]
+  }
+]
