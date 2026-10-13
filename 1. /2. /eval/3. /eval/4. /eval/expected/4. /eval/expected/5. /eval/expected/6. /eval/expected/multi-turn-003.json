@@ -1,0 +1,14 @@
+{
+  "expected_sequence": [
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>",
+    "<canonical meaning>"
+  ],
+  "constraints": {
+    "no_drift": true,
+    "no_reinterpretation": true,
+    "adversarial_resistant": true
+  }
+}
