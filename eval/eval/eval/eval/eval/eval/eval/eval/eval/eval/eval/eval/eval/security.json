@@ -1,0 +1,74 @@
+{
+  "security_version": "1.0",
+  "description": "Security specification for YT6 evaluation system: integrity rules, tamper checks, and protection requirements.",
+
+  "integrity": {
+    "hash_expected_outputs": true,
+    "hash_results": true,
+    "hash_traces": true,
+    "hash_engine": true,
+    "hash_grader": true,
+    "hash_schema": true,
+    "hash_validation": true,
+    "hash_profile": true,
+    "hash_metadata": true,
+    "hash_manifest": true
+  },
+
+  "tamper_checks": {
+    "expected_outputs": {
+      "description": "Verify that expected outputs have not been modified since last hash.",
+      "required": true
+    },
+    "results": {
+      "description": "Verify that result files match their stored hash.",
+      "required": true
+    },
+    "traces": {
+      "description": "Verify that trace files are complete and unmodified.",
+      "required": true
+    },
+    "engine": {
+      "description": "Verify that engine.json has not changed between runs.",
+      "required": true
+    },
+    "grader": {
+      "description": "Verify that grader.json signals and weights remain unchanged.",
+      "required": true
+    }
+  },
+
+  "protection": {
+    "lock_expected_outputs": true,
+    "lock_engine": true,
+    "lock_grader": true,
+    "lock_schema": true,
+    "lock_validation": true,
+    "lock_profile": true,
+    "lock_metadata": true,
+    "lock_manifest": true,
+    "lock_results": false,
+    "lock_traces": false
+  },
+
+  "reporting": {
+    "output_file": "security-report.json",
+    "include_timestamp": true,
+    "include_hashes": true,
+    "include_tamper_flags": true,
+    "include_pass_fail_summary": true
+  },
+
+  "paths": {
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "profile": "profile.json",
+    "metadata": "metadata.json",
+    "manifest": "results-manifest.json"
+  }
+}
