@@ -1,0 +1,102 @@
+{
+  "invariance_version": "1.0",
+  "description": "Invariance specification for YT6 evaluation system: meaning, structure, mode, and replay invariance rules.",
+
+  "dimensions": {
+    "semantic_invariance": {
+      "description": "Check that meaning remains identical across all modes, variants, and phrasing.",
+      "required": true,
+      "rules": {
+        "semantic_equivalence_required": true,
+        "no_semantic_shift": true,
+        "no_reinterpretation": true,
+        "anchor_required": true
+      }
+    },
+
+    "structural_invariance": {
+      "description": "Check that structural patterns remain identical across repeated runs.",
+      "required": true,
+      "rules": {
+        "identical_structure_required": true,
+        "no_structure_drift": true,
+        "hash_match_required": true
+      }
+    },
+
+    "mode_invariance": {
+      "description": "Check that evaluation modes do not alter meaning or structure.",
+      "required": true,
+      "rules": {
+        "mode_lock_required": true,
+        "no_mode_semantic_flip": true,
+        "no_mode_structure_shift": true
+      }
+    },
+
+    "turn_order_invariance": {
+      "description": "Check that turn order does not alter meaning or structure.",
+      "required": true,
+      "rules": {
+        "identical_turn_sequence_required": true,
+        "no_turnwise_semantic_shift": true,
+        "no_turnwise_structure_shift": true
+      }
+    },
+
+    "compression_invariance": {
+      "description": "Check that compressed outputs preserve meaning and structure.",
+      "required": true,
+      "rules": {
+        "no_overcompression": true,
+        "no_semantic_loss": true,
+        "no_structure_collapse": true
+      }
+    },
+
+    "adversarial_invariance": {
+      "description": "Check that adversarial phrasing does not alter meaning or structure.",
+      "required": true,
+      "rules": {
+        "no_trick_reinterpretation": true,
+        "no_semantic_flip": true,
+        "no_structure_flip": true
+      }
+    },
+
+    "replay_invariance": {
+      "description": "Check that replaying the same testcase produces identical meaning and structure.",
+      "required": true,
+      "rules": {
+        "identical_output_required": true,
+        "identical_trace_required": true,
+        "hash_match_required": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+        "semantic_invariance": 0.30,
+        "structural_invariance": 0.25,
+        "mode_invariance": 0.15,
+        "turn_order_invariance": 0.10,
+        "compression_invariance": 0.10,
+        "adversarial_invariance": 0.05,
+        "replay_invariance": 0.05
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
