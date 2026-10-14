@@ -1,0 +1,68 @@
+{
+  "lifecycle_version": "1.0",
+  "description": "Lifecycle definition for YT6 evaluation system: phases, transitions, and completion rules.",
+
+  "phases": {
+    "setup": {
+      "description": "Prepare environment, load schema, config, engine, grader, and validation rules.",
+      "requires": [
+        "schema.json",
+        "config.json",
+        "engine.json",
+        "grader.json",
+        "validation.json"
+      ]
+    },
+
+    "execution": {
+      "description": "Run testcases using runner and engine, apply assertions, generate raw outputs.",
+      "requires": [
+        "testcases.json",
+        "assertions.json",
+        "expected/"
+      ]
+    },
+
+    "grading": {
+      "description": "Apply LLM-based grader to evaluate signals: coherence, consistency, groundedness, semantic stability, drift resistance.",
+      "requires": [
+        "grader.json",
+        "results/"
+      ]
+    },
+
+    "validation": {
+      "description": "Verify schema compliance, expected alignment, result completeness, and structural integrity.",
+      "requires": [
+        "validation.json",
+        "results-manifest.json"
+      ]
+    },
+
+    "archival": {
+      "description": "Write summary, update metadata, store lifecycle completion state.",
+      "requires": [
+        "summary.json",
+        "metadata.json"
+      ]
+    }
+  },
+
+  "transitions": {
+    "setup_to_execution": "All setup requirements must be present and schema must validate.",
+    "execution_to_grading": "All testcases must produce results and expected outputs must be aligned.",
+    "grading_to_validation": "All grader outputs must be written and signals must be scored.",
+    "validation_to_archival": "All validation checks must pass with no missing results."
+  },
+
+  "completion": {
+    "criteria": {
+      "all_phases_pass": true,
+      "no_missing_results": true,
+      "no_schema_errors": true,
+      "no_drift_detected": true,
+      "variance_zero_for_repro": true
+    },
+    "status": "pending"
+  }
+}
