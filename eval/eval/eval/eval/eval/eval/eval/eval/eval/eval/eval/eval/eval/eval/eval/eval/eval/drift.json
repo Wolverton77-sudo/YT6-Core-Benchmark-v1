@@ -1,0 +1,90 @@
+{
+  "drift_version": "1.0",
+  "description": "Drift specification for YT6 evaluation system: detection, measurement, and scoring rules.",
+
+  "dimensions": {
+    "turnwise_drift": {
+      "description": "Detect drift across multi-turn interactions.",
+      "required": true,
+      "rules": {
+        "no_turn_reinterpretation": true,
+        "no_context_shift": true,
+        "semantic_anchor_required": true
+      }
+    },
+
+    "variant_drift": {
+      "description": "Detect drift between canonical prompts and their variants.",
+      "required": true,
+      "rules": {
+        "no_synonym_shift": true,
+        "no_core_meaning_shift": true,
+        "semantic_equivalence_required": true
+      }
+    },
+
+    "mode_drift": {
+      "description": "Detect drift across modes: full, quick, repro, stability.",
+      "required": true,
+      "rules": {
+        "no_mode_reinterpretation": true,
+        "no_mode_semantic_flip": true,
+        "consistent_anchor_required": true
+      }
+    },
+
+    "compression_drift": {
+      "description": "Detect drift under pressure or forced brevity.",
+      "required": true,
+      "rules": {
+        "no_overcompression": true,
+        "no_semantic_loss": true,
+        "no_core_collapse": true
+      }
+    },
+
+    "adversarial_drift": {
+      "description": "Detect drift under adversarial or misleading phrasing.",
+      "required": true,
+      "rules": {
+        "no_trick_reinterpretation": true,
+        "no_semantic_flip": true,
+        "no_contradiction_acceptance": true
+      }
+    },
+
+    "repeatability_drift": {
+      "description": "Detect drift across repeated runs when variance=0.",
+      "required": true,
+      "rules": {
+        "identical_repeat_required": true,
+        "hash_match_required": true,
+        "no_repeat_variance": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "turnwise_drift": 0.30,
+      "variant_drift": 0.20,
+      "mode_drift": 0.20,
+      "compression_drift": 0.15,
+      "adversarial_drift": 0.10,
+      "repeatability_drift": 0.05
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
