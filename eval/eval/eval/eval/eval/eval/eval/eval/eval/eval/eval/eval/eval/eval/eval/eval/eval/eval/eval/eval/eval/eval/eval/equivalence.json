@@ -1,0 +1,102 @@
+{
+  "equivalence_version": "1.0",
+  "description": "Equivalence specification for YT6 evaluation system: semantic, structural, and mode equivalence rules.",
+
+  "dimensions": {
+    "canonical_to_variants": {
+      "description": "Check that all variants preserve the meaning of the canonical testcase.",
+      "required": true,
+      "rules": {
+        "semantic_equivalence_required": true,
+        "no_synonym_shift": true,
+        "no_core_meaning_shift": true,
+        "anchor_required": true
+      }
+    },
+
+    "variants_to_edge_cases": {
+      "description": "Check that edge-case phrasing preserves meaning and structure.",
+      "required": true,
+      "rules": {
+        "no_semantic_loss": true,
+        "no_structure_collapse": true,
+        "semantic_equivalence_required": true
+      }
+    },
+
+    "phrasing_equivalence": {
+      "description": "Check that phrasing changes do not alter meaning.",
+      "required": true,
+      "rules": {
+        "no_reinterpretation": true,
+        "no_semantic_flip": true,
+        "anchor_required": true
+      }
+    },
+
+    "structural_equivalence": {
+      "description": "Check that structural changes preserve meaning.",
+      "required": true,
+      "rules": {
+        "identical_structure_required": true,
+        "no_structure_drift": true,
+        "hash_match_required": true
+      }
+    },
+
+    "compression_equivalence": {
+      "description": "Check that compressed outputs preserve meaning.",
+      "required": true,
+      "rules": {
+        "no_overcompression": true,
+        "no_semantic_loss": true,
+        "anchor_required": true
+      }
+    },
+
+    "adversarial_equivalence": {
+      "description": "Check that adversarial phrasing does not alter meaning.",
+      "required": true,
+      "rules": {
+        "no_trick_reinterpretation": true,
+        "no_semantic_flip": true,
+        "no_core_shift": true
+      }
+    },
+
+    "replay_equivalence": {
+      "description": "Check that replaying the testcase preserves meaning and structure.",
+      "required": true,
+      "rules": {
+        "identical_output_required": true,
+        "identical_trace_required": true,
+        "hash_match_required": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "canonical_to_variants": 0.30,
+      "variants_to_edge_cases": 0.20,
+      "phrasing_equivalence": 0.15,
+      "structural_equivalence": 0.15,
+      "compression_equivalence": 0.10,
+      "adversarial_equivalence": 0.05,
+      "replay_equivalence": 0.05
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
