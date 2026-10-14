@@ -1,0 +1,37 @@
+{
+  "validation_version": "1.0",
+  "description": "Validation rules for YT6 evaluation dataset, engine, grader, schema, and results.",
+
+  "checks": {
+    "schema_compliance": true,
+    "expected_files_present": true,
+    "testcases_match_expected": true,
+    "assertions_match_categories": true,
+    "engine_integrity": true,
+    "grader_integrity": true,
+    "config_integrity": true,
+    "results_manifest_integrity": true
+  },
+
+  "rules": {
+    "require_all_testcases": true,
+    "require_all_expected": true,
+    "require_summary_file": true,
+    "require_individual_results": true,
+    "require_zero_variance_for_repro": true,
+    "require_no_drift_in_multi_turn": true,
+    "require_semantic_stability": true
+  },
+
+  "paths": {
+    "schema": "schema.json",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "config": "config.json",
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "results": "results/",
+    "manifest": "results-manifest.json"
+  }
+}
