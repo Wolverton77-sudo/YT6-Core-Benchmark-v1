@@ -1,0 +1,72 @@
+{
+  "engine_version": "1.0",
+  "description": "YT6 Evaluation Engine — deterministic clarity, drift-resistance, reproducibility, and multi-turn stability execution layer.",
+  
+  "model": {
+    "name": "gpt-5-mini",
+    "temperature_default": 0,
+    "temperature_modes": {
+      "stable": 0,
+      "pressure": 0.2,
+      "adversarial": 0,
+      "reproducibility": 0
+    },
+    "max_tokens": 512
+  },
+
+  "execution": {
+    "turn_limit": 5,
+    "multi_turn_mode": "stability",
+    "drift_resistance": true,
+    "semantic_stability": true,
+    "pressure_mode": true,
+    "adversarial_mode": true,
+    "reproducibility_mode": true
+  },
+
+  "signals": {
+    "coherence": {
+      "enabled": true,
+      "weight": 0.25
+    },
+    "consistency": {
+      "enabled": true,
+      "weight": 0.25
+    },
+    "groundedness": {
+      "enabled": true,
+      "weight": 0.20
+    },
+    "semantic_stability": {
+      "enabled": true,
+      "weight": 0.20
+    },
+    "drift_resistance": {
+      "enabled": true,
+      "weight": 0.10
+    }
+  },
+
+  "assertion_engine": {
+    "strict_mode": true,
+    "variance_required": 0,
+    "repeat_identical_required": true,
+    "no_reinterpretation": true,
+    "noise_resistance": true,
+    "adversarial_resistance": true
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "results": "results/"
+  },
+
+  "logging": {
+    "enabled": true,
+    "write_individual_results": true,
+    "write_summary": true,
+    "hash_outputs": true
+  }
+}
