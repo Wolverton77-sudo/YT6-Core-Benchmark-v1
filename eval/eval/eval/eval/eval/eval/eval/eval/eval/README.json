@@ -1,0 +1,34 @@
+{
+  "readme_version": "1.0",
+  "title": "YT6 Evaluation System Overview",
+  "description": "Human-readable documentation for the YT6 clarity-system evaluation stack.",
+
+  "sections": {
+    "overview": "The YT6 evaluation system provides a structured, deterministic, and drift-resistant framework for assessing clarity-system behaviour across meaning stability, reproducibility, multi-turn stability, and adversarial resistance.",
+
+    "components": {
+      "testcases": "Defines canonical prompts, variants, and edge cases.",
+      "assertions": "Defines pass/fail rules for each evaluation category.",
+      "expected": "Contains expected outputs for each testcase.",
+      "config": "Defines model, temperature, grading, and output settings.",
+      "engine": "Defines execution behaviour, modes, and stability constraints.",
+      "grader": "Defines LLM-based scoring prompts and signal weights.",
+      "schema": "Defines the formal structure of all evaluation files.",
+      "validation": "Defines rules for verifying dataset integrity.",
+      "profile": "Defines evaluation modes and tiers.",
+      "results_manifest": "Defines how results are indexed and stored.",
+      "metadata": "Defines identity, provenance, and structural fingerprint."
+    },
+
+    "execution_flow": "The runner loads testcases, expected outputs, assertions, config, engine, and grader. It executes each testcase, applies assertions, generates results, writes a summary, and validates the output using schema and validation rules.",
+
+    "usage": {
+      "full": "Run the entire evaluation stack including grader and validation.",
+      "quick": "Run canonical-only tests for rapid checks.",
+      "repro": "Run reproducibility tests enforcing variance=0.",
+      "stability": "Run multi-turn and drift-resistance tests."
+    },
+
+    "output": "Results are written to the results/ directory, including individual testcase results and a summary.json file."
+  }
+}
