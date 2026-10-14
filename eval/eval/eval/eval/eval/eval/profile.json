@@ -1,0 +1,77 @@
+{
+  "profile_version": "1.0",
+  "description": "Evaluation profile for YT6 clarity-system: execution presets, modes, tiers, and evaluation intent.",
+
+  "modes": {
+    "full": {
+      "description": "Run all testcases, assertions, expected outputs, grader, engine, and validation.",
+      "include_grader": true,
+      "include_validation": true,
+      "include_schema_check": true,
+      "include_pressure_tests": true,
+      "include_adversarial_tests": true
+    },
+    "quick": {
+      "description": "Run canonical testcases only with basic assertions.",
+      "include_grader": false,
+      "include_validation": false,
+      "include_schema_check": false,
+      "include_pressure_tests": false,
+      "include_adversarial_tests": false
+    },
+    "repro": {
+      "description": "Run reproducibility-only tests with variance=0 enforcement.",
+      "include_grader": false,
+      "include_validation": true,
+      "include_schema_check": true,
+      "include_pressure_tests": false,
+      "include_adversarial_tests": false
+    },
+    "stability": {
+      "description": "Run multi-turn stability and drift-resistance tests.",
+      "include_grader": true,
+      "include_validation": true,
+      "include_schema_check": true,
+      "include_pressure_tests": true,
+      "include_adversarial_tests": true
+    }
+  },
+
+  "tiers": {
+    "tier_1": {
+      "description": "Basic compliance: canonical meaning stability.",
+      "required_pass_rate": 0.80
+    },
+    "tier_2": {
+      "description": "Intermediate compliance: drift-resistance and multi-turn stability.",
+      "required_pass_rate": 0.85
+    },
+    "tier_3": {
+      "description": "Advanced compliance: adversarial and pressure stability.",
+      "required_pass_rate": 0.90
+    },
+    "tier_4": {
+      "description": "Partner-grade compliance: full evaluation stack including grader and validation.",
+      "required_pass_rate": 0.95
+    }
+  },
+
+  "defaults": {
+    "mode": "full",
+    "tier": "tier_4",
+    "temperature": 0,
+    "max_turns": 5
+  },
+
+  "paths": {
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "results": "results/",
+    "manifest": "results-manifest.json"
+  }
+}
