@@ -1,0 +1,90 @@
+{
+  "variance_version": "1.0",
+  "description": "Variance specification for YT6 evaluation system: measurement, constraints, and scoring rules.",
+
+  "dimensions": {
+    "output_variance": {
+      "description": "Measure variance across repeated outputs.",
+      "required": true,
+      "rules": {
+        "variance_zero_required": true,
+        "hash_match_required": true,
+        "no_output_noise": true
+      }
+    },
+
+    "signal_variance": {
+      "description": "Measure variance across grader signals.",
+      "required": true,
+      "rules": {
+        "identical_signals_required": true,
+        "no_signal_drift": true,
+        "no_weight_shift": true
+      }
+    },
+
+    "trace_variance": {
+      "description": "Measure variance across execution traces.",
+      "required": true,
+      "rules": {
+        "identical_turn_sequence_required": true,
+        "identical_semantic_anchor_required": true,
+        "no_turnwise_noise": true
+      }
+    },
+
+    "mode_variance": {
+      "description": "Measure variance across evaluation modes.",
+      "required": true,
+      "rules": {
+        "mode_lock_required": true,
+        "no_mode_semantic_flip": true,
+        "no_mode_output_shift": true
+      }
+    },
+
+    "multi_turn_variance": {
+      "description": "Measure variance across multi-turn interactions.",
+      "required": true,
+      "rules": {
+        "identical_multi_turn_required": true,
+        "no_turnwise_variance": true,
+        "semantic_anchor_required": true
+      }
+    },
+
+    "repeatability_variance": {
+      "description": "Measure variance across repeated runs.",
+      "required": true,
+      "rules": {
+        "identical_repeat_required": true,
+        "no_repeat_variance": true,
+        "hash_match_required": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "output_variance": 0.30,
+      "signal_variance": 0.20,
+      "trace_variance": 0.20,
+      "mode_variance": 0.15,
+      "multi_turn_variance": 0.10,
+      "repeatability_variance": 0.05
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
