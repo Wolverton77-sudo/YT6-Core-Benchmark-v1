@@ -1,0 +1,43 @@
+{
+  "metadata_version": "1.0",
+  "description": "Metadata for YT6 evaluation system: identity, provenance, versioning, and structural fingerprint.",
+
+  "identity": {
+    "system_name": "YT6 Clarity-System Evaluation Stack",
+    "system_version": "1.0",
+    "author": "Anthony Christopher Stephen Olley",
+    "maintainer": "YT6-Core-Benchmark-v1"
+  },
+
+  "provenance": {
+    "created_at": "2026-10-14T10:53:00Z",
+    "last_updated": "2026-10-14T10:53:00Z",
+    "location": "Barmouth, Wales, United Kingdom"
+  },
+
+  "components": {
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "config": "config.json",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "profile": "profile.json",
+    "results_manifest": "results-manifest.json"
+  },
+
+  "fingerprint": {
+    "structure_hash": "pending",
+    "dataset_hash": "pending",
+    "engine_hash": "pending",
+    "grader_hash": "pending"
+  },
+
+  "integrity": {
+    "schema_compliant": true,
+    "paths_valid": true,
+    "components_present": true
+  }
+}
