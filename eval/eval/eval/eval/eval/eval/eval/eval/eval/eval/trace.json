@@ -1,0 +1,54 @@
+{
+  "trace_version": "1.0",
+  "description": "Execution trace specification for YT6 evaluation system: structure, fields, and storage rules.",
+
+  "structure": {
+    "trace_id": "string",
+    "testcase_id": "string",
+    "timestamp_start": "string",
+    "timestamp_end": "string",
+    "mode": "string",
+    "engine_temperature": "number",
+    "turns": [
+      {
+        "turn_number": "number",
+        "input": "string",
+        "output": "string",
+        "hash": "string",
+        "flags": {
+          "pressure": "boolean",
+          "adversarial": "boolean",
+          "reproducibility": "boolean",
+          "stability": "boolean"
+        }
+      }
+    ],
+    "assertions_applied": "array[string]",
+    "grader_signals": {
+      "coherence": "number(optional)",
+      "consistency": "number(optional)",
+      "groundedness": "number(optional)",
+      "semantic_stability": "number(optional)",
+      "drift_resistance": "number(optional)"
+    },
+    "validation_checks": "array[string]",
+    "status": "string"
+  },
+
+  "rules": {
+    "require_hash_for_each_turn": true,
+    "require_timestamp_start_end": true,
+    "require_testcase_id": true,
+    "require_mode": true,
+    "require_assertions_list": true,
+    "allow_empty_grader_signals": true,
+    "allow_empty_validation_checks": true
+  },
+
+  "storage": {
+    "directory": "results/traces/",
+    "filename_pattern": "<testcase-id>-trace.json",
+    "write_on_each_run": true,
+    "append_mode": false
+  }
+}
