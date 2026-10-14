@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "description": "Formal schema for YT6 evaluation dataset: testcases, assertions, expected outputs, config, and engine definitions.",
+
+  "testcase_schema": {
+    "id": "string",
+    "category": "string",
+    "canonical": "string",
+    "variants": "array[string]",
+    "edge_cases": "array[string]"
+  },
+
+  "assertions_schema": {
+    "id": "string",
+    "category": "string",
+    "rules": "array[string]"
+  },
+
+  "expected_schema": {
+    "expected_definition": "string(optional)",
+    "expected_repeat": "string(optional)",
+    "expected_sequence": "array[string](optional)",
+    "expected_outputs": "array[string](optional)",
+    "constraints": {
+      "no_synonyms": "boolean(optional)",
+      "no_reinterpretation": "boolean(optional)",
+      "stable_across_variants": "boolean(optional)",
+      "identical_repeat": "boolean(optional)",
+      "noise_resistant": "boolean(optional)",
+      "contradiction_resistant": "boolean(optional)",
+      "no_drift": "boolean(optional)",
+      "adversarial_resistant": "boolean(optional)",
+      "variance": "number(optional)",
+      "temperature_invariant": "boolean(optional)"
+    }
+  },
+
+  "config_schema": {
+    "version": "string",
+    "model": "string",
+    "temperature": "number",
+    "max_turns": "number",
+    "grading": {
+      "use_llm_grader": "boolean",
+      "signals": "array[string]"
+    },
+    "assertions": "string",
+    "testcases": "string",
+    "output_dir": "string"
+  },
+
+  "engine_schema": {
+    "engine_version": "string",
+    "description": "string",
+    "model": {
+      "name": "string",
+      "temperature_default": "number",
+      "temperature_modes": "object",
+      "max_tokens": "number"
+    },
+    "execution": {
+      "turn_limit": "number",
+      "multi_turn_mode": "string",
+      "drift_resistance": "boolean",
+      "semantic_stability": "boolean",
+      "pressure_mode": "boolean",
+      "adversarial_mode": "boolean",
+      "reproducibility_mode": "boolean"
+    },
+    "signals": "object",
+    "assertion_engine": "object",
+    "paths": "object",
+    "logging": "object"
+  }
+}
