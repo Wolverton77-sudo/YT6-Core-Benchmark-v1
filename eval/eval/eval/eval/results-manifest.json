@@ -1,0 +1,30 @@
+{
+  "manifest_version": "1.0",
+  "description": "Index and structure definition for YT6 evaluation results.",
+
+  "results_dir": "results/",
+  "expected_dir": "expected/",
+  "testcases_file": "testcases.json",
+  "assertions_file": "assertions.json",
+  "config_file": "config.json",
+  "engine_file": "engine.json",
+  "grader_file": "grader.json",
+  "schema_file": "schema.json",
+
+  "structure": {
+    "individual_results": {
+      "pattern": "<testcase-id>-result.json",
+      "required": true
+    },
+    "summary": {
+      "file": "summary.json",
+      "required": true
+    }
+  },
+
+  "validation": {
+    "check_missing_results": true,
+    "check_schema_compliance": true,
+    "check_expected_alignment": true
+  }
+}
