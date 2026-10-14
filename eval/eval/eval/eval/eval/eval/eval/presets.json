@@ -1,0 +1,58 @@
+{
+  "presets_version": "1.0",
+  "description": "Reusable execution presets for YT6 evaluation system.",
+
+  "presets": {
+    "default": {
+      "mode": "full",
+      "tier": "tier_4",
+      "temperature": 0,
+      "max_turns": 5,
+      "use_grader": true,
+      "use_validation": true,
+      "use_schema_check": true
+    },
+
+    "fast": {
+      "mode": "quick",
+      "tier": "tier_1",
+      "temperature": 0,
+      "max_turns": 1,
+      "use_grader": false,
+      "use_validation": false,
+      "use_schema_check": false
+    },
+
+    "stability_focus": {
+      "mode": "stability",
+      "tier": "tier_3",
+      "temperature": 0,
+      "max_turns": 5,
+      "use_grader": true,
+      "use_validation": true,
+      "use_schema_check": true
+    },
+
+    "repro_strict": {
+      "mode": "repro",
+      "tier": "tier_2",
+      "temperature": 0,
+      "max_turns": 3,
+      "use_grader": false,
+      "use_validation": true,
+      "use_schema_check": true
+    }
+  },
+
+  "paths": {
+    "engine": "engine.json",
+    "profile": "profile.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "grader": "grader.json",
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "results": "results/"
+  }
+}
