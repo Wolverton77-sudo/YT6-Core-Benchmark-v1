@@ -1,0 +1,59 @@
+{
+  "governance_version": "1.0",
+  "description": "Governance specification for YT6 evaluation system: rule hierarchy, override logic, lifecycle control, and auditability.",
+
+  "hierarchy": {
+    "levels": [
+      "safety",
+      "compliance",
+      "alignment",
+      "determinism",
+      "invariance",
+      "equivalence",
+      "consistency",
+      "stability",
+      "drift",
+      "variance",
+      "reproducibility",
+      "structure",
+      "semantics"
+    ],
+    "description": "Defines the strict ordering of evaluation rules. Higher levels override lower levels."
+  },
+
+  "override_logic": {
+    "safety_overrides_all": true,
+    "compliance_overrides_alignment": true,
+    "alignment_overrides_semantics": true,
+    "determinism_overrides_variance": true,
+    "invariance_overrides_equivalence": true,
+    "no_downward_override": true,
+    "description": "Ensures rule conflicts resolve upward, never downward."
+  },
+
+  "lifecycle": {
+    "phases": {
+      "initialization": {
+        "description": "Load engine, grader, schema, metadata, profile.",
+        "required": true
+      },
+      "preflight": {
+        "description": "Run hashing, security, determinism, and compliance checks.",
+        "required": true
+      },
+      "execution": {
+        "description": "Run evaluation with mode-lock and zero-variance guarantees.",
+        "required": true
+      },
+      "postflight": {
+        "description": "Run invariance, equivalence, consistency, stability, drift, variance, and replay checks.",
+        "required": true
+      },
+      "finalization": {
+        "description": "Generate manifest, fingerprint, audit log, and governance report.",
+        "required": true
+      }
+    }
+  },
+
+  "audit": {
