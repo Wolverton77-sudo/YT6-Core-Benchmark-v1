@@ -1,0 +1,71 @@
+{
+  "audit_version": "1.0",
+  "description": "Audit specification for YT6 evaluation system: external review rules, required artefacts, and compliance checks.",
+
+  "requirements": {
+    "complete_dataset": true,
+    "complete_expected_outputs": true,
+    "complete_results": true,
+    "complete_metadata": true,
+    "complete_traces": true,
+    "complete_validation": true,
+    "complete_profile": true,
+    "complete_engine": true,
+    "complete_grader": true,
+    "complete_schema": true
+  },
+
+  "checks": {
+    "dataset_integrity": {
+      "description": "Verify that all testcases have corresponding expected outputs and assertions.",
+      "required": true
+    },
+    "engine_integrity": {
+      "description": "Verify that engine.json contains all required execution, signal, and stability fields.",
+      "required": true
+    },
+    "grader_integrity": {
+      "description": "Verify that grader.json defines all signals and weights.",
+      "required": true
+    },
+    "schema_integrity": {
+      "description": "Verify that schema.json defines all structural rules for evaluation artefacts.",
+      "required": true
+    },
+    "results_completeness": {
+      "description": "Verify that every testcase has a corresponding result file and summary.json exists.",
+      "required": true
+    },
+    "trace_completeness": {
+      "description": "Verify that each testcase has a trace file with required fields.",
+      "required": true
+    },
+    "validation_pass": {
+      "description": "Verify that all validation checks pass with no missing artefacts.",
+      "required": true
+    }
+  },
+
+  "report": {
+    "output_file": "audit-report.json",
+    "include_timestamp": true,
+    "include_component_status": true,
+    "include_missing_items": true,
+    "include_pass_fail_summary": true
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "profile": "profile.json",
+    "metadata": "metadata.json",
+    "manifest": "results-manifest.json"
+  }
+}
