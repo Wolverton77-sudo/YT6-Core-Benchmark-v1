@@ -1,0 +1,97 @@
+{
+  "hashing_version": "1.0",
+  "description": "Hashing specification for YT6 evaluation system: algorithms, components, and fingerprint rules.",
+
+  "algorithm": {
+    "name": "sha256",
+    "output_format": "hex",
+    "uppercase": false
+  },
+
+  "components": {
+    "testcases": {
+      "path": "testcases.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "assertions": {
+      "path": "assertions.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "expected": {
+      "path": "expected/",
+      "hash_each_file": true,
+      "hash_directory_manifest": true
+    },
+    "engine": {
+      "path": "engine.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "grader": {
+      "path": "grader.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "schema": {
+      "path": "schema.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "validation": {
+      "path": "validation.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "profile": {
+      "path": "profile.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "metadata": {
+      "path": "metadata.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "manifest": {
+      "path": "results-manifest.json",
+      "hash_on_load": true,
+      "hash_on_write": true
+    },
+    "results": {
+      "path": "results/",
+      "hash_each_file": true,
+      "hash_summary": true
+    },
+    "traces": {
+      "path": "results/traces/",
+      "hash_each_file": true
+    }
+  },
+
+  "fingerprint": {
+    "structure_hash": "pending",
+    "dataset_hash": "pending",
+    "engine_hash": "pending",
+    "grader_hash": "pending",
+    "expected_hash": "pending",
+    "results_hash": "pending",
+    "traces_hash": "pending"
+  },
+
+  "rules": {
+    "require_hash_for_all_components": true,
+    "require_directory_manifest": true,
+    "require_consistent_algorithm": true,
+    "require_fingerprint_update_on_change": true,
+    "block_execution_if_hash_mismatch": true
+  },
+
+  "output": {
+    "fingerprint_file": "fingerprint.json",
+    "include_timestamp": true,
+    "include_all_component_hashes": true,
+    "include_structure_hash": true
+  }
+}
