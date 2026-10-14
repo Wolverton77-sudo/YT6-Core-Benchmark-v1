@@ -1,0 +1,13 @@
+{
+  "determinism_version": "1.0",
+  "description": "Determinism specification for YT6 evaluation system: execution invariance, mode locking, and zero-randomness rules.",
+
+  "requirements": {
+    "temperature_zero": true,
+    "no_sampling": true,
+    "no_stochastic_processes": true,
+    "engine_mode_locked": true,
+    "grader_mode_locked": true,
+    "schema_locked": true,
+    "max_turns_fixed": true,
+    "no_external
