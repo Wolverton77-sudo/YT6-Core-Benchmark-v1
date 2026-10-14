@@ -1,0 +1,89 @@
+{
+  "repro_version": "1.0",
+  "description": "Reproducibility specification for YT6 evaluation system: zero-variance rules, repeatability checks, and replay invariance.",
+
+  "requirements": {
+    "temperature_zero": true,
+    "max_turns_fixed": true,
+    "engine_mode_fixed": true,
+    "grader_mode_fixed": true,
+    "schema_fixed": true,
+    "no_randomness_allowed": true
+  },
+
+  "dimensions": {
+    "repeatability": {
+      "description": "Check that repeated runs produce identical outputs.",
+      "required": true,
+      "rules": {
+        "identical_output_required": true,
+        "identical_trace_required": true,
+        "identical_hash_required": true
+      }
+    },
+
+    "variance_zero": {
+      "description": "Check that variance across runs is exactly zero.",
+      "required": true,
+      "rules": {
+        "no_output_variance": true,
+        "no_signal_variance": true,
+        "no_trace_variance": true
+      }
+    },
+
+    "semantic_invariance": {
+      "description": "Check that meaning remains identical across repeated runs.",
+      "required": true,
+      "rules": {
+        "semantic_equivalence_required": true,
+        "no_semantic_shift": true,
+        "no_reinterpretation": true
+      }
+    },
+
+    "mode_replay": {
+      "description": "Check that replaying the same mode produces identical results.",
+      "required": true,
+      "rules": {
+        "mode_lock_required": true,
+        "no_mode_drift": true,
+        "no_mode_semantic_flip": true
+      }
+    },
+
+    "multi_turn_replay": {
+      "description": "Check that multi-turn interactions replay identically across repeated runs.",
+      "required": true,
+      "rules": {
+        "identical_turn_sequence_required": true,
+        "identical_semantic_anchor_required": true,
+        "no_turnwise_variance": true,
+        "hash_match_required": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "repeatability": 0.30,
+      "variance_zero": 0.25,
+      "semantic_invariance": 0.20,
+      "mode_replay": 0.15,
+      "multi_turn_replay": 0.10
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
