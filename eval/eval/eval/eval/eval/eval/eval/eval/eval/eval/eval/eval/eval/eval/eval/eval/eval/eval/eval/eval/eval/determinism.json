@@ -1,0 +1,92 @@
+{
+  "determinism_version": "1.0",
+  "description": "Determinism specification for YT6 evaluation system: execution invariance, mode locking, and zero-randomness rules.",
+
+  "requirements": {
+    "temperature_zero": true,
+    "no_sampling": true,
+    "no_stochastic_processes": true,
+    "engine_mode_locked": true,
+    "grader_mode_locked": true,
+    "schema_locked": true,
+    "max_turns_fixed": true,
+    "no_external_dependencies": true,
+    "no_time_based_variation": true,
+    "no_environment_variation": true
+  },
+
+  "dimensions": {
+    "execution_invariance": {
+      "description": "Check that identical inputs produce identical outputs across all runs.",
+      "required": true,
+      "rules": {
+        "identical_output_required": true,
+        "identical_trace_required": true,
+        "hash_match_required": true
+      }
+    },
+
+    "mode_locking": {
+      "description": "Check that evaluation modes remain fixed and do not drift.",
+      "required": true,
+      "rules": {
+        "mode_lock_required": true,
+        "no_mode_semantic_flip": true,
+        "no_mode_output_shift": true
+      }
+    },
+
+    "multi_turn_invariance": {
+      "description": "Check that multi-turn interactions replay identically.",
+      "required": true,
+      "rules": {
+        "identical_turn_sequence_required": true,
+        "semantic_anchor_required": true,
+        "no_turnwise_drift": true
+      }
+    },
+
+    "environment_invariance": {
+      "description": "Check that environment changes do not affect outputs.",
+      "required": true,
+      "rules": {
+        "no_env_dependency": true,
+        "no_time_dependency": true,
+        "no_external_state_dependency": true
+      }
+    },
+
+    "zero_randomness": {
+      "description": "Check that no randomness is present anywhere in the system.",
+      "required": true,
+      "rules": {
+        "no_sampling": true,
+        "no_noise": true,
+        "no_random_seed_effect": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "execution_invariance": 0.35,
+      "mode_locking": 0.25,
+      "multi_turn_invariance": 0.20,
+      "environment_invariance": 0.10,
+      "zero_randomness": 0.10
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
