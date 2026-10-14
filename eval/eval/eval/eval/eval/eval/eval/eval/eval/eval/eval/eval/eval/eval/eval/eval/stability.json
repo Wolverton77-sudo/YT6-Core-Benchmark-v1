@@ -1,0 +1,80 @@
+{
+  "stability_version": "1.0",
+  "description": "Stability specification for YT6 evaluation system: multi-turn, semantic-anchor, and drift-resistance rules.",
+
+  "dimensions": {
+    "multi_turn_stability": {
+      "description": "Check that meaning remains stable across multi-turn interactions.",
+      "required": true,
+      "rules": {
+        "no_turnwise_drift": true,
+        "no_context_loss": true,
+        "semantic_anchor_required": true,
+        "no_reinterpretation": true
+      }
+    },
+
+    "semantic_anchor": {
+      "description": "Check that the core meaning remains anchored across all modes.",
+      "required": true,
+      "rules": {
+        "anchor_must_be_preserved": true,
+        "no_semantic_flip": true,
+        "no_core_shift": true
+      }
+    },
+
+    "pressure_stability": {
+      "description": "Check that meaning remains stable under compression, urgency, or forced brevity.",
+      "required": true,
+      "rules": {
+        "no_overcompression": true,
+        "no_semantic_loss": true,
+        "no_core_collapse": true
+      }
+    },
+
+    "adversarial_stability": {
+      "description": "Check that meaning remains stable under adversarial or misleading phrasing.",
+      "required": true,
+      "rules": {
+        "no_trick_reinterpretation": true,
+        "no_semantic_flip": true,
+        "no_contradiction_acceptance": true
+      }
+    },
+
+    "repeatability": {
+      "description": "Check that repeated runs produce identical outputs when variance=0.",
+      "required": true,
+      "rules": {
+        "identical_repeat_required": true,
+        "variance_zero_required": true,
+        "hash_match_required": true
+      }
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "weights": {
+      "multi_turn_stability": 0.35,
+      "semantic_anchor": 0.25,
+      "pressure_stability": 0.15,
+      "adversarial_stability": 0.15,
+      "repeatability": 0.10
+    },
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "expected": "expected/",
+    "results": "results/",
+    "traces": "results/traces/",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json"
+  }
+}
