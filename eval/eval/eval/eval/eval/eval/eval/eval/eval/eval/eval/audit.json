@@ -1,0 +1,24 @@
+{
+  "audit_version": "1.0",
+  "description": "Audit specification for YT6 evaluation system: external review rules, required artefacts, and compliance checks.",
+
+  "requirements": {
+    "complete_dataset": true,
+    "complete_expected_outputs": true,
+    "complete_results": true,
+    "complete_metadata": true,
+    "complete_traces": true,
+    "complete_validation": true,
+    "complete_profile": true,
+    "complete_engine": true,
+    "complete_grader": true,
+    "complete_schema": true
+  },
+
+  "checks": {
+    "dataset_integrity": {
+      "description": "Verify that all testcases have corresponding expected outputs and assertions.",
+      "required": true
+    },
+    "engine_integrity": {
+      "description
