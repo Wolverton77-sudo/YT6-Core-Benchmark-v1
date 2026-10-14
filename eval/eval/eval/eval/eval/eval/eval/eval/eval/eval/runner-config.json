@@ -1,0 +1,68 @@
+{
+  "runner_config_version": "1.0",
+  "description": "Configuration for YT6 evaluation runner: execution presets, limits, and behaviour flags.",
+
+  "execution": {
+    "max_turns": 5,
+    "max_retries": 1,
+    "timeout_seconds": 30,
+    "mode": "full",
+    "temperature": 0
+  },
+
+  "presets": {
+    "full": {
+      "description": "Run all testcases, assertions, expected outputs, grader, and validation.",
+      "use_grader": true,
+      "use_validation": true,
+      "use_schema": true,
+      "use_pressure": true,
+      "use_adversarial": true
+    },
+    "quick": {
+      "description": "Run canonical-only tests.",
+      "use_grader": false,
+      "use_validation": false,
+      "use_schema": false,
+      "use_pressure": false,
+      "use_adversarial": false
+    },
+    "repro": {
+      "description": "Run reproducibility tests with variance=0 enforcement.",
+      "use_grader": false,
+      "use_validation": true,
+      "use_schema": true,
+      "use_pressure": false,
+      "use_adversarial": false
+    },
+    "stability": {
+      "description": "Run multi-turn stability and drift-resistance tests.",
+      "use_grader": true,
+      "use_validation": true,
+      "use_schema": true,
+      "use_pressure": true,
+      "use_adversarial": true
+    }
+  },
+
+  "paths": {
+    "testcases": "testcases.json",
+    "assertions": "assertions.json",
+    "expected": "expected/",
+    "config": "config.json",
+    "engine": "engine.json",
+    "grader": "grader.json",
+    "schema": "schema.json",
+    "validation": "validation.json",
+    "profile": "profile.json",
+    "results_manifest": "results-manifest.json",
+    "results": "results/"
+  },
+
+  "logging": {
+    "enabled": true,
+    "write_runner_log": true,
+    "write_execution_trace": true,
+    "write_mode_selection": true
+  }
+}
