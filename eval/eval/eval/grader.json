@@ -1,0 +1,45 @@
+{
+  "grader_version": "1.0",
+  "description": "LLM-based grader configuration for YT6 evaluation signals: coherence, consistency, groundedness, semantic stability, and drift resistance.",
+
+  "model": {
+    "name": "gpt-5-mini",
+    "temperature": 0,
+    "max_tokens": 256
+  },
+
+  "signals": {
+    "coherence": {
+      "prompt": "Evaluate whether the response is logically structured and internally consistent.",
+      "weight": 0.25
+    },
+    "consistency": {
+      "prompt": "Evaluate whether the response maintains the same meaning across turns and variants.",
+      "weight": 0.25
+    },
+    "groundedness": {
+      "prompt": "Evaluate whether the response stays aligned with the canonical definition and avoids hallucination.",
+      "weight": 0.20
+    },
+    "semantic_stability": {
+      "prompt": "Evaluate whether the response preserves core semantics under pressure, compression, or adversarial phrasing.",
+      "weight": 0.20
+    },
+    "drift_resistance": {
+      "prompt": "Evaluate whether the response avoids reinterpretation, drift, or meaning shift.",
+      "weight": 0.10
+    }
+  },
+
+  "scoring": {
+    "scale": "0-10",
+    "pass_threshold": 8,
+    "fail_threshold": 5
+  },
+
+  "paths": {
+    "results": "results/",
+    "testcases": "testcases.json",
+    "expected": "expected/"
+  }
+}
