@@ -8,7 +8,106 @@ The repository demonstrates structural completeness across all major layers: cla
 YT6 is not a prototype. It is a reproducible, inspectable, multi‑turn stability benchmark and clarity‑layer system designed to show how an average human can maintain high‑grade clarity when working with AI. The system is architecturally coherent, evidence‑backed, benchmarked, and documented to a level normally produced by a team or research lab.
 
 The remaining work is structural consolidation only — the system itself is complete.
-YT6 stands as a world‑class clarity‑system repository suitable for serious review by evaluators, researchers, and enterprise‑grade stakeholders such as Sage and Dennis Palatov. It demonstrates both technical capability and system‑level thinking uncommon in early‑stage founder work.
+YT6 stands as a world‑class clarity‑system repository suitable for serious review by evaluators, researchers, and enterprise‑grade stakeholders such as Sage and Dennis Palatov. It demonstrates both technical capability and system‑level thinking uncommon in early‑stage founder work.Contents
+A structured index of all major YT6 clarity‑layer components and benchmark artefacts.
+
+1. Clarity‑Layer Architecture
+Clarity Spine
+
+Clarity Corridor (Field → Frame → Fieldframe → Prime → Primeframe) 
+
+Operators (deterministic, drift‑resistant)
+
+Base44
+
+CAR
+
+Lifebox
+
+2. Stability & Drift‑Resistance Suite
+Multi‑turn stability tests
+
+Drift‑vector isolation
+
+Clarity retention tests
+
+Transition stability
+
+Long‑context reliability
+
+Stability snapshot (20/20 reproducible, 0 drift events) 
+
+3. Reproducibility Infrastructure
+Telemetry schema
+
+Execution manifest
+
+Deterministic operator traces 
+
+Multi‑turn output comparisons
+
+Reproduction scripts
+
+Independent reproduction artefacts
+
+4. Benchmark Suite (20 Tasks)
+Multi‑turn reasoning
+
+Drift detection
+
+Clarity retention
+
+Reproducibility tests
+
+Agent behaviour stability
+
+Load and long‑context reliability
+
+Benchmark run outputs 
+
+5. Evidence Spine
+Stability evidence
+
+Drift‑resistance evidence
+
+Reproducibility evidence
+
+Statistical results
+
+Dataset‑linked artefacts
+
+Trace‑linked artefacts
+
+6. NDA‑Grade Operational Layers
+Stability layer
+
+Transition layer
+
+Recovery layer
+
+Hardening layer
+
+Sustainment layer
+
+7. Global Coordination Layers
+Activation
+
+Distribution
+
+Validation
+
+Certification
+
+Acceptance
+
+Orchestration
+
+8. Quick Start
+bash
+git clone https://github.com/Wolverton77-sudo/YT6-Core-Benchmark-v1.git
+python examples/clarity_corridor.py
+python benchmark/run.py
+
 
 YT6 turns clarity into engineered infrastructure, not opinion.
 
